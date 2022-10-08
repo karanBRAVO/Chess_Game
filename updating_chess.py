@@ -659,6 +659,171 @@ def get_pos():
     return [mouse_x, mouse_y]
 
 
+# checks if black pawns can cuts the white pieces
+def check_pawn_black_canCut(which_pawn_clicked, num):
+    if pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pw1) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pw2) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pw3) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pw4) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pw5) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pw6) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pw7) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pw8) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.Kw) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.Qw) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.rw1) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.rw2) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.kw1) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.kw2) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.bw1) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.bw2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num], border_radius=100)
+        if which_pawn_clicked == pos.pb1:
+            pos.pawnBlack1Clicked = 1
+            pos.pawnBlack1Clicked_cut = 1
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+            pos.QueenBlackClicked = 0
+        elif which_pawn_clicked == pos.pb2:
+            pos.pawnBlack2Clicked = 1
+            pos.pawnBlack2Clicked_cut = 1
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+            pos.QueenBlackClicked = 0
+        elif which_pawn_clicked == pos.pb3:
+            pos.pawnBlack3Clicked = 1
+            pos.pawnBlack3Clicked_cut = 1
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+            pos.QueenBlackClicked = 0
+        elif which_pawn_clicked == pos.pb4:
+            pos.pawnBlack4Clicked = 1
+            pos.pawnBlack4Clicked_cut = 1
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+            pos.QueenBlackClicked = 0
+        elif which_pawn_clicked == pos.pb5:
+            pos.pawnBlack5Clicked = 1
+            pos.pawnBlack5Clicked_cut = 1
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+            pos.QueenBlackClicked = 0
+        elif which_pawn_clicked == pos.pb6:
+            pos.pawnBlack6Clicked = 1
+            pos.pawnBlack6Clicked_cut = 1
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+            pos.QueenBlackClicked = 0
+        elif which_pawn_clicked == pos.pb7:
+            pos.pawnBlack7Clicked = 1
+            pos.pawnBlack7Clicked_cut = 1
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+            pos.QueenBlackClicked = 0
+        elif which_pawn_clicked == pos.pb8:
+            pos.pawnBlack8Clicked = 1
+            pos.pawnBlack8Clicked_cut = 1
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+            pos.QueenBlackClicked = 0
+
+
 # checks if next positions for black pawns are empty or not
 def check_pawn_next_pos(which_pawn_clicked):
     mouse_pos = get_pos()
@@ -1121,475 +1286,84 @@ def check_pawn_next_pos(which_pawn_clicked):
                     pos.pawnBlack8Clicked = 0
         # check if white pieces are diagonal to black pawn
         if 0 * boxSize <= which_pawn_clicked.x <= 6 * boxSize and which_pawn_clicked.y < pos.box_dict["box57"].y:
-            if pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.pw1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.pw2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.pw3) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.pw4) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.pw5) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.pw6) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.pw7) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.pw8) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.Kw) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.Qw) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.rw1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.rw2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.kw1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.kw2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.bw1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1].colliderect(pos.bw2):
-                pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 + 1], border_radius=100)
-                if which_pawn_clicked == pos.pb1:
-                    pos.pawnBlack1Clicked = 1
-                    pos.pawnBlack1Clicked_cut = 1
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb2:
-                    pos.pawnBlack2Clicked = 1
-                    pos.pawnBlack2Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb3:
-                    pos.pawnBlack3Clicked = 1
-                    pos.pawnBlack3Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb4:
-                    pos.pawnBlack4Clicked = 1
-                    pos.pawnBlack4Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb5:
-                    pos.pawnBlack5Clicked = 1
-                    pos.pawnBlack5Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb6:
-                    pos.pawnBlack6Clicked = 1
-                    pos.pawnBlack6Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb7:
-                    pos.pawnBlack7Clicked = 1
-                    pos.pawnBlack7Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb8:
-                    pos.pawnBlack8Clicked = 1
-                    pos.pawnBlack8Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
+            check_pawn_black_canCut(which_pawn_clicked, 8 + 1)
         # check for another diagonal
         if 1 * boxSize <= which_pawn_clicked.x <= 7 * boxSize and which_pawn_clicked.y < pos.box_dict["box57"].y:
-            if pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.pw1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.pw2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.pw3) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.pw4) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.pw5) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.pw6) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.pw7) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.pw8) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.Kw) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.Qw) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.rw1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.rw2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.kw1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.kw2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.bw1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1].colliderect(pos.bw2):
-                pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(which_pawn_clicked) + 8 - 1], border_radius=100)
-                if which_pawn_clicked == pos.pb1:
-                    pos.pawnBlack1Clicked = 1
-                    pos.pawnBlack1Clicked_cut = 1
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb2:
-                    pos.pawnBlack2Clicked = 1
-                    pos.pawnBlack2Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb3:
-                    pos.pawnBlack3Clicked = 1
-                    pos.pawnBlack3Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb4:
-                    pos.pawnBlack4Clicked = 1
-                    pos.pawnBlack4Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb5:
-                    pos.pawnBlack5Clicked = 1
-                    pos.pawnBlack5Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb6:
-                    pos.pawnBlack6Clicked = 1
-                    pos.pawnBlack6Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                    pos.QueenBlackClicked = 0
-                elif which_pawn_clicked == pos.pb7:
-                    pos.pawnBlack7Clicked = 1
-                    pos.pawnBlack7Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack8Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.QueenBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
-                elif which_pawn_clicked == pos.pb8:
-                    pos.pawnBlack8Clicked = 1
-                    pos.pawnBlack8Clicked_cut = 1
-                    pos.pawnBlack1Clicked = 0
-                    pos.pawnBlack2Clicked = 0
-                    pos.pawnBlack3Clicked = 0
-                    pos.pawnBlack4Clicked = 0
-                    pos.pawnBlack5Clicked = 0
-                    pos.pawnBlack6Clicked = 0
-                    pos.pawnBlack7Clicked = 0
-                    pos.KingBlackClicked = 0
-                    pos.QueenBlackClicked = 0
-                    pos.knightBlack1Clicked = 0
-                    pos.knightBlack2Clicked = 0
-                    pos.rookBlack1Clicked = 0
-                    pos.rookBlack2Clicked = 0
-                    pos.bishopBlack1Clicked = 0
-                    pos.bishopBlack2Clicked = 0
+            check_pawn_black_canCut(which_pawn_clicked, 8 - 1)
 
 
 # remove the white pieces if they are at diagonal to black pieces
-def check_cut_piece(who_cuts):
+def check_cut_piece(who_cuts, num):
     mouse_pos = get_pos()
 
-    if who_cuts.x < pos.box_dict["box8"].x and who_cuts.y < pos.box_dict["box57"].y:
-        if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].collidepoint(mouse_pos[0], mouse_pos[1]):
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.pw1):
-                pos.pw1 = pos.white_deadPieceRect_dict["whiteCutPiece_1"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.pw2):
-                pos.pw2 = pos.white_deadPieceRect_dict["whiteCutPiece_2"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.pw3):
-                pos.pw3 = pos.white_deadPieceRect_dict["whiteCutPiece_3"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.pw4):
-                pos.pw4 = pos.white_deadPieceRect_dict["whiteCutPiece_4"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.pw5):
-                pos.pw5 = pos.white_deadPieceRect_dict["whiteCutPiece_5"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.pw6):
-                pos.pw6 = pos.white_deadPieceRect_dict["whiteCutPiece_6"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.pw7):
-                pos.pw7 = pos.white_deadPieceRect_dict["whiteCutPiece_7"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.pw8):
-                pos.pw8 = pos.white_deadPieceRect_dict["whiteCutPiece_8"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.rw1):
-                pos.rw1 = pos.white_deadPieceRect_dict["whiteCutPiece_9"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.rw2):
-                pos.rw2 = pos.white_deadPieceRect_dict["whiteCutPiece_10"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.kw1):
-                pos.kw1 = pos.white_deadPieceRect_dict["whiteCutPiece_11"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.kw2):
-                pos.kw2 = pos.white_deadPieceRect_dict["whiteCutPiece_12"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.bw1):
-                pos.bw1 = pos.white_deadPieceRect_dict["whiteCutPiece_13"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.bw2):
-                pos.bw2 = pos.white_deadPieceRect_dict["whiteCutPiece_14"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.Kw):
-                pos.Kw = pos.white_deadPieceRect_dict["whiteCutPiece_15"]
-                pos.KingWhite_isDead = 1
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1].colliderect(pos.Qw):
-                pos.Qw = pos.white_deadPieceRect_dict["whiteCutPiece_16"]
+    if pos.boxLst[pos.boxLst.index(who_cuts) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw1):
+            pos.pw1 = pos.white_deadPieceRect_dict["whiteCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw2):
+            pos.pw2 = pos.white_deadPieceRect_dict["whiteCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw3):
+            pos.pw3 = pos.white_deadPieceRect_dict["whiteCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw4):
+            pos.pw4 = pos.white_deadPieceRect_dict["whiteCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw5):
+            pos.pw5 = pos.white_deadPieceRect_dict["whiteCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw6):
+            pos.pw6 = pos.white_deadPieceRect_dict["whiteCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw7):
+            pos.pw7 = pos.white_deadPieceRect_dict["whiteCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw8):
+            pos.pw8 = pos.white_deadPieceRect_dict["whiteCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rw1):
+            pos.rw1 = pos.white_deadPieceRect_dict["whiteCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rw2):
+            pos.rw2 = pos.white_deadPieceRect_dict["whiteCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kw1):
+            pos.kw1 = pos.white_deadPieceRect_dict["whiteCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kw2):
+            pos.kw2 = pos.white_deadPieceRect_dict["whiteCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bw1):
+            pos.bw1 = pos.white_deadPieceRect_dict["whiteCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bw2):
+            pos.bw2 = pos.white_deadPieceRect_dict["whiteCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Kw):
+            pos.Kw = pos.white_deadPieceRect_dict["whiteCutPiece_15"]
+            pos.KingWhite_isDead = 1
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Qw):
+            pos.Qw = pos.white_deadPieceRect_dict["whiteCutPiece_16"]
 
-            if who_cuts == pos.pb1:
-                pos.pb1 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1]
-                pos.pawnBlack1Clicked = 0
-                pos.pawnBlack1Clicked_cut = 0
-            elif who_cuts == pos.pb2:
-                pos.pb2 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1]
-                pos.pawnBlack2Clicked = 0
-                pos.pawnBlack2Clicked_cut = 0
-            elif who_cuts == pos.pb3:
-                pos.pb3 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1]
-                pos.pawnBlack3Clicked = 0
-                pos.pawnBlack3Clicked_cut = 0
-            elif who_cuts == pos.pb4:
-                pos.pb4 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1]
-                pos.pawnBlack4Clicked = 0
-                pos.pawnBlack4Clicked_cut = 0
-            elif who_cuts == pos.pb5:
-                pos.pb5 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1]
-                pos.pawnBlack5Clicked = 0
-                pos.pawnBlack5Clicked_cut = 0
-            elif who_cuts == pos.pb6:
-                pos.pb6 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1]
-                pos.pawnBlack6Clicked = 0
-                pos.pawnBlack6Clicked_cut = 0
-            elif who_cuts == pos.pb7:
-                pos.pb7 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1]
-                pos.pawnBlack7Clicked = 0
-                pos.pawnBlack7Clicked_cut = 0
-            elif who_cuts == pos.pb8:
-                pos.pb8 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 + 1]
-                pos.pawnBlack8Clicked = 0
-                pos.pawnBlack8Clicked_cut = 0
-            pos.turn = "white"
-
-    if pos.box_dict["box1"].x <= who_cuts.x and who_cuts.y < pos.box_dict["box57"].y:
-        if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].collidepoint(mouse_pos[0], mouse_pos[1]):
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.pw1):
-                pos.pw1 = pos.white_deadPieceRect_dict["whiteCutPiece_1"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.pw2):
-                pos.pw2 = pos.white_deadPieceRect_dict["whiteCutPiece_2"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.pw3):
-                pos.pw3 = pos.white_deadPieceRect_dict["whiteCutPiece_3"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.pw4):
-                pos.pw4 = pos.white_deadPieceRect_dict["whiteCutPiece_4"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.pw5):
-                pos.pw5 = pos.white_deadPieceRect_dict["whiteCutPiece_5"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.pw6):
-                pos.pw6 = pos.white_deadPieceRect_dict["whiteCutPiece_6"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.pw7):
-                pos.pw7 = pos.white_deadPieceRect_dict["whiteCutPiece_7"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.pw8):
-                pos.pw8 = pos.white_deadPieceRect_dict["whiteCutPiece_8"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.rw1):
-                pos.rw1 = pos.white_deadPieceRect_dict["whiteCutPiece_9"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.rw2):
-                pos.rw2 = pos.white_deadPieceRect_dict["whiteCutPiece_10"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.kw1):
-                pos.kw1 = pos.white_deadPieceRect_dict["whiteCutPiece_11"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.kw2):
-                pos.kw2 = pos.white_deadPieceRect_dict["whiteCutPiece_12"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.bw1):
-                pos.bw1 = pos.white_deadPieceRect_dict["whiteCutPiece_13"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.bw2):
-                pos.bw2 = pos.white_deadPieceRect_dict["whiteCutPiece_14"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.Kw):
-                pos.Kw = pos.white_deadPieceRect_dict["whiteCutPiece_15"]
-                pos.KingWhite_isDead = 1
-            if pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1].colliderect(pos.Qw):
-                pos.Qw = pos.white_deadPieceRect_dict["whiteCutPiece_16"]
-
-            if who_cuts == pos.pb1:
-                pos.pb1 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1]
-                pos.pawnBlack1Clicked = 0
-                pos.pawnBlack1Clicked_cut = 0
-            elif who_cuts == pos.pb2:
-                pos.pb2 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1]
-                pos.pawnBlack2Clicked = 0
-                pos.pawnBlack2Clicked_cut = 0
-            elif who_cuts == pos.pb3:
-                pos.pb3 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1]
-                pos.pawnBlack3Clicked = 0
-                pos.pawnBlack3Clicked_cut = 0
-            elif who_cuts == pos.pb4:
-                pos.pb4 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1]
-                pos.pawnBlack4Clicked = 0
-                pos.pawnBlack4Clicked_cut = 0
-            elif who_cuts == pos.pb5:
-                pos.pb5 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1]
-                pos.pawnBlack5Clicked = 0
-                pos.pawnBlack5Clicked_cut = 0
-            elif who_cuts == pos.pb6:
-                pos.pb6 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1]
-                pos.pawnBlack6Clicked = 0
-                pos.pawnBlack6Clicked_cut = 0
-            elif who_cuts == pos.pb7:
-                pos.pb7 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1]
-                pos.pawnBlack7Clicked = 0
-                pos.pawnBlack7Clicked_cut = 0
-            elif who_cuts == pos.pb8:
-                pos.pb8 = pos.boxLst[pos.boxLst.index(who_cuts) + 8 - 1]
-                pos.pawnBlack8Clicked = 0
-                pos.pawnBlack8Clicked_cut = 0
-            pos.turn = "white"
+        if who_cuts == pos.pb1:
+            pos.pb1 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack1Clicked_cut = 0
+        elif who_cuts == pos.pb2:
+            pos.pb2 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack2Clicked_cut = 0
+        elif who_cuts == pos.pb3:
+            pos.pb3 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack3Clicked_cut = 0
+        elif who_cuts == pos.pb4:
+            pos.pb4 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack4Clicked_cut = 0
+        elif who_cuts == pos.pb5:
+            pos.pb5 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack5Clicked_cut = 0
+        elif who_cuts == pos.pb6:
+            pos.pb6 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack6Clicked_cut = 0
+        elif who_cuts == pos.pb7:
+            pos.pb7 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack7Clicked_cut = 0
+        elif who_cuts == pos.pb8:
+            pos.pb8 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnBlack8Clicked = 0
+            pos.pawnBlack8Clicked_cut = 0
+        pos.turn = "white"
 
 
 def pawnBMovements():
@@ -1621,7 +1395,10 @@ def pawnBMovements():
             pos.pawnBlack1Clicked = 0
             pos.turn = "white"
         if pos.pawnBlack1Clicked_cut == 1:
-            check_cut_piece(pos.pb1)
+            if pos.pb1.x < pos.box_dict["box8"].x and pos.pb1.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb1, 8+1)
+            if pos.box_dict["box1"].x <= pos.pb1.x and pos.pb1.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb1, 8-1)
         if pos.pb1.y < pos.box_dict["box49"].y:
             if pos.pawnBlack1Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb1) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1636,7 +1413,10 @@ def pawnBMovements():
             pos.pawnBlack2Clicked = 0
             pos.turn = "white"
         if pos.pawnBlack2Clicked_cut == 1:
-            check_cut_piece(pos.pb2)
+            if pos.pb2.x < pos.box_dict["box8"].x and pos.pb2.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb2, 8+1)
+            if pos.box_dict["box1"].x <= pos.pb2.x and pos.pb2.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb2, 8-1)
         if pos.pb2.y < pos.box_dict["box49"].y:
             if pos.pawnBlack2Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb2) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1651,7 +1431,10 @@ def pawnBMovements():
             pos.pawnBlack3Clicked = 0
             pos.turn = "white"
         if pos.pawnBlack3Clicked_cut == 1:
-            check_cut_piece(pos.pb3)
+            if pos.pb3.x < pos.box_dict["box8"].x and pos.pb3.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb3, 8+1)
+            if pos.box_dict["box1"].x <= pos.pb3.x and pos.pb3.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb3, 8-1)
         if pos.pb3.y < pos.box_dict["box49"].y:
             if pos.pawnBlack3Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb3) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1666,7 +1449,10 @@ def pawnBMovements():
             pos.pawnBlack4Clicked = 0
             pos.turn = "white"
         if pos.pawnBlack4Clicked_cut == 1:
-            check_cut_piece(pos.pb4)
+            if pos.pb4.x < pos.box_dict["box8"].x and pos.pb4.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb4, 8+1)
+            if pos.box_dict["box1"].x <= pos.pb4.x and pos.pb4.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb4, 8-1)
         if pos.pb4.y < pos.box_dict["box49"].y:
             if pos.pawnBlack4Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb4) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1681,7 +1467,10 @@ def pawnBMovements():
             pos.pawnBlack5Clicked = 0
             pos.turn = "white"
         if pos.pawnBlack5Clicked_cut == 1:
-            check_cut_piece(pos.pb5)
+            if pos.pb5.x < pos.box_dict["box8"].x and pos.pb5.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb5, 8+1)
+            if pos.box_dict["box1"].x <= pos.pb5.x and pos.pb5.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb5, 8-1)
         if pos.pb5.y < pos.box_dict["box49"].y:
             if pos.pawnBlack5Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb5) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1696,7 +1485,10 @@ def pawnBMovements():
             pos.pawnBlack6Clicked = 0
             pos.turn = "white"
         if pos.pawnBlack6Clicked_cut == 1:
-            check_cut_piece(pos.pb6)
+            if pos.pb6.x < pos.box_dict["box8"].x and pos.pb6.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb6, 8+1)
+            if pos.box_dict["box1"].x <= pos.pb6.x and pos.pb6.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb6, 8-1)
         if pos.pb6.y < pos.box_dict["box49"].y:
             if pos.pawnBlack6Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb6) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1711,7 +1503,10 @@ def pawnBMovements():
             pos.pawnBlack7Clicked = 0
             pos.turn = "white"
         if pos.pawnBlack7Clicked_cut == 1:
-            check_cut_piece(pos.pb7)
+            if pos.pb7.x < pos.box_dict["box8"].x and pos.pb7.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb7, 8+1)
+            if pos.box_dict["box1"].x <= pos.pb7.x and pos.pb7.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb7, 8-1)
         if pos.pb7.y < pos.box_dict["box49"].y:
             if pos.pawnBlack7Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb7) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1726,7 +1521,10 @@ def pawnBMovements():
             pos.pawnBlack8Clicked = 0
             pos.turn = "white"
         if pos.pawnBlack8Clicked_cut == 1:
-            check_cut_piece(pos.pb8)
+            if pos.pb8.x < pos.box_dict["box8"].x and pos.pb8.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb8, 8+1)
+            if pos.box_dict["box1"].x <= pos.pb8.x and pos.pb8.y < pos.box_dict["box57"].y:
+                check_cut_piece(pos.pb8, 8-1)
         if pos.pb8.y < pos.box_dict["box49"].y:
             if pos.pawnBlack8Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb8) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1734,6 +1532,171 @@ def pawnBMovements():
                     pos.pawnBlack8Clicked = 0
                     pos.pawnBlack8Clicked_twoStep = 0
                     pos.turn = "white"
+
+
+# checks if white pawns can cuts the black pieces
+def check_pawn_white_canCut(which_pawn_clicked, num):
+    if pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pb1) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pb2) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pb3) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pb4) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pb5) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pb6) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pb7) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.pb8) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.Kb) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.Qb) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.rb1) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.rb2) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.kb1) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.kb2) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.bb1) or \
+            pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(which_pawn_clicked) + num], border_radius=100)
+        if which_pawn_clicked == pos.pw1:
+            pos.pawnWhite1Clicked = 1
+            pos.pawnWhite1Clicked_cut = 1
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+            pos.QueenWhiteClicked = 0
+        elif which_pawn_clicked == pos.pw2:
+            pos.pawnWhite2Clicked = 1
+            pos.pawnWhite2Clicked_cut = 1
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+            pos.QueenWhiteClicked = 0
+        elif which_pawn_clicked == pos.pw3:
+            pos.pawnWhite3Clicked = 1
+            pos.pawnWhite3Clicked_cut = 1
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+            pos.QueenWhiteClicked = 0
+        elif which_pawn_clicked == pos.pw4:
+            pos.pawnWhite4Clicked = 1
+            pos.pawnWhite4Clicked_cut = 1
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+            pos.QueenWhiteClicked = 0
+        elif which_pawn_clicked == pos.pw5:
+            pos.pawnWhite5Clicked = 1
+            pos.pawnWhite5Clicked_cut = 1
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+            pos.QueenWhiteClicked = 0
+        elif which_pawn_clicked == pos.pw6:
+            pos.pawnWhite6Clicked = 1
+            pos.pawnWhite6Clicked_cut = 1
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+            pos.QueenWhiteClicked = 0
+        elif which_pawn_clicked == pos.pw7:
+            pos.pawnWhite7Clicked = 1
+            pos.pawnWhite7Clicked_cut = 1
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+            pos.QueenWhiteClicked = 0
+        elif which_pawn_clicked == pos.pw8:
+            pos.pawnWhite8Clicked = 1
+            pos.pawnWhite8Clicked_cut = 1
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+            pos.QueenWhiteClicked = 0
 
 
 # checks if next positions for white pawns are empty or not
@@ -2197,474 +2160,83 @@ def check_pawn_white_next_pos(which_pawn_clicked):
                 elif which_pawn_clicked == pos.pw8:
                     pos.pawnWhite8Clicked = 0
         if which_pawn_clicked.x < pos.box_dict["box8"].x and which_pawn_clicked.y > pos.box_dict["box1"].y:
-            if pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.pb1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.pb2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.pb3) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.pb4) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.pb5) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.pb6) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.pb7) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.pb8) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.Kb) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.Qb) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.rb1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.rb2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.kb1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.kb2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.bb1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1].colliderect(pos.bb2):
-                pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 + 1], border_radius=100)
-                if which_pawn_clicked == pos.pw1:
-                    pos.pawnWhite1Clicked = 1
-                    pos.pawnWhite1Clicked_cut = 1
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw2:
-                    pos.pawnWhite2Clicked = 1
-                    pos.pawnWhite2Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw3:
-                    pos.pawnWhite3Clicked = 1
-                    pos.pawnWhite3Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw4:
-                    pos.pawnWhite4Clicked = 1
-                    pos.pawnWhite4Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw5:
-                    pos.pawnWhite5Clicked = 1
-                    pos.pawnWhite5Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw6:
-                    pos.pawnWhite6Clicked = 1
-                    pos.pawnWhite6Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw7:
-                    pos.pawnWhite7Clicked = 1
-                    pos.pawnWhite7Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw8:
-                    pos.pawnWhite8Clicked = 1
-                    pos.pawnWhite8Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
+            check_pawn_white_canCut(which_pawn_clicked, -8 + 1)
         if which_pawn_clicked.x > pos.box_dict["box1"].x and which_pawn_clicked.y > pos.box_dict["box1"].y:
-            if pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.pb1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.pb2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.pb3) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.pb4) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.pb5) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.pb6) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.pb7) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.pb8) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.Kb) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.Qb) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.rb1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.rb2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.kb1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.kb2) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.bb1) or \
-                    pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1].colliderect(pos.bb2):
-                pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(which_pawn_clicked) - 8 - 1], border_radius=100)
-                if which_pawn_clicked == pos.pw1:
-                    pos.pawnWhite1Clicked = 1
-                    pos.pawnWhite1Clicked_cut = 1
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw2:
-                    pos.pawnWhite2Clicked = 1
-                    pos.pawnWhite2Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw3:
-                    pos.pawnWhite3Clicked = 1
-                    pos.pawnWhite3Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw4:
-                    pos.pawnWhite4Clicked = 1
-                    pos.pawnWhite4Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw5:
-                    pos.pawnWhite5Clicked = 1
-                    pos.pawnWhite5Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw6:
-                    pos.pawnWhite6Clicked = 1
-                    pos.pawnWhite6Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                    pos.QueenWhiteClicked = 0
-                elif which_pawn_clicked == pos.pw7:
-                    pos.pawnWhite7Clicked = 1
-                    pos.pawnWhite7Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite8Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.QueenWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
-                elif which_pawn_clicked == pos.pw8:
-                    pos.pawnWhite8Clicked = 1
-                    pos.pawnWhite8Clicked_cut = 1
-                    pos.pawnWhite1Clicked = 0
-                    pos.pawnWhite2Clicked = 0
-                    pos.pawnWhite3Clicked = 0
-                    pos.pawnWhite4Clicked = 0
-                    pos.pawnWhite5Clicked = 0
-                    pos.pawnWhite6Clicked = 0
-                    pos.pawnWhite7Clicked = 0
-                    pos.KingWhiteClicked = 0
-                    pos.QueenWhiteClicked = 0
-                    pos.knightWhite1Clicked = 0
-                    pos.knightWhite2Clicked = 0
-                    pos.rookWhite1Clicked = 0
-                    pos.rookWhite2Clicked = 0
-                    pos.bishopWhite1Clicked = 0
-                    pos.bishopWhite2Clicked = 0
+            check_pawn_white_canCut(which_pawn_clicked, -8 - 1)
 
 
 # remove the black pieces if they are diagonal to white pieces
-def check_white_cut_piece(who_cuts):
+def check_white_cut_piece(who_cuts, num):
     mouse_pos = get_pos()
 
-    if who_cuts.x < pos.box_dict["box8"].x and who_cuts.y > pos.box_dict["box1"].y:
-        if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].collidepoint(mouse_pos[0], mouse_pos[1]):
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.pb1):
-                pos.pb1 = pos.black_deadPieceRect_dict["blackCutPiece_1"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.pb2):
-                pos.pb2 = pos.black_deadPieceRect_dict["blackCutPiece_2"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.pb3):
-                pos.pb3 = pos.black_deadPieceRect_dict["blackCutPiece_3"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.pb4):
-                pos.pb4 = pos.black_deadPieceRect_dict["blackCutPiece_4"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.pb5):
-                pos.pb5 = pos.black_deadPieceRect_dict["blackCutPiece_5"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.pb6):
-                pos.pb6 = pos.black_deadPieceRect_dict["blackCutPiece_6"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.pb7):
-                pos.pb7 = pos.black_deadPieceRect_dict["blackCutPiece_7"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.pb8):
-                pos.pb8 = pos.black_deadPieceRect_dict["blackCutPiece_8"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.rb1):
-                pos.rb1 = pos.black_deadPieceRect_dict["blackCutPiece_9"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.rb2):
-                pos.rb2 = pos.black_deadPieceRect_dict["blackCutPiece_10"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.kb1):
-                pos.kb1 = pos.black_deadPieceRect_dict["blackCutPiece_11"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.kb2):
-                pos.kb2 = pos.black_deadPieceRect_dict["blackCutPiece_12"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.bb1):
-                pos.bb1 = pos.black_deadPieceRect_dict["blackCutPiece_13"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.bb2):
-                pos.bb2 = pos.black_deadPieceRect_dict["blackCutPiece_14"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.Kb):
-                pos.Kb = pos.black_deadPieceRect_dict["blackCutPiece_15"]
-                pos.KingBlack_isDead = 1
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1].colliderect(pos.Qb):
-                pos.Qb = pos.black_deadPieceRect_dict["blackCutPiece_16"]
+    if pos.boxLst[pos.boxLst.index(who_cuts) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb1):
+            pos.pb1 = pos.black_deadPieceRect_dict["blackCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb2):
+            pos.pb2 = pos.black_deadPieceRect_dict["blackCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb3):
+            pos.pb3 = pos.black_deadPieceRect_dict["blackCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb4):
+            pos.pb4 = pos.black_deadPieceRect_dict["blackCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb5):
+            pos.pb5 = pos.black_deadPieceRect_dict["blackCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb6):
+            pos.pb6 = pos.black_deadPieceRect_dict["blackCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb7):
+            pos.pb7 = pos.black_deadPieceRect_dict["blackCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb8):
+            pos.pb8 = pos.black_deadPieceRect_dict["blackCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rb1):
+            pos.rb1 = pos.black_deadPieceRect_dict["blackCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rb2):
+            pos.rb2 = pos.black_deadPieceRect_dict["blackCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kb1):
+            pos.kb1 = pos.black_deadPieceRect_dict["blackCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kb2):
+            pos.kb2 = pos.black_deadPieceRect_dict["blackCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bb1):
+            pos.bb1 = pos.black_deadPieceRect_dict["blackCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bb2):
+            pos.bb2 = pos.black_deadPieceRect_dict["blackCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Kb):
+            pos.Kb = pos.black_deadPieceRect_dict["blackCutPiece_15"]
+            pos.KingBlack_isDead = 1
+        if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Qb):
+            pos.Qb = pos.black_deadPieceRect_dict["blackCutPiece_16"]
 
-            if who_cuts == pos.pw1:
-                pos.pw1 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1]
-                pos.pawnWhite1Clicked = 0
-                pos.pawnWhite1Clicked_cut = 0
-            elif who_cuts == pos.pw2:
-                pos.pw2 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1]
-                pos.pawnWhite2Clicked = 0
-                pos.pawnWhite2Clicked_cut = 0
-            elif who_cuts == pos.pw3:
-                pos.pw3 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1]
-                pos.pawnWhite3Clicked = 0
-                pos.pawnWhite3Clicked_cut = 0
-            elif who_cuts == pos.pw4:
-                pos.pw4 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1]
-                pos.pawnWhite4Clicked = 0
-                pos.pawnWhite4Clicked_cut = 0
-            elif who_cuts == pos.pw5:
-                pos.pw5 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1]
-                pos.pawnWhite5Clicked = 0
-                pos.pawnWhite5Clicked_cut = 0
-            elif who_cuts == pos.pw6:
-                pos.pw6 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1]
-                pos.pawnWhite6Clicked = 0
-                pos.pawnWhite6Clicked_cut = 0
-            elif who_cuts == pos.pw7:
-                pos.pw7 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1]
-                pos.pawnWhite7Clicked = 0
-                pos.pawnWhite7Clicked_cut = 0
-            elif who_cuts == pos.pw8:
-                pos.pw8 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 + 1]
-                pos.pawnWhite8Clicked = 0
-                pos.pawnWhite8Clicked_cut = 0
-            pos.turn = "black"
-
-    if pos.box_dict["box1"].x < who_cuts.x and who_cuts.y > pos.box_dict["box1"].y:
-        if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].collidepoint(mouse_pos[0], mouse_pos[1]):
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.pb1):
-                pos.pb1 = pos.black_deadPieceRect_dict["blackCutPiece_1"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.pb2):
-                pos.pb2 = pos.black_deadPieceRect_dict["blackCutPiece_2"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.pb3):
-                pos.pb3 = pos.black_deadPieceRect_dict["blackCutPiece_3"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.pb4):
-                pos.pb4 = pos.black_deadPieceRect_dict["blackCutPiece_4"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.pb5):
-                pos.pb5 = pos.black_deadPieceRect_dict["blackCutPiece_5"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.pb6):
-                pos.pb6 = pos.black_deadPieceRect_dict["blackCutPiece_6"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.pb7):
-                pos.pb7 = pos.black_deadPieceRect_dict["blackCutPiece_7"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.pb8):
-                pos.pb8 = pos.black_deadPieceRect_dict["blackCutPiece_8"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.rb1):
-                pos.rb1 = pos.black_deadPieceRect_dict["blackCutPiece_9"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.rb2):
-                pos.rb2 = pos.black_deadPieceRect_dict["blackCutPiece_10"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.kb1):
-                pos.kb1 = pos.black_deadPieceRect_dict["blackCutPiece_11"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.kb2):
-                pos.kb2 = pos.black_deadPieceRect_dict["blackCutPiece_12"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.bb1):
-                pos.bb1 = pos.black_deadPieceRect_dict["blackCutPiece_13"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.bb2):
-                pos.bb2 = pos.black_deadPieceRect_dict["blackCutPiece_14"]
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.Kb):
-                pos.Kb = pos.black_deadPieceRect_dict["blackCutPiece_15"]
-                pos.KingBlack_isDead = 1
-            if pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1].colliderect(pos.Qb):
-                pos.Qb = pos.black_deadPieceRect_dict["blackCutPiece_16"]
-
-            if who_cuts == pos.pw1:
-                pos.pw1 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1]
-                pos.pawnWhite1Clicked = 0
-                pos.pawnWhite1Clicked_cut = 0
-            elif who_cuts == pos.pw2:
-                pos.pw2 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1]
-                pos.pawnWhite2Clicked = 0
-                pos.pawnWhite2Clicked_cut = 0
-            elif who_cuts == pos.pw3:
-                pos.pw3 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1]
-                pos.pawnWhite3Clicked = 0
-                pos.pawnWhite3Clicked_cut = 0
-            elif who_cuts == pos.pw4:
-                pos.pw4 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1]
-                pos.pawnWhite4Clicked = 0
-                pos.pawnWhite4Clicked_cut = 0
-            elif who_cuts == pos.pw5:
-                pos.pw5 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1]
-                pos.pawnWhite5Clicked = 0
-                pos.pawnWhite5Clicked_cut = 0
-            elif who_cuts == pos.pw6:
-                pos.pw6 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1]
-                pos.pawnWhite6Clicked = 0
-                pos.pawnWhite6Clicked_cut = 0
-            elif who_cuts == pos.pw7:
-                pos.pw7 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1]
-                pos.pawnWhite7Clicked = 0
-                pos.pawnWhite7Clicked_cut = 0
-            elif who_cuts == pos.pw8:
-                pos.pw8 = pos.boxLst[pos.boxLst.index(who_cuts) - 8 - 1]
-                pos.pawnWhite8Clicked = 0
-                pos.pawnWhite8Clicked_cut = 0
-            pos.turn = "black"
+        if who_cuts == pos.pw1:
+            pos.pw1 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite1Clicked_cut = 0
+        elif who_cuts == pos.pw2:
+            pos.pw2 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite2Clicked_cut = 0
+        elif who_cuts == pos.pw3:
+            pos.pw3 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite3Clicked_cut = 0
+        elif who_cuts == pos.pw4:
+            pos.pw4 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite4Clicked_cut = 0
+        elif who_cuts == pos.pw5:
+            pos.pw5 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite5Clicked_cut = 0
+        elif who_cuts == pos.pw6:
+            pos.pw6 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite6Clicked_cut = 0
+        elif who_cuts == pos.pw7:
+            pos.pw7 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite7Clicked_cut = 0
+        elif who_cuts == pos.pw8:
+            pos.pw8 = pos.boxLst[pos.boxLst.index(who_cuts) + num]
+            pos.pawnWhite8Clicked = 0
+            pos.pawnWhite8Clicked_cut = 0
+        pos.turn = "black"
 
 
 def pawnWMovements():
@@ -2696,7 +2268,10 @@ def pawnWMovements():
             pos.pawnWhite1Clicked = 0
             pos.turn = "black"
         if pos.pawnWhite1Clicked_cut == 1:
-            check_white_cut_piece(pos.pw1)
+            if pos.pw1.x < pos.box_dict["box8"].x and pos.pw1.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw1, -8+1)
+            if pos.box_dict["box1"].x < pos.pw1.x and pos.pw1.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw1, -8-1)
         if pos.pw1.y > pos.box_dict["box9"].y:
             if pos.pawnWhite1Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw1) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2711,7 +2286,10 @@ def pawnWMovements():
             pos.pawnWhite2Clicked = 0
             pos.turn = "black"
         if pos.pawnWhite2Clicked_cut == 1:
-            check_white_cut_piece(pos.pw2)
+            if pos.pw2.x < pos.box_dict["box8"].x and pos.pw2.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw2, -8+1)
+            if pos.box_dict["box1"].x < pos.pw2.x and pos.pw2.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw2, -8-1)
         if pos.pw2.y > pos.box_dict["box9"].y:
             if pos.pawnWhite2Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw2) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2726,7 +2304,10 @@ def pawnWMovements():
             pos.pawnWhite3Clicked = 0
             pos.turn = "black"
         if pos.pawnWhite3Clicked_cut == 1:
-            check_white_cut_piece(pos.pw3)
+            if pos.pw3.x < pos.box_dict["box8"].x and pos.pw3.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw3, -8+1)
+            if pos.box_dict["box1"].x < pos.pw3.x and pos.pw3.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw3, -8-1)
         if pos.pw3.y > pos.box_dict["box9"].y:
             if pos.pawnWhite3Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw3) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2741,7 +2322,10 @@ def pawnWMovements():
             pos.pawnWhite4Clicked = 0
             pos.turn = "black"
         if pos.pawnWhite4Clicked_cut == 1:
-            check_white_cut_piece(pos.pw4)
+            if pos.pw4.x < pos.box_dict["box8"].x and pos.pw4.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw4, -8+1)
+            if pos.box_dict["box1"].x < pos.pw4.x and pos.pw4.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw4, -8-1)
         if pos.pw4.y > pos.box_dict["box9"].y:
             if pos.pawnWhite4Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw4) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2756,7 +2340,10 @@ def pawnWMovements():
             pos.pawnWhite5Clicked = 0
             pos.turn = "black"
         if pos.pawnWhite5Clicked_cut == 1:
-            check_white_cut_piece(pos.pw5)
+            if pos.pw5.x < pos.box_dict["box8"].x and pos.pw5.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw5, -8+1)
+            if pos.box_dict["box1"].x < pos.pw5.x and pos.pw5.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw5, -8-1)
         if pos.pw5.y > pos.box_dict["box9"].y:
             if pos.pawnWhite5Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw5) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2771,7 +2358,10 @@ def pawnWMovements():
             pos.pawnWhite6Clicked = 0
             pos.turn = "black"
         if pos.pawnWhite6Clicked_cut == 1:
-            check_white_cut_piece(pos.pw6)
+            if pos.pw6.x < pos.box_dict["box8"].x and pos.pw6.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw6, -8+1)
+            if pos.box_dict["box1"].x < pos.pw6.x and pos.pw6.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw6, -8-1)
         if pos.pw6.y > pos.box_dict["box9"].y:
             if pos.pawnWhite6Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw6) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2786,7 +2376,10 @@ def pawnWMovements():
             pos.pawnWhite7Clicked = 0
             pos.turn = "black"
         if pos.pawnWhite7Clicked_cut == 1:
-            check_white_cut_piece(pos.pw7)
+            if pos.pw7.x < pos.box_dict["box8"].x and pos.pw7.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw7, -8+1)
+            if pos.box_dict["box1"].x < pos.pw7.x and pos.pw7.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw7, -8-1)
         if pos.pw7.y > pos.box_dict["box9"].y:
             if pos.pawnWhite7Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw7) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2801,7 +2394,10 @@ def pawnWMovements():
             pos.pawnWhite8Clicked = 0
             pos.turn = "black"
         if pos.pawnWhite8Clicked_cut == 1:
-            check_white_cut_piece(pos.pw8)
+            if pos.pw8.x < pos.box_dict["box8"].x and pos.pw8.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw8, -8+1)
+            if pos.box_dict["box1"].x < pos.pw8.x and pos.pw8.y > pos.box_dict["box1"].y:
+                check_white_cut_piece(pos.pw8, -8-1)
         if pos.pw8.y > pos.box_dict["box9"].y:
             if pos.pawnWhite8Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw8) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2811,11 +2407,541 @@ def pawnWMovements():
                     pos.turn = "black"
 
 
+# checks if places where king moves are empty or not
+def check_king_next_pos(num):
+    if not pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw3) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw4) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw5) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw6) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw7) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw8) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.Kw) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.Qw) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.rw1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.rw2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.kw1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.kw2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.bw1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.bw2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pb1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pb2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pb3) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pb4) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pb5) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pb6) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pb7) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pb8) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.Kb) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.Qb) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.rb1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.rb2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.kb1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.kb2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.bb1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, blue, pos.boxLst[pos.boxLst.index(pos.Kb) + num], border_radius=100)
+        pos.KingBlackClicked = 1
+        pos.pawnBlack1Clicked = 0
+        pos.pawnBlack2Clicked = 0
+        pos.pawnBlack3Clicked = 0
+        pos.pawnBlack4Clicked = 0
+        pos.pawnBlack5Clicked = 0
+        pos.pawnBlack6Clicked = 0
+        pos.pawnBlack7Clicked = 0
+        pos.pawnBlack8Clicked = 0
+        pos.knightBlack1Clicked = 0
+        pos.knightBlack2Clicked = 0
+        pos.rookBlack1Clicked = 0
+        pos.rookBlack2Clicked = 0
+        pos.bishopBlack1Clicked = 0
+        pos.bishopBlack2Clicked = 0
+        pos.QueenBlackClicked = 0
+
+
+# checks if white pieces are at position where king moves
+def check_king_canCut(num):
+    if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw1) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw2) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw3) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw4) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw5) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw6) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw7) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw8) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.Kw) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.Qw) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.rw1) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.rw2) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.kw1) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.kw2) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.bw1) or \
+            pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.bw2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(pos.Kb) + num], border_radius=100)
+        pos.KingBlackClicked = 1
+        pos.KingBlackClicked_cut = 1
+        pos.pawnBlack1Clicked = 0
+        pos.pawnBlack2Clicked = 0
+        pos.pawnBlack3Clicked = 0
+        pos.pawnBlack4Clicked = 0
+        pos.pawnBlack5Clicked = 0
+        pos.pawnBlack6Clicked = 0
+        pos.pawnBlack7Clicked = 0
+        pos.pawnBlack8Clicked = 0
+        pos.knightBlack1Clicked = 0
+        pos.knightBlack2Clicked = 0
+        pos.rookBlack1Clicked = 0
+        pos.bishopBlack1Clicked = 0
+        pos.bishopBlack2Clicked = 0
+        pos.QueenBlackClicked = 0
+
+
+# moves the king
+def moveKing(num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(pos.Kb) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        pos.Kb = pos.boxLst[pos.boxLst.index(pos.Kb) + num]
+        pos.KingBlackClicked = 0
+        pos.turn = "white"
+
+
+# remove the white pieces which are cut
+def KingRemovePieces(num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(pos.Kb) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw1):
+            pos.pw1 = pos.white_deadPieceRect_dict["whiteCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw2):
+            pos.pw2 = pos.white_deadPieceRect_dict["whiteCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw3):
+            pos.pw3 = pos.white_deadPieceRect_dict["whiteCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw4):
+            pos.pw4 = pos.white_deadPieceRect_dict["whiteCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw5):
+            pos.pw5 = pos.white_deadPieceRect_dict["whiteCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw6):
+            pos.pw6 = pos.white_deadPieceRect_dict["whiteCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw7):
+            pos.pw7 = pos.white_deadPieceRect_dict["whiteCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.pw8):
+            pos.pw8 = pos.white_deadPieceRect_dict["whiteCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.rw1):
+            pos.rw1 = pos.white_deadPieceRect_dict["whiteCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.rw2):
+            pos.rw2 = pos.white_deadPieceRect_dict["whiteCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.kw1):
+            pos.kw1 = pos.white_deadPieceRect_dict["whiteCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.kw2):
+            pos.kw2 = pos.white_deadPieceRect_dict["whiteCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.bw1):
+            pos.bw1 = pos.white_deadPieceRect_dict["whiteCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.bw2):
+            pos.bw2 = pos.white_deadPieceRect_dict["whiteCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.Kw):
+            pos.Kw = pos.white_deadPieceRect_dict["whiteCutPiece_15"]
+            pos.KingWhite_isDead = 1
+        if pos.boxLst[pos.boxLst.index(pos.Kb) + num].colliderect(pos.Qw):
+            pos.Qw = pos.white_deadPieceRect_dict["whiteCutPiece_16"]
+        pos.Kb = pos.boxLst[pos.boxLst.index(pos.Kb) + num]
+        pos.KingBlackClicked = 0
+        pos.KingBlackClicked_cut = 0
+        pos.turn = "white"
+
+
 def kingBMovements():
-    pass
+    mouse_pos = get_pos()
+
+    if pos.turn == "black":
+        if pos.Kb.collidepoint(mouse_pos[0], mouse_pos[1]):
+            if pos.box_dict["box1"].x < pos.Kb.x < pos.box_dict["box8"].x and pos.box_dict["box1"].y < pos.Kb.y < pos.box_dict["box57"].y:  # boxes except first (row, column) and last (row, column)
+                check_king_next_pos(1)
+                check_king_next_pos(-1)
+                check_king_next_pos(8)
+                check_king_next_pos(-8)
+                check_king_next_pos(8 + 1)
+                check_king_next_pos(8 - 1)
+                check_king_next_pos(-8 + 1)
+                check_king_next_pos(-8 - 1)
+            elif pos.Kb.x == pos.box_dict["box1"].x and pos.box_dict["box1"].y < pos.Kb.y < pos.box_dict["box57"].y:  # first column
+                check_king_next_pos(1)
+                check_king_next_pos(8)
+                check_king_next_pos(8 + 1)
+                check_king_next_pos(-8)
+                check_king_next_pos(-8 + 1)
+            elif pos.Kb.x == pos.box_dict["box8"].x and pos.box_dict["box1"].y < pos.Kb.y < pos.box_dict["box57"].y:  # last column
+                check_king_next_pos(-1)
+                check_king_next_pos(-8)
+                check_king_next_pos(-8 - 1)
+                check_king_next_pos(8)
+                check_king_next_pos(8 - 1)
+            elif pos.box_dict["box1"].x < pos.Kb.x < pos.box_dict["box8"].x and pos.Kb.y == pos.box_dict["box1"].y:  # first row
+                check_king_next_pos(1)
+                check_king_next_pos(-1)
+                check_king_next_pos(8)
+                check_king_next_pos(8 + 1)
+                check_king_next_pos(8 - 1)
+            elif pos.box_dict["box1"].x < pos.Kb.x < pos.box_dict["box8"].x and pos.Kb.y == pos.box_dict["box57"].y:  # last row
+                check_king_next_pos(1)
+                check_king_next_pos(-1)
+                check_king_next_pos(-8)
+                check_king_next_pos(-8 + 1)
+                check_king_next_pos(-8 - 1)
+            elif pos.Kb == pos.box_dict["box1"]:
+                check_king_next_pos(1)
+                check_king_next_pos(8)
+                check_king_next_pos(8 + 1)
+            elif pos.Kb == pos.box_dict["box8"]:
+                check_king_next_pos(-1)
+                check_king_next_pos(8)
+                check_king_next_pos(8 - 1)
+            elif pos.Kb == pos.box_dict["box57"]:
+                check_king_next_pos(1)
+                check_king_next_pos(-8)
+                check_king_next_pos(-8 + 1)
+            elif pos.Kb == pos.box_dict["box64"]:
+                check_king_next_pos(-1)
+                check_king_next_pos(-8)
+                check_king_next_pos(-8 - 1)
+
+            # check if king black can cut the white pieces
+            if pos.Kb.x > pos.box_dict["box1"].x:
+                check_king_canCut(-1)
+            if pos.Kb.x < pos.box_dict["box8"].x:
+                check_king_canCut(1)
+            if pos.Kb.y < pos.box_dict["box57"].y:
+                check_king_canCut(8)
+            if pos.Kb.y < pos.box_dict["box57"].y:
+                if pos.Kb.x > pos.box_dict["box1"].x:
+                    check_king_canCut(8-1)
+            if pos.Kb.y < pos.box_dict["box57"].y:
+                if pos.Kb.x < pos.box_dict["box8"].x:
+                    check_king_canCut(8+1)
+            if pos.Kb.y > pos.box_dict["box1"].y:
+                check_king_canCut(-8)
+            if pos.Kb.y > pos.box_dict["box1"].y:
+                if pos.Kb.x > pos.box_dict["box1"].x:
+                    check_king_canCut(-8-1)
+            if pos.Kb.y > pos.box_dict["box1"].y:
+                if pos.Kb.x < pos.box_dict["box8"].x:
+                    check_king_canCut(-8+1)
+
+    # what should happen if king is clicked
+    if pos.KingBlackClicked == 1:
+
+        # cut the pieces
+        if pos.KingBlackClicked_cut == 1:
+            if pos.Kb.x < pos.box_dict["box8"].x:
+                KingRemovePieces(1)
+            if pos.Kb.x > pos.box_dict["box1"].x:
+                KingRemovePieces(-1)
+            if pos.Kb.y < pos.box_dict["box57"].y:
+                if pos.Kb.x > pos.box_dict["box1"].x:
+                    KingRemovePieces(8-1)
+                if pos.Kb.y < pos.box_dict["box57"].y:
+                    KingRemovePieces(8)
+                if pos.Kb.y < pos.box_dict["box57"].y:
+                    if pos.Kb.x < pos.box_dict["box8"].x:
+                        KingRemovePieces(8+1)
+            if pos.Kb.y > pos.box_dict["box1"].y:
+                if pos.Kb.x > pos.box_dict["box1"].x:
+                    KingRemovePieces(-8-1)
+                KingRemovePieces(-8)
+                if pos.Kb.x < pos.box_dict["box8"].x:
+                    KingRemovePieces(-8+1)
+
+        if pos.Kb.x < pos.box_dict["box8"].x:
+            moveKing(1)
+        if pos.Kb.x > pos.box_dict["box1"].x:
+            moveKing(-1)
+        if pos.Kb.y < pos.box_dict["box57"].y:
+            if pos.Kb.x > pos.box_dict["box1"].x:
+                moveKing(8-1)
+        if pos.Kb.y < pos.box_dict["box57"].y:
+            moveKing(8)
+        if pos.Kb.y < pos.box_dict["box57"].y:
+            if pos.Kb.x < pos.box_dict["box8"].x:
+                moveKing(8+1)
+        if pos.Kb.y > pos.box_dict["box1"].y:
+            if pos.Kb.x > pos.box_dict["box1"].x:
+                moveKing(-8-1)
+            moveKing(-8)
+            if pos.Kb.x < pos.box_dict["box8"].x:
+                moveKing(-8+1)
+
+
+# checks if places where king moves are empty or not
+def check_white_king_next_pos(num):
+    if not pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pw1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pw2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pw3) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pw4) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pw5) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pw6) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pw7) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pw8) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.Kw) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.Qw) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.rw1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.rw2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.kw1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.kw2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.bw1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.bw2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb3) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb4) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb5) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb6) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb7) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb8) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.Kb) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.Qb) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.rb1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.rb2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.kb1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.kb2) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.bb1) and not \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, blue, pos.boxLst[pos.boxLst.index(pos.Kw) + num], border_radius=100)
+        pos.KingWhiteClicked = 1
+        pos.pawnWhite1Clicked = 0
+        pos.pawnWhite2Clicked = 0
+        pos.pawnWhite3Clicked = 0
+        pos.pawnWhite4Clicked = 0
+        pos.pawnWhite5Clicked = 0
+        pos.pawnWhite6Clicked = 0
+        pos.pawnWhite7Clicked = 0
+        pos.pawnWhite8Clicked = 0
+        pos.knightWhite1Clicked = 0
+        pos.knightWhite2Clicked = 0
+        pos.rookWhite1Clicked = 0
+        pos.rookWhite2Clicked = 0
+        pos.bishopWhite1Clicked = 0
+        pos.bishopWhite2Clicked = 0
+        pos.QueenWhiteClicked = 0
+
+
+# checks if white pieces are at position where king moves
+def check_white_king_canCut(num):
+    if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb1) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb2) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb3) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb4) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb5) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb6) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb7) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb8) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.Kb) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.Qb) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.rb1) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.rb2) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.kb1) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.kb2) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.bb1) or \
+            pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(pos.Kw) + num], border_radius=100)
+        pos.KingWhiteClicked = 1
+        pos.KingWhiteClicked_cut = 1
+        pos.pawnWhite1Clicked = 0
+        pos.pawnWhite2Clicked = 0
+        pos.pawnWhite3Clicked = 0
+        pos.pawnWhite4Clicked = 0
+        pos.pawnWhite5Clicked = 0
+        pos.pawnWhite6Clicked = 0
+        pos.pawnWhite7Clicked = 0
+        pos.pawnWhite8Clicked = 0
+        pos.knightWhite1Clicked = 0
+        pos.knightWhite2Clicked = 0
+        pos.rookWhite1Clicked = 0
+        pos.bishopWhite1Clicked = 0
+        pos.bishopWhite2Clicked = 0
+        pos.QueenWhiteClicked = 0
+
+
+# moves the king
+def moveWhiteKing(num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(pos.Kw) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        pos.Kw = pos.boxLst[pos.boxLst.index(pos.Kw) + num]
+        pos.KingWhiteClicked = 0
+        pos.turn = "black"
+
+
+# remove the white pieces which are cut
+def WhiteKingRemovePieces(num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(pos.Kw) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb1):
+            pos.pb1 = pos.black_deadPieceRect_dict["blackCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb2):
+            pos.pb2 = pos.black_deadPieceRect_dict["blackCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb3):
+            pos.pb3 = pos.black_deadPieceRect_dict["blackCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb4):
+            pos.pb4 = pos.black_deadPieceRect_dict["blackCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb5):
+            pos.pb5 = pos.black_deadPieceRect_dict["blackCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb6):
+            pos.pb6 = pos.black_deadPieceRect_dict["blackCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb7):
+            pos.pb7 = pos.black_deadPieceRect_dict["blackCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.pb8):
+            pos.pb8 = pos.black_deadPieceRect_dict["blackCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.rb1):
+            pos.rb1 = pos.black_deadPieceRect_dict["blackCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.rb2):
+            pos.rb2 = pos.black_deadPieceRect_dict["blackCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.kb1):
+            pos.kb1 = pos.black_deadPieceRect_dict["blackCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.kb2):
+            pos.kb2 = pos.black_deadPieceRect_dict["blackCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.bb1):
+            pos.bb1 = pos.black_deadPieceRect_dict["blackCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.bb2):
+            pos.bb2 = pos.black_deadPieceRect_dict["blackCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.Kb):
+            pos.Kb = pos.black_deadPieceRect_dict["blackCutPiece_15"]
+            pos.KingBlack_isDead = 1
+        if pos.boxLst[pos.boxLst.index(pos.Kw) + num].colliderect(pos.Qb):
+            pos.Qb = pos.black_deadPieceRect_dict["blackCutPiece_16"]
+        pos.Kw = pos.boxLst[pos.boxLst.index(pos.Kw) + num]
+        pos.KingWhiteClicked = 0
+        pos.KingWhiteClicked_cut = 0
+        pos.turn = "black"
 
 
 def kingWMovements():
+    mouse_pos = get_pos()
+
+    if pos.turn == "white":
+        if pos.Kw.collidepoint(mouse_pos[0], mouse_pos[1]):
+            if pos.box_dict["box1"].x < pos.Kw.x < pos.box_dict["box8"].x and pos.box_dict["box1"].y < pos.Kw.y < pos.box_dict["box57"].y:  # boxes except first (row, column) and last (row, column)
+                check_white_king_next_pos(1)
+                check_white_king_next_pos(-1)
+                check_white_king_next_pos(8)
+                check_white_king_next_pos(-8)
+                check_white_king_next_pos(8 + 1)
+                check_white_king_next_pos(8 - 1)
+                check_white_king_next_pos(-8 + 1)
+                check_white_king_next_pos(-8 - 1)
+            elif pos.Kw.x == pos.box_dict["box1"].x and pos.box_dict["box1"].y < pos.Kw.y < pos.box_dict["box57"].y:  # first column
+                check_white_king_next_pos(1)
+                check_white_king_next_pos(8)
+                check_white_king_next_pos(8 + 1)
+                check_white_king_next_pos(-8)
+                check_white_king_next_pos(-8 + 1)
+            elif pos.Kw.x == pos.box_dict["box8"].x and pos.box_dict["box1"].y < pos.Kw.y < pos.box_dict["box57"].y:  # last column
+                check_white_king_next_pos(-1)
+                check_white_king_next_pos(-8)
+                check_white_king_next_pos(-8 - 1)
+                check_white_king_next_pos(8)
+                check_white_king_next_pos(8 - 1)
+            elif pos.box_dict["box1"].x < pos.Kw.x < pos.box_dict["box8"].x and pos.Kw.y == pos.box_dict["box1"].y:  # first row
+                check_white_king_next_pos(1)
+                check_white_king_next_pos(-1)
+                check_white_king_next_pos(8)
+                check_white_king_next_pos(8 + 1)
+                check_white_king_next_pos(8 - 1)
+            elif pos.box_dict["box1"].x < pos.Kw.x < pos.box_dict["box8"].x and pos.Kw.y == pos.box_dict["box57"].y:  # last row
+                check_white_king_next_pos(1)
+                check_white_king_next_pos(-1)
+                check_white_king_next_pos(-8)
+                check_white_king_next_pos(-8 + 1)
+                check_white_king_next_pos(-8 - 1)
+            elif pos.Kw == pos.box_dict["box1"]:
+                check_white_king_next_pos(1)
+                check_white_king_next_pos(8)
+                check_white_king_next_pos(8 + 1)
+            elif pos.Kw == pos.box_dict["box8"]:
+                check_white_king_next_pos(-1)
+                check_white_king_next_pos(8)
+                check_white_king_next_pos(8 - 1)
+            elif pos.Kw == pos.box_dict["box57"]:
+                check_white_king_next_pos(1)
+                check_white_king_next_pos(-8)
+                check_white_king_next_pos(-8 + 1)
+            elif pos.Kw == pos.box_dict["box64"]:
+                check_white_king_next_pos(-1)
+                check_white_king_next_pos(-8)
+                check_white_king_next_pos(-8 - 1)
+
+            # check if king black can cut the white pieces
+            if pos.Kw.x > pos.box_dict["box1"].x:
+                check_white_king_canCut(-1)
+            if pos.Kw.x < pos.box_dict["box8"].x:
+                check_white_king_canCut(1)
+            if pos.Kw.y < pos.box_dict["box57"].y:
+                check_white_king_canCut(8)
+            if pos.Kw.y < pos.box_dict["box57"].y:
+                if pos.Kw.x > pos.box_dict["box1"].x:
+                    check_white_king_canCut(8-1)
+            if pos.Kw.y < pos.box_dict["box57"].y:
+                if pos.Kw.x < pos.box_dict["box8"].x:
+                    check_white_king_canCut(8+1)
+            if pos.Kw.y > pos.box_dict["box1"].y:
+                check_white_king_canCut(-8)
+            if pos.Kw.y > pos.box_dict["box1"].y:
+                if pos.Kw.x > pos.box_dict["box1"].x:
+                    check_white_king_canCut(-8-1)
+            if pos.Kw.y > pos.box_dict["box1"].y:
+                if pos.Kw.x < pos.box_dict["box8"].x:
+                    check_white_king_canCut(-8+1)
+
+    # what should happen if king is clicked
+    if pos.KingWhiteClicked == 1:
+
+        # cut the pieces
+        if pos.KingWhiteClicked_cut == 1:
+            if pos.Kw.x < pos.box_dict["box8"].x:
+                WhiteKingRemovePieces(1)
+            if pos.Kw.x > pos.box_dict["box1"].x:
+                WhiteKingRemovePieces(-1)
+            if pos.Kw.y < pos.box_dict["box57"].y:
+                if pos.Kw.x > pos.box_dict["box1"].x:
+                    WhiteKingRemovePieces(8-1)
+                if pos.Kw.y < pos.box_dict["box57"].y:
+                    WhiteKingRemovePieces(8)
+                if pos.Kw.y < pos.box_dict["box57"].y:
+                    if pos.Kw.x < pos.box_dict["box8"].x:
+                        WhiteKingRemovePieces(8+1)
+            if pos.Kw.y > pos.box_dict["box1"].y:
+                if pos.Kw.x > pos.box_dict["box1"].x:
+                    WhiteKingRemovePieces(-8-1)
+                WhiteKingRemovePieces(-8)
+                if pos.Kw.x < pos.box_dict["box8"].x:
+                    WhiteKingRemovePieces(-8+1)
+
+        if pos.Kw.x < pos.box_dict["box8"].x:
+            moveWhiteKing(1)
+        if pos.Kw.x > pos.box_dict["box1"].x:
+            moveWhiteKing(-1)
+        if pos.Kw.y < pos.box_dict["box57"].y:
+            if pos.Kw.x > pos.box_dict["box1"].x:
+                moveWhiteKing(8-1)
+        if pos.Kw.y < pos.box_dict["box57"].y:
+            moveWhiteKing(8)
+        if pos.Kw.y < pos.box_dict["box57"].y:
+            if pos.Kw.x < pos.box_dict["box8"].x:
+                moveWhiteKing(8+1)
+        if pos.Kw.y > pos.box_dict["box1"].y:
+            if pos.Kw.x > pos.box_dict["box1"].x:
+                moveWhiteKing(-8-1)
+            moveWhiteKing(-8)
+            if pos.Kw.x < pos.box_dict["box8"].x:
+                moveWhiteKing(-8+1)
+
+
+def knightBMovements():
+    pass
+
+
+def knightWMovements():
     pass
 
 
@@ -2828,6 +2954,8 @@ def drawGameWindow():
     pawnWMovements()
     kingBMovements()
     kingWMovements()
+    knightBMovements()
+    knightWMovements()
 
 
 game = MainGame()
