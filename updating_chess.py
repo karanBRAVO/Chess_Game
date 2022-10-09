@@ -2937,11 +2937,493 @@ def kingWMovements():
                 moveWhiteKing(-8+1)
 
 
+# check if knight can move or not
+def check_knight_canMove(which_knight_clicked, num):
+    if not pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw1) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw2) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw3) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw4) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw5) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw6) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw7) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw8) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.Kw) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.Qw) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.rw1) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.rw2) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.kw1) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.kw2) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.bw1) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.bw2) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb1) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb2) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb3) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb4) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb5) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb6) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb7) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb8) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.Kb) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.Qb) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.rb1) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.rb2) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.kb1) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.kb2) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.bb1) and not \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, blue, pos.boxLst[pos.boxLst.index(which_knight_clicked) + num], border_radius=100)
+        if which_knight_clicked == pos.kb1:
+            pos.knightBlack1Clicked = 1
+            pos.knightBlack2Clicked = 0
+        elif which_knight_clicked == pos.kb2:
+            pos.knightBlack2Clicked = 1
+            pos.knightBlack1Clicked = 0
+        if which_knight_clicked == pos.kw1:
+            pos.knightWhite1Clicked = 1
+            pos.knightWhite2Clicked = 0
+        elif which_knight_clicked == pos.kw2:
+            pos.knightWhite2Clicked = 1
+            pos.knightWhite1Clicked = 0
+
+        if which_knight_clicked == pos.kb1 or which_knight_clicked == pos.kb2:
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.QueenBlackClicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack2Clicked = 0
+        elif which_knight_clicked == pos.kw1 or which_knight_clicked == pos.kw2:
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.QueenWhiteClicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite2Clicked = 0
+
+
+# checks restrictions
+def check_knight_restrictions(which_knight_clicked):
+    if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
+        check_knight_canMove(which_knight_clicked, 16 + 1)
+    if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
+        check_knight_canMove(which_knight_clicked, 16 - 1)
+    if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
+        check_knight_canMove(which_knight_clicked, -16 + 1)
+    if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
+        check_knight_canMove(which_knight_clicked, -16 - 1)
+    if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
+        check_knight_canMove(which_knight_clicked, 8 + 2)
+    if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
+        check_knight_canMove(which_knight_clicked, 8 - 2)
+    if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
+        check_knight_canMove(which_knight_clicked, -8 + 2)
+    if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
+        check_knight_canMove(which_knight_clicked, -8 - 2)
+
+
+# check knight can cut or not
+def check_knight_canCut(which_knight_clicked, num):
+    if pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw1) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw2) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw3) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw4) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw5) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw6) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw7) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pw8) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.Kw) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.Qw) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.rw1) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.rw2) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.kw1) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.kw2) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.bw1) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.bw2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(which_knight_clicked) + num], border_radius=100)
+        if which_knight_clicked == pos.kb1:
+            pos.knightBlack1Clicked = 1
+            pos.knightBlack1Clicked_cut = 1
+            pos.knightBlack2Clicked = 0
+        elif which_knight_clicked == pos.kb2:
+            pos.knightBlack2Clicked = 1
+            pos.knightBlack2Clicked_cut = 1
+            pos.knightBlack1Clicked = 0
+        pos.pawnBlack1Clicked = 0
+        pos.pawnBlack2Clicked = 0
+        pos.pawnBlack3Clicked = 0
+        pos.pawnBlack4Clicked = 0
+        pos.pawnBlack5Clicked = 0
+        pos.pawnBlack6Clicked = 0
+        pos.pawnBlack7Clicked = 0
+        pos.pawnBlack8Clicked = 0
+        pos.KingBlackClicked = 0
+        pos.QueenBlackClicked = 0
+        pos.rookBlack1Clicked = 0
+        pos.rookBlack2Clicked = 0
+        pos.bishopBlack1Clicked = 0
+        pos.bishopBlack2Clicked = 0
+
+
+# check knight cutting restrictions
+def check_knight_canCut_restrictions(which_knight_clicked):
+    if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
+        check_knight_canCut(which_knight_clicked, 16+1)
+    if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
+        check_knight_canCut(which_knight_clicked, 16-1)
+    if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
+        check_knight_canCut(which_knight_clicked, -16+1)
+    if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
+        check_knight_canCut(which_knight_clicked, -16-1)
+    if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
+        check_knight_canCut(which_knight_clicked, 8+2)
+    if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
+        check_knight_canCut(which_knight_clicked, 8-2)
+    if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
+        check_knight_canCut(which_knight_clicked, -8+2)
+    if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
+        check_knight_canCut(which_knight_clicked, -8-2)
+
+
+# move knight
+def move_knight(which_knight_moves, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(which_knight_moves) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if which_knight_moves == pos.kb1:
+            pos.kb1 = pos.boxLst[pos.boxLst.index(which_knight_moves) + num]
+            pos.knightBlack1Clicked = 0
+        elif which_knight_moves == pos.kb2:
+            pos.kb2 = pos.boxLst[pos.boxLst.index(which_knight_moves) + num]
+            pos.knightBlack2Clicked = 0
+        pos.turn = "white"
+
+
+# moving knight restrictions
+def moveKnight_restrictions(which_knight_moves):
+    # move the knight
+    if which_knight_moves.x > pos.box_dict["box1"].x and which_knight_moves.y < pos.box_dict["box49"].y:
+        move_knight(which_knight_moves, 16 - 1)
+    if which_knight_moves.x < pos.box_dict["box8"].x and which_knight_moves.y < pos.box_dict["box49"].y:
+        move_knight(which_knight_moves, 16 + 1)
+    if which_knight_moves.x < pos.box_dict["box8"].x and which_knight_moves.y > pos.box_dict["box9"].y:
+        move_knight(which_knight_moves, -16 + 1)
+    if which_knight_moves.x > pos.box_dict["box1"].x and which_knight_moves.y > pos.box_dict["box9"].y:
+        move_knight(which_knight_moves, -16 - 1)
+    if which_knight_moves.x < pos.box_dict["box7"].x and which_knight_moves.y < pos.box_dict["box57"].y:
+        move_knight(which_knight_moves, 8 + 2)
+    if which_knight_moves.x > pos.box_dict["box2"].x and which_knight_moves.y < pos.box_dict["box57"].y:
+        move_knight(which_knight_moves, 8 - 2)
+    if which_knight_moves.x < pos.box_dict["box7"].x and which_knight_moves.y > pos.box_dict["box1"].y:
+        move_knight(which_knight_moves, -8 + 2)
+    if which_knight_moves.x > pos.box_dict["box2"].x and which_knight_moves.y > pos.box_dict["box1"].y:
+        move_knight(which_knight_moves, -8 - 2)
+
+
+# remove the white pieces if cut
+def knight_remove_pieces(who_removes, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(who_removes) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw1):
+            pos.pw1 = pos.white_deadPieceRect_dict["whiteCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw2):
+            pos.pw2 = pos.white_deadPieceRect_dict["whiteCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw3):
+            pos.pw3 = pos.white_deadPieceRect_dict["whiteCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw4):
+            pos.pw4 = pos.white_deadPieceRect_dict["whiteCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw5):
+            pos.pw5 = pos.white_deadPieceRect_dict["whiteCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw6):
+            pos.pw6 = pos.white_deadPieceRect_dict["whiteCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw7):
+            pos.pw7 = pos.white_deadPieceRect_dict["whiteCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw8):
+            pos.pw8 = pos.white_deadPieceRect_dict["whiteCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rw1):
+            pos.rw1 = pos.white_deadPieceRect_dict["whiteCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rw2):
+            pos.rw2 = pos.white_deadPieceRect_dict["whiteCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kw1):
+            pos.kw1 = pos.white_deadPieceRect_dict["whiteCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kw2):
+            pos.kw2 = pos.white_deadPieceRect_dict["whiteCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bw1):
+            pos.bw1 = pos.white_deadPieceRect_dict["whiteCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bw2):
+            pos.bw2 = pos.white_deadPieceRect_dict["whiteCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Kw):
+            pos.Kw = pos.white_deadPieceRect_dict["whiteCutPiece_15"]
+            pos.KingWhite_isDead = 1
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Qw):
+            pos.Qw = pos.white_deadPieceRect_dict["whiteCutPiece_16"]
+
+        if who_removes == pos.kb1:
+            pos.kb1 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack1Clicked_cut = 0
+        elif who_removes == pos.kb2:
+            pos.kb2 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.knightBlack2Clicked = 0
+            pos.knightBlack2Clicked_cut = 0
+        pos.turn = "white"
+
+
+# check for restrictions on removing
+def knight_remove_pieces_restrictions(who_removes):
+    if who_removes.x > pos.box_dict["box1"].x and who_removes.y < pos.box_dict["box49"].y:
+        knight_remove_pieces(who_removes, 16-1)
+    if who_removes.x < pos.box_dict["box8"].x and who_removes.y < pos.box_dict["box49"].y:
+        knight_remove_pieces(who_removes, 16+1)
+    if who_removes.x < pos.box_dict["box8"].x and who_removes.y > pos.box_dict["box9"].y:
+        knight_remove_pieces(who_removes, -16+1)
+    if who_removes.x > pos.box_dict["box1"].x and who_removes.y > pos.box_dict["box9"].y:
+        knight_remove_pieces(who_removes, -16-1)
+    if who_removes.x < pos.box_dict["box7"].x and who_removes.y < pos.box_dict["box57"].y:
+        knight_remove_pieces(who_removes, 8+2)
+    if who_removes.x > pos.box_dict["box2"].x and who_removes.y < pos.box_dict["box57"].y:
+        knight_remove_pieces(who_removes, 8-2)
+    if who_removes.x < pos.box_dict["box7"].x and who_removes.y > pos.box_dict["box1"].y:
+        knight_remove_pieces(who_removes, -8+2)
+    if who_removes.x > pos.box_dict["box2"].x and who_removes.y > pos.box_dict["box1"].y:
+        knight_remove_pieces(who_removes, -8-2)
+
+
 def knightBMovements():
-    pass
+    mouse_pos = get_pos()
+
+    if pos.turn == "black":
+        if pos.kb1.collidepoint(mouse_pos[0], mouse_pos[1]):
+            check_knight_restrictions(pos.kb1)
+            check_knight_canCut_restrictions(pos.kb1)
+        elif pos.kb2.collidepoint(mouse_pos[0], mouse_pos[1]):
+            check_knight_restrictions(pos.kb2)
+            check_knight_canCut_restrictions(pos.kb2)
+
+    if pos.knightBlack1Clicked == 1:
+        # cut white pieces
+        if pos.knightBlack1Clicked_cut == 1:
+            knight_remove_pieces_restrictions(pos.kb1)
+        moveKnight_restrictions(pos.kb1)
+    elif pos.knightBlack2Clicked == 1:
+        # cut white pieces
+        if pos.knightBlack2Clicked_cut == 1:
+            knight_remove_pieces_restrictions(pos.kb2)
+        moveKnight_restrictions(pos.kb2)
+
+
+# check white knight can cut or not
+def check_white_knight_canCut(which_knight_clicked, num):
+    if pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb1) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb2) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb3) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb4) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb5) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb6) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb7) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.pb8) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.Kb) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.Qb) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.rb1) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.rb2) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.kb1) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.kb2) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.bb1) or \
+            pos.boxLst[pos.boxLst.index(which_knight_clicked) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(which_knight_clicked) + num], border_radius=100)
+        if which_knight_clicked == pos.kw1:
+            pos.knightWhite1Clicked = 1
+            pos.knightWhite1Clicked_cut = 1
+            pos.knightWhite2Clicked = 0
+        elif which_knight_clicked == pos.kw2:
+            pos.knightWhite2Clicked = 1
+            pos.knightWhite2Clicked_cut = 1
+            pos.knightWhite1Clicked = 0
+        pos.pawnWhite1Clicked = 0
+        pos.pawnWhite2Clicked = 0
+        pos.pawnWhite3Clicked = 0
+        pos.pawnWhite4Clicked = 0
+        pos.pawnWhite5Clicked = 0
+        pos.pawnWhite6Clicked = 0
+        pos.pawnWhite7Clicked = 0
+        pos.pawnWhite8Clicked = 0
+        pos.KingWhiteClicked = 0
+        pos.QueenWhiteClicked = 0
+        pos.rookWhite1Clicked = 0
+        pos.rookWhite2Clicked = 0
+        pos.bishopWhite1Clicked = 0
+        pos.bishopWhite2Clicked = 0
+
+
+# check white knight cutting restrictions
+def check_white_knight_canCut_restrictions(which_knight_clicked):
+    if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
+        check_white_knight_canCut(which_knight_clicked, 16+1)
+    if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
+        check_white_knight_canCut(which_knight_clicked, 16-1)
+    if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
+        check_white_knight_canCut(which_knight_clicked, -16+1)
+    if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
+        check_white_knight_canCut(which_knight_clicked, -16-1)
+    if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
+        check_white_knight_canCut(which_knight_clicked, 8+2)
+    if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
+        check_white_knight_canCut(which_knight_clicked, 8-2)
+    if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
+        check_white_knight_canCut(which_knight_clicked, -8+2)
+    if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
+        check_white_knight_canCut(which_knight_clicked, -8-2)
+
+
+# move knight
+def move_white_knight(which_knight_moves, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(which_knight_moves) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if which_knight_moves == pos.kw1:
+            pos.kw1 = pos.boxLst[pos.boxLst.index(which_knight_moves) + num]
+            pos.knightWhite1Clicked = 0
+        elif which_knight_moves == pos.kw2:
+            pos.kw2 = pos.boxLst[pos.boxLst.index(which_knight_moves) + num]
+            pos.knightWhite2Clicked = 0
+        pos.turn = "black"
+
+
+# moving knight restrictions
+def moveWhiteKnight_restrictions(which_knight_moves):
+    # move the knight
+    if which_knight_moves.x > pos.box_dict["box1"].x and which_knight_moves.y < pos.box_dict["box49"].y:
+        move_white_knight(which_knight_moves, 16 - 1)
+    if which_knight_moves.x < pos.box_dict["box8"].x and which_knight_moves.y < pos.box_dict["box49"].y:
+        move_white_knight(which_knight_moves, 16 + 1)
+    if which_knight_moves.x < pos.box_dict["box8"].x and which_knight_moves.y > pos.box_dict["box9"].y:
+        move_white_knight(which_knight_moves, -16 + 1)
+    if which_knight_moves.x > pos.box_dict["box1"].x and which_knight_moves.y > pos.box_dict["box9"].y:
+        move_white_knight(which_knight_moves, -16 - 1)
+    if which_knight_moves.x < pos.box_dict["box7"].x and which_knight_moves.y < pos.box_dict["box57"].y:
+        move_white_knight(which_knight_moves, 8 + 2)
+    if which_knight_moves.x > pos.box_dict["box2"].x and which_knight_moves.y < pos.box_dict["box57"].y:
+        move_white_knight(which_knight_moves, 8 - 2)
+    if which_knight_moves.x < pos.box_dict["box7"].x and which_knight_moves.y > pos.box_dict["box1"].y:
+        move_white_knight(which_knight_moves, -8 + 2)
+    if which_knight_moves.x > pos.box_dict["box2"].x and which_knight_moves.y > pos.box_dict["box1"].y:
+        move_white_knight(which_knight_moves, -8 - 2)
+
+
+# remove the white pieces if cut
+def white_knight_remove_pieces(who_removes, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(who_removes) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb1):
+            pos.pb1 = pos.black_deadPieceRect_dict["blackCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb2):
+            pos.pb2 = pos.black_deadPieceRect_dict["blackCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb3):
+            pos.pb3 = pos.black_deadPieceRect_dict["blackCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb4):
+            pos.pb4 = pos.black_deadPieceRect_dict["blackCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb5):
+            pos.pb5 = pos.black_deadPieceRect_dict["blackCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb6):
+            pos.pb6 = pos.black_deadPieceRect_dict["blackCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb7):
+            pos.pb7 = pos.black_deadPieceRect_dict["blackCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb8):
+            pos.pb8 = pos.black_deadPieceRect_dict["blackCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rb1):
+            pos.rb1 = pos.black_deadPieceRect_dict["blackCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rb2):
+            pos.rb2 = pos.black_deadPieceRect_dict["blackCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kb1):
+            pos.kb1 = pos.black_deadPieceRect_dict["blackCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kb2):
+            pos.kb2 = pos.black_deadPieceRect_dict["blackCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bb1):
+            pos.bb1 = pos.black_deadPieceRect_dict["blackCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bb2):
+            pos.bb2 = pos.black_deadPieceRect_dict["blackCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Kb):
+            pos.Kb = pos.black_deadPieceRect_dict["blackCutPiece_15"]
+            pos.KingBlack_isDead = 1
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Qb):
+            pos.Qb = pos.black_deadPieceRect_dict["blackCutPiece_16"]
+
+        if who_removes == pos.kw1:
+            pos.kw1 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite1Clicked_cut = 0
+        elif who_removes == pos.kw2:
+            pos.kw2 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.knightWhite2Clicked = 0
+            pos.knightWhite2Clicked_cut = 0
+        pos.turn = "black"
+
+
+# check for restrictions on removing
+def white_knight_remove_pieces_restrictions(who_removes):
+    if who_removes.x > pos.box_dict["box1"].x and who_removes.y < pos.box_dict["box49"].y:
+        white_knight_remove_pieces(who_removes, 16-1)
+    if who_removes.x < pos.box_dict["box8"].x and who_removes.y < pos.box_dict["box49"].y:
+        white_knight_remove_pieces(who_removes, 16+1)
+    if who_removes.x < pos.box_dict["box8"].x and who_removes.y > pos.box_dict["box9"].y:
+        white_knight_remove_pieces(who_removes, -16+1)
+    if who_removes.x > pos.box_dict["box1"].x and who_removes.y > pos.box_dict["box9"].y:
+        white_knight_remove_pieces(who_removes, -16-1)
+    if who_removes.x < pos.box_dict["box7"].x and who_removes.y < pos.box_dict["box57"].y:
+        white_knight_remove_pieces(who_removes, 8+2)
+    if who_removes.x > pos.box_dict["box2"].x and who_removes.y < pos.box_dict["box57"].y:
+        white_knight_remove_pieces(who_removes, 8-2)
+    if who_removes.x < pos.box_dict["box7"].x and who_removes.y > pos.box_dict["box1"].y:
+        white_knight_remove_pieces(who_removes, -8+2)
+    if who_removes.x > pos.box_dict["box2"].x and who_removes.y > pos.box_dict["box1"].y:
+        white_knight_remove_pieces(who_removes, -8-2)
 
 
 def knightWMovements():
+    mouse_pos = get_pos()
+
+    if pos.turn == "white":
+        if pos.kw1.collidepoint(mouse_pos[0], mouse_pos[1]):
+            check_knight_restrictions(pos.kw1)
+            check_white_knight_canCut_restrictions(pos.kw1)
+        elif pos.kw2.collidepoint(mouse_pos[0], mouse_pos[1]):
+            check_knight_restrictions(pos.kw2)
+            check_white_knight_canCut_restrictions(pos.kw2)
+
+    if pos.knightWhite1Clicked == 1:
+        # cut white pieces
+        if pos.knightWhite1Clicked_cut == 1:
+            white_knight_remove_pieces_restrictions(pos.kw1)
+        moveWhiteKnight_restrictions(pos.kw1)
+    elif pos.knightWhite2Clicked == 1:
+        # cut white pieces
+        if pos.knightWhite2Clicked_cut == 1:
+            white_knight_remove_pieces_restrictions(pos.kw2)
+        moveWhiteKnight_restrictions(pos.kw2)
+
+
+def rookBMovements():
+    pass
+
+
+def rookWMovements():
     pass
 
 
@@ -2956,6 +3438,8 @@ def drawGameWindow():
     kingWMovements()
     knightBMovements()
     knightWMovements()
+    rookBMovements()
+    rookWMovements()
 
 
 game = MainGame()
