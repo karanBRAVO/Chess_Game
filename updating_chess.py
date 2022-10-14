@@ -1396,9 +1396,9 @@ def pawnBMovements():
             pos.turn = "white"
         if pos.pawnBlack1Clicked_cut == 1:
             if pos.pb1.x < pos.box_dict["box8"].x and pos.pb1.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb1, 8+1)
+                check_cut_piece(pos.pb1, 8 + 1)
             if pos.box_dict["box1"].x <= pos.pb1.x and pos.pb1.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb1, 8-1)
+                check_cut_piece(pos.pb1, 8 - 1)
         if pos.pb1.y < pos.box_dict["box49"].y:
             if pos.pawnBlack1Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb1) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1414,9 +1414,9 @@ def pawnBMovements():
             pos.turn = "white"
         if pos.pawnBlack2Clicked_cut == 1:
             if pos.pb2.x < pos.box_dict["box8"].x and pos.pb2.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb2, 8+1)
+                check_cut_piece(pos.pb2, 8 + 1)
             if pos.box_dict["box1"].x <= pos.pb2.x and pos.pb2.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb2, 8-1)
+                check_cut_piece(pos.pb2, 8 - 1)
         if pos.pb2.y < pos.box_dict["box49"].y:
             if pos.pawnBlack2Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb2) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1432,9 +1432,9 @@ def pawnBMovements():
             pos.turn = "white"
         if pos.pawnBlack3Clicked_cut == 1:
             if pos.pb3.x < pos.box_dict["box8"].x and pos.pb3.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb3, 8+1)
+                check_cut_piece(pos.pb3, 8 + 1)
             if pos.box_dict["box1"].x <= pos.pb3.x and pos.pb3.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb3, 8-1)
+                check_cut_piece(pos.pb3, 8 - 1)
         if pos.pb3.y < pos.box_dict["box49"].y:
             if pos.pawnBlack3Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb3) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1450,9 +1450,9 @@ def pawnBMovements():
             pos.turn = "white"
         if pos.pawnBlack4Clicked_cut == 1:
             if pos.pb4.x < pos.box_dict["box8"].x and pos.pb4.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb4, 8+1)
+                check_cut_piece(pos.pb4, 8 + 1)
             if pos.box_dict["box1"].x <= pos.pb4.x and pos.pb4.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb4, 8-1)
+                check_cut_piece(pos.pb4, 8 - 1)
         if pos.pb4.y < pos.box_dict["box49"].y:
             if pos.pawnBlack4Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb4) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1468,9 +1468,9 @@ def pawnBMovements():
             pos.turn = "white"
         if pos.pawnBlack5Clicked_cut == 1:
             if pos.pb5.x < pos.box_dict["box8"].x and pos.pb5.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb5, 8+1)
+                check_cut_piece(pos.pb5, 8 + 1)
             if pos.box_dict["box1"].x <= pos.pb5.x and pos.pb5.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb5, 8-1)
+                check_cut_piece(pos.pb5, 8 - 1)
         if pos.pb5.y < pos.box_dict["box49"].y:
             if pos.pawnBlack5Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb5) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1486,9 +1486,9 @@ def pawnBMovements():
             pos.turn = "white"
         if pos.pawnBlack6Clicked_cut == 1:
             if pos.pb6.x < pos.box_dict["box8"].x and pos.pb6.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb6, 8+1)
+                check_cut_piece(pos.pb6, 8 + 1)
             if pos.box_dict["box1"].x <= pos.pb6.x and pos.pb6.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb6, 8-1)
+                check_cut_piece(pos.pb6, 8 - 1)
         if pos.pb6.y < pos.box_dict["box49"].y:
             if pos.pawnBlack6Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb6) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1504,9 +1504,9 @@ def pawnBMovements():
             pos.turn = "white"
         if pos.pawnBlack7Clicked_cut == 1:
             if pos.pb7.x < pos.box_dict["box8"].x and pos.pb7.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb7, 8+1)
+                check_cut_piece(pos.pb7, 8 + 1)
             if pos.box_dict["box1"].x <= pos.pb7.x and pos.pb7.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb7, 8-1)
+                check_cut_piece(pos.pb7, 8 - 1)
         if pos.pb7.y < pos.box_dict["box49"].y:
             if pos.pawnBlack7Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb7) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -1522,9 +1522,9 @@ def pawnBMovements():
             pos.turn = "white"
         if pos.pawnBlack8Clicked_cut == 1:
             if pos.pb8.x < pos.box_dict["box8"].x and pos.pb8.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb8, 8+1)
+                check_cut_piece(pos.pb8, 8 + 1)
             if pos.box_dict["box1"].x <= pos.pb8.x and pos.pb8.y < pos.box_dict["box57"].y:
-                check_cut_piece(pos.pb8, 8-1)
+                check_cut_piece(pos.pb8, 8 - 1)
         if pos.pb8.y < pos.box_dict["box49"].y:
             if pos.pawnBlack8Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pb8) + 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2269,9 +2269,9 @@ def pawnWMovements():
             pos.turn = "black"
         if pos.pawnWhite1Clicked_cut == 1:
             if pos.pw1.x < pos.box_dict["box8"].x and pos.pw1.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw1, -8+1)
+                check_white_cut_piece(pos.pw1, -8 + 1)
             if pos.box_dict["box1"].x < pos.pw1.x and pos.pw1.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw1, -8-1)
+                check_white_cut_piece(pos.pw1, -8 - 1)
         if pos.pw1.y > pos.box_dict["box9"].y:
             if pos.pawnWhite1Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw1) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2287,9 +2287,9 @@ def pawnWMovements():
             pos.turn = "black"
         if pos.pawnWhite2Clicked_cut == 1:
             if pos.pw2.x < pos.box_dict["box8"].x and pos.pw2.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw2, -8+1)
+                check_white_cut_piece(pos.pw2, -8 + 1)
             if pos.box_dict["box1"].x < pos.pw2.x and pos.pw2.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw2, -8-1)
+                check_white_cut_piece(pos.pw2, -8 - 1)
         if pos.pw2.y > pos.box_dict["box9"].y:
             if pos.pawnWhite2Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw2) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2305,9 +2305,9 @@ def pawnWMovements():
             pos.turn = "black"
         if pos.pawnWhite3Clicked_cut == 1:
             if pos.pw3.x < pos.box_dict["box8"].x and pos.pw3.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw3, -8+1)
+                check_white_cut_piece(pos.pw3, -8 + 1)
             if pos.box_dict["box1"].x < pos.pw3.x and pos.pw3.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw3, -8-1)
+                check_white_cut_piece(pos.pw3, -8 - 1)
         if pos.pw3.y > pos.box_dict["box9"].y:
             if pos.pawnWhite3Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw3) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2323,9 +2323,9 @@ def pawnWMovements():
             pos.turn = "black"
         if pos.pawnWhite4Clicked_cut == 1:
             if pos.pw4.x < pos.box_dict["box8"].x and pos.pw4.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw4, -8+1)
+                check_white_cut_piece(pos.pw4, -8 + 1)
             if pos.box_dict["box1"].x < pos.pw4.x and pos.pw4.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw4, -8-1)
+                check_white_cut_piece(pos.pw4, -8 - 1)
         if pos.pw4.y > pos.box_dict["box9"].y:
             if pos.pawnWhite4Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw4) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2341,9 +2341,9 @@ def pawnWMovements():
             pos.turn = "black"
         if pos.pawnWhite5Clicked_cut == 1:
             if pos.pw5.x < pos.box_dict["box8"].x and pos.pw5.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw5, -8+1)
+                check_white_cut_piece(pos.pw5, -8 + 1)
             if pos.box_dict["box1"].x < pos.pw5.x and pos.pw5.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw5, -8-1)
+                check_white_cut_piece(pos.pw5, -8 - 1)
         if pos.pw5.y > pos.box_dict["box9"].y:
             if pos.pawnWhite5Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw5) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2359,9 +2359,9 @@ def pawnWMovements():
             pos.turn = "black"
         if pos.pawnWhite6Clicked_cut == 1:
             if pos.pw6.x < pos.box_dict["box8"].x and pos.pw6.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw6, -8+1)
+                check_white_cut_piece(pos.pw6, -8 + 1)
             if pos.box_dict["box1"].x < pos.pw6.x and pos.pw6.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw6, -8-1)
+                check_white_cut_piece(pos.pw6, -8 - 1)
         if pos.pw6.y > pos.box_dict["box9"].y:
             if pos.pawnWhite6Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw6) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2377,9 +2377,9 @@ def pawnWMovements():
             pos.turn = "black"
         if pos.pawnWhite7Clicked_cut == 1:
             if pos.pw7.x < pos.box_dict["box8"].x and pos.pw7.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw7, -8+1)
+                check_white_cut_piece(pos.pw7, -8 + 1)
             if pos.box_dict["box1"].x < pos.pw7.x and pos.pw7.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw7, -8-1)
+                check_white_cut_piece(pos.pw7, -8 - 1)
         if pos.pw7.y > pos.box_dict["box9"].y:
             if pos.pawnWhite7Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw7) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2395,9 +2395,9 @@ def pawnWMovements():
             pos.turn = "black"
         if pos.pawnWhite8Clicked_cut == 1:
             if pos.pw8.x < pos.box_dict["box8"].x and pos.pw8.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw8, -8+1)
+                check_white_cut_piece(pos.pw8, -8 + 1)
             if pos.box_dict["box1"].x < pos.pw8.x and pos.pw8.y > pos.box_dict["box1"].y:
-                check_white_cut_piece(pos.pw8, -8-1)
+                check_white_cut_piece(pos.pw8, -8 - 1)
         if pos.pw8.y > pos.box_dict["box9"].y:
             if pos.pawnWhite8Clicked_twoStep == 1:
                 if pos.boxLst[pos.boxLst.index(pos.pw8) - 16].collidepoint(mouse_pos[0], mouse_pos[1]):
@@ -2615,18 +2615,18 @@ def kingBMovements():
                 check_king_canCut(8)
             if pos.Kb.y < pos.box_dict["box57"].y:
                 if pos.Kb.x > pos.box_dict["box1"].x:
-                    check_king_canCut(8-1)
+                    check_king_canCut(8 - 1)
             if pos.Kb.y < pos.box_dict["box57"].y:
                 if pos.Kb.x < pos.box_dict["box8"].x:
-                    check_king_canCut(8+1)
+                    check_king_canCut(8 + 1)
             if pos.Kb.y > pos.box_dict["box1"].y:
                 check_king_canCut(-8)
             if pos.Kb.y > pos.box_dict["box1"].y:
                 if pos.Kb.x > pos.box_dict["box1"].x:
-                    check_king_canCut(-8-1)
+                    check_king_canCut(-8 - 1)
             if pos.Kb.y > pos.box_dict["box1"].y:
                 if pos.Kb.x < pos.box_dict["box8"].x:
-                    check_king_canCut(-8+1)
+                    check_king_canCut(-8 + 1)
 
     # what should happen if king is clicked
     if pos.KingBlackClicked == 1:
@@ -2639,18 +2639,18 @@ def kingBMovements():
                 KingRemovePieces(-1)
             if pos.Kb.y < pos.box_dict["box57"].y:
                 if pos.Kb.x > pos.box_dict["box1"].x:
-                    KingRemovePieces(8-1)
+                    KingRemovePieces(8 - 1)
                 if pos.Kb.y < pos.box_dict["box57"].y:
                     KingRemovePieces(8)
                 if pos.Kb.y < pos.box_dict["box57"].y:
                     if pos.Kb.x < pos.box_dict["box8"].x:
-                        KingRemovePieces(8+1)
+                        KingRemovePieces(8 + 1)
             if pos.Kb.y > pos.box_dict["box1"].y:
                 if pos.Kb.x > pos.box_dict["box1"].x:
-                    KingRemovePieces(-8-1)
+                    KingRemovePieces(-8 - 1)
                 KingRemovePieces(-8)
                 if pos.Kb.x < pos.box_dict["box8"].x:
-                    KingRemovePieces(-8+1)
+                    KingRemovePieces(-8 + 1)
 
         if pos.Kb.x < pos.box_dict["box8"].x:
             moveKing(1)
@@ -2658,18 +2658,18 @@ def kingBMovements():
             moveKing(-1)
         if pos.Kb.y < pos.box_dict["box57"].y:
             if pos.Kb.x > pos.box_dict["box1"].x:
-                moveKing(8-1)
+                moveKing(8 - 1)
         if pos.Kb.y < pos.box_dict["box57"].y:
             moveKing(8)
         if pos.Kb.y < pos.box_dict["box57"].y:
             if pos.Kb.x < pos.box_dict["box8"].x:
-                moveKing(8+1)
+                moveKing(8 + 1)
         if pos.Kb.y > pos.box_dict["box1"].y:
             if pos.Kb.x > pos.box_dict["box1"].x:
-                moveKing(-8-1)
+                moveKing(-8 - 1)
             moveKing(-8)
             if pos.Kb.x < pos.box_dict["box8"].x:
-                moveKing(-8+1)
+                moveKing(-8 + 1)
 
 
 # checks if places where king moves are empty or not
@@ -2880,18 +2880,18 @@ def kingWMovements():
                 check_white_king_canCut(8)
             if pos.Kw.y < pos.box_dict["box57"].y:
                 if pos.Kw.x > pos.box_dict["box1"].x:
-                    check_white_king_canCut(8-1)
+                    check_white_king_canCut(8 - 1)
             if pos.Kw.y < pos.box_dict["box57"].y:
                 if pos.Kw.x < pos.box_dict["box8"].x:
-                    check_white_king_canCut(8+1)
+                    check_white_king_canCut(8 + 1)
             if pos.Kw.y > pos.box_dict["box1"].y:
                 check_white_king_canCut(-8)
             if pos.Kw.y > pos.box_dict["box1"].y:
                 if pos.Kw.x > pos.box_dict["box1"].x:
-                    check_white_king_canCut(-8-1)
+                    check_white_king_canCut(-8 - 1)
             if pos.Kw.y > pos.box_dict["box1"].y:
                 if pos.Kw.x < pos.box_dict["box8"].x:
-                    check_white_king_canCut(-8+1)
+                    check_white_king_canCut(-8 + 1)
 
     # what should happen if king is clicked
     if pos.KingWhiteClicked == 1:
@@ -2904,18 +2904,18 @@ def kingWMovements():
                 WhiteKingRemovePieces(-1)
             if pos.Kw.y < pos.box_dict["box57"].y:
                 if pos.Kw.x > pos.box_dict["box1"].x:
-                    WhiteKingRemovePieces(8-1)
+                    WhiteKingRemovePieces(8 - 1)
                 if pos.Kw.y < pos.box_dict["box57"].y:
                     WhiteKingRemovePieces(8)
                 if pos.Kw.y < pos.box_dict["box57"].y:
                     if pos.Kw.x < pos.box_dict["box8"].x:
-                        WhiteKingRemovePieces(8+1)
+                        WhiteKingRemovePieces(8 + 1)
             if pos.Kw.y > pos.box_dict["box1"].y:
                 if pos.Kw.x > pos.box_dict["box1"].x:
-                    WhiteKingRemovePieces(-8-1)
+                    WhiteKingRemovePieces(-8 - 1)
                 WhiteKingRemovePieces(-8)
                 if pos.Kw.x < pos.box_dict["box8"].x:
-                    WhiteKingRemovePieces(-8+1)
+                    WhiteKingRemovePieces(-8 + 1)
 
         if pos.Kw.x < pos.box_dict["box8"].x:
             moveWhiteKing(1)
@@ -2923,18 +2923,18 @@ def kingWMovements():
             moveWhiteKing(-1)
         if pos.Kw.y < pos.box_dict["box57"].y:
             if pos.Kw.x > pos.box_dict["box1"].x:
-                moveWhiteKing(8-1)
+                moveWhiteKing(8 - 1)
         if pos.Kw.y < pos.box_dict["box57"].y:
             moveWhiteKing(8)
         if pos.Kw.y < pos.box_dict["box57"].y:
             if pos.Kw.x < pos.box_dict["box8"].x:
-                moveWhiteKing(8+1)
+                moveWhiteKing(8 + 1)
         if pos.Kw.y > pos.box_dict["box1"].y:
             if pos.Kw.x > pos.box_dict["box1"].x:
-                moveWhiteKing(-8-1)
+                moveWhiteKing(-8 - 1)
             moveWhiteKing(-8)
             if pos.Kw.x < pos.box_dict["box8"].x:
-                moveWhiteKing(-8+1)
+                moveWhiteKing(-8 + 1)
 
 
 # check if knight can move or not
@@ -3083,21 +3083,21 @@ def check_knight_canCut(which_knight_clicked, num):
 # check knight cutting restrictions
 def check_knight_canCut_restrictions(which_knight_clicked):
     if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
-        check_knight_canCut(which_knight_clicked, 16+1)
+        check_knight_canCut(which_knight_clicked, 16 + 1)
     if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
-        check_knight_canCut(which_knight_clicked, 16-1)
+        check_knight_canCut(which_knight_clicked, 16 - 1)
     if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
-        check_knight_canCut(which_knight_clicked, -16+1)
+        check_knight_canCut(which_knight_clicked, -16 + 1)
     if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
-        check_knight_canCut(which_knight_clicked, -16-1)
+        check_knight_canCut(which_knight_clicked, -16 - 1)
     if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
-        check_knight_canCut(which_knight_clicked, 8+2)
+        check_knight_canCut(which_knight_clicked, 8 + 2)
     if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
-        check_knight_canCut(which_knight_clicked, 8-2)
+        check_knight_canCut(which_knight_clicked, 8 - 2)
     if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
-        check_knight_canCut(which_knight_clicked, -8+2)
+        check_knight_canCut(which_knight_clicked, -8 + 2)
     if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
-        check_knight_canCut(which_knight_clicked, -8-2)
+        check_knight_canCut(which_knight_clicked, -8 - 2)
 
 
 # move knight
@@ -3188,21 +3188,21 @@ def knight_remove_pieces(who_removes, num):
 # check for restrictions on removing
 def knight_remove_pieces_restrictions(who_removes):
     if who_removes.x > pos.box_dict["box1"].x and who_removes.y < pos.box_dict["box49"].y:
-        knight_remove_pieces(who_removes, 16-1)
+        knight_remove_pieces(who_removes, 16 - 1)
     if who_removes.x < pos.box_dict["box8"].x and who_removes.y < pos.box_dict["box49"].y:
-        knight_remove_pieces(who_removes, 16+1)
+        knight_remove_pieces(who_removes, 16 + 1)
     if who_removes.x < pos.box_dict["box8"].x and who_removes.y > pos.box_dict["box9"].y:
-        knight_remove_pieces(who_removes, -16+1)
+        knight_remove_pieces(who_removes, -16 + 1)
     if who_removes.x > pos.box_dict["box1"].x and who_removes.y > pos.box_dict["box9"].y:
-        knight_remove_pieces(who_removes, -16-1)
+        knight_remove_pieces(who_removes, -16 - 1)
     if who_removes.x < pos.box_dict["box7"].x and who_removes.y < pos.box_dict["box57"].y:
-        knight_remove_pieces(who_removes, 8+2)
+        knight_remove_pieces(who_removes, 8 + 2)
     if who_removes.x > pos.box_dict["box2"].x and who_removes.y < pos.box_dict["box57"].y:
-        knight_remove_pieces(who_removes, 8-2)
+        knight_remove_pieces(who_removes, 8 - 2)
     if who_removes.x < pos.box_dict["box7"].x and who_removes.y > pos.box_dict["box1"].y:
-        knight_remove_pieces(who_removes, -8+2)
+        knight_remove_pieces(who_removes, -8 + 2)
     if who_removes.x > pos.box_dict["box2"].x and who_removes.y > pos.box_dict["box1"].y:
-        knight_remove_pieces(who_removes, -8-2)
+        knight_remove_pieces(who_removes, -8 - 2)
 
 
 def knightBMovements():
@@ -3274,21 +3274,21 @@ def check_white_knight_canCut(which_knight_clicked, num):
 # check white knight cutting restrictions
 def check_white_knight_canCut_restrictions(which_knight_clicked):
     if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
-        check_white_knight_canCut(which_knight_clicked, 16+1)
+        check_white_knight_canCut(which_knight_clicked, 16 + 1)
     if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y < pos.box_dict["box49"].y:
-        check_white_knight_canCut(which_knight_clicked, 16-1)
+        check_white_knight_canCut(which_knight_clicked, 16 - 1)
     if which_knight_clicked.x < pos.box_dict["box8"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
-        check_white_knight_canCut(which_knight_clicked, -16+1)
+        check_white_knight_canCut(which_knight_clicked, -16 + 1)
     if which_knight_clicked.x > pos.box_dict["box1"].x and which_knight_clicked.y > pos.box_dict["box9"].y:
-        check_white_knight_canCut(which_knight_clicked, -16-1)
+        check_white_knight_canCut(which_knight_clicked, -16 - 1)
     if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
-        check_white_knight_canCut(which_knight_clicked, 8+2)
+        check_white_knight_canCut(which_knight_clicked, 8 + 2)
     if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y < pos.box_dict["box57"].y:
-        check_white_knight_canCut(which_knight_clicked, 8-2)
+        check_white_knight_canCut(which_knight_clicked, 8 - 2)
     if which_knight_clicked.x < pos.box_dict["box7"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
-        check_white_knight_canCut(which_knight_clicked, -8+2)
+        check_white_knight_canCut(which_knight_clicked, -8 + 2)
     if which_knight_clicked.x > pos.box_dict["box2"].x and which_knight_clicked.y > pos.box_dict["box1"].y:
-        check_white_knight_canCut(which_knight_clicked, -8-2)
+        check_white_knight_canCut(which_knight_clicked, -8 - 2)
 
 
 # move knight
@@ -3379,21 +3379,21 @@ def white_knight_remove_pieces(who_removes, num):
 # check for restrictions on removing
 def white_knight_remove_pieces_restrictions(who_removes):
     if who_removes.x > pos.box_dict["box1"].x and who_removes.y < pos.box_dict["box49"].y:
-        white_knight_remove_pieces(who_removes, 16-1)
+        white_knight_remove_pieces(who_removes, 16 - 1)
     if who_removes.x < pos.box_dict["box8"].x and who_removes.y < pos.box_dict["box49"].y:
-        white_knight_remove_pieces(who_removes, 16+1)
+        white_knight_remove_pieces(who_removes, 16 + 1)
     if who_removes.x < pos.box_dict["box8"].x and who_removes.y > pos.box_dict["box9"].y:
-        white_knight_remove_pieces(who_removes, -16+1)
+        white_knight_remove_pieces(who_removes, -16 + 1)
     if who_removes.x > pos.box_dict["box1"].x and who_removes.y > pos.box_dict["box9"].y:
-        white_knight_remove_pieces(who_removes, -16-1)
+        white_knight_remove_pieces(who_removes, -16 - 1)
     if who_removes.x < pos.box_dict["box7"].x and who_removes.y < pos.box_dict["box57"].y:
-        white_knight_remove_pieces(who_removes, 8+2)
+        white_knight_remove_pieces(who_removes, 8 + 2)
     if who_removes.x > pos.box_dict["box2"].x and who_removes.y < pos.box_dict["box57"].y:
-        white_knight_remove_pieces(who_removes, 8-2)
+        white_knight_remove_pieces(who_removes, 8 - 2)
     if who_removes.x < pos.box_dict["box7"].x and who_removes.y > pos.box_dict["box1"].y:
-        white_knight_remove_pieces(who_removes, -8+2)
+        white_knight_remove_pieces(who_removes, -8 + 2)
     if who_removes.x > pos.box_dict["box2"].x and who_removes.y > pos.box_dict["box1"].y:
-        white_knight_remove_pieces(who_removes, -8-2)
+        white_knight_remove_pieces(who_removes, -8 - 2)
 
 
 def knightWMovements():
@@ -3419,11 +3419,1614 @@ def knightWMovements():
         moveWhiteKnight_restrictions(pos.kw2)
 
 
+# check rook can move
+def check_rook_canMove(which_rook_clicked, num):
+    if not pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pw1) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pw2) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pw3) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pw4) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pw5) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pw6) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pw7) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pw8) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.Kw) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.Qw) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.rw1) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.rw2) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.kw1) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.kw2) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.bw1) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.bw2) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pb1) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pb2) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pb3) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pb4) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pb5) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pb6) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pb7) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.pb8) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.Kb) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.Qb) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.kb1) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.kb2) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.rb1) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.rb2) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.bb1) and not \
+            pos.boxLst[pos.boxLst.index(which_rook_clicked) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, blue, pos.boxLst[pos.boxLst.index(which_rook_clicked) + num], border_radius=100)
+
+        if which_rook_clicked == pos.rb1:
+            if num == 8:
+                pos.rookBlack1Clicked_plus8 = 1
+            if num == 16:
+                pos.rookBlack1Clicked_plus16 = 1
+            if num == 24:
+                pos.rookBlack1Clicked_plus24 = 1
+            if num == 32:
+                pos.rookBlack1Clicked_plus32 = 1
+            if num == 40:
+                pos.rookBlack1Clicked_plus40 = 1
+            if num == 48:
+                pos.rookBlack1Clicked_plus48 = 1
+            if num == 1:
+                pos.rookBlack1Clicked_plus1 = 1
+            if num == 2:
+                pos.rookBlack1Clicked_plus2 = 1
+            if num == 3:
+                pos.rookBlack1Clicked_plus3 = 1
+            if num == 4:
+                pos.rookBlack1Clicked_plus4 = 1
+            if num == 5:
+                pos.rookBlack1Clicked_plus5 = 1
+            if num == 6:
+                pos.rookBlack1Clicked_plus6 = 1
+            if num == -8:
+                pos.rookBlack1Clicked_minus8 = 1
+            if num == -16:
+                pos.rookBlack1Clicked_minus16 = 1
+            if num == -24:
+                pos.rookBlack1Clicked_minus24 = 1
+            if num == -32:
+                pos.rookBlack1Clicked_minus32 = 1
+            if num == -40:
+                pos.rookBlack1Clicked_minus40 = 1
+            if num == -48:
+                pos.rookBlack1Clicked_minus48 = 1
+            if num == -1:
+                pos.rookBlack1Clicked_minus1 = 1
+            if num == -2:
+                pos.rookBlack1Clicked_minus2 = 1
+            if num == -3:
+                pos.rookBlack1Clicked_minus3 = 1
+            if num == -4:
+                pos.rookBlack1Clicked_minus4 = 1
+            if num == -5:
+                pos.rookBlack1Clicked_minus5 = 1
+            if num == -6:
+                pos.rookBlack1Clicked_minus6 = 1
+
+        elif which_rook_clicked == pos.rb2:
+            if num == 8:
+                pos.rookBlack2Clicked_plus8 = 1
+            if num == 16:
+                pos.rookBlack2Clicked_plus16 = 1
+            if num == 24:
+                pos.rookBlack2Clicked_plus24 = 1
+            if num == 32:
+                pos.rookBlack2Clicked_plus32 = 1
+            if num == 40:
+                pos.rookBlack2Clicked_plus40 = 1
+            if num == 48:
+                pos.rookBlack2Clicked_plus48 = 1
+            if num == 1:
+                pos.rookBlack2Clicked_plus1 = 1
+            if num == 2:
+                pos.rookBlack2Clicked_plus2 = 1
+            if num == 3:
+                pos.rookBlack2Clicked_plus3 = 1
+            if num == 4:
+                pos.rookBlack2Clicked_plus4 = 1
+            if num == 5:
+                pos.rookBlack2Clicked_plus5 = 1
+            if num == 6:
+                pos.rookBlack2Clicked_plus6 = 1
+            if num == -8:
+                pos.rookBlack2Clicked_minus8 = 1
+            if num == -16:
+                pos.rookBlack2Clicked_minus16 = 1
+            if num == -24:
+                pos.rookBlack2Clicked_minus24 = 1
+            if num == -32:
+                pos.rookBlack2Clicked_minus32 = 1
+            if num == -40:
+                pos.rookBlack2Clicked_minus40 = 1
+            if num == -48:
+                pos.rookBlack2Clicked_minus48 = 1
+            if num == -1:
+                pos.rookBlack2Clicked_minus1 = 1
+            if num == -2:
+                pos.rookBlack2Clicked_minus2 = 1
+            if num == -3:
+                pos.rookBlack2Clicked_minus3 = 1
+            if num == -4:
+                pos.rookBlack2Clicked_minus4 = 1
+            if num == -5:
+                pos.rookBlack2Clicked_minus5 = 1
+            if num == -6:
+                pos.rookBlack2Clicked_minus6 = 1
+
+        if which_rook_clicked == pos.rw1:
+            if num == 8:
+                pos.rookWhite2Clicked_plus8 = 1
+            if num == 16:
+                pos.rookWhite2Clicked_plus16 = 1
+            if num == 24:
+                pos.rookWhite2Clicked_plus24 = 1
+            if num == 32:
+                pos.rookWhite2Clicked_plus32 = 1
+            if num == 40:
+                pos.rookWhite2Clicked_plus40 = 1
+            if num == 48:
+                pos.rookWhite2Clicked_plus48 = 1
+            if num == 1:
+                pos.rookWhite2Clicked_plus1 = 1
+            if num == 2:
+                pos.rookWhite2Clicked_plus2 = 1
+            if num == 3:
+                pos.rookWhite2Clicked_plus3 = 1
+            if num == 4:
+                pos.rookWhite2Clicked_plus4 = 1
+            if num == 5:
+                pos.rookWhite2Clicked_plus5 = 1
+            if num == 6:
+                pos.rookWhite2Clicked_plus6 = 1
+            if num == -8:
+                pos.rookWhite2Clicked_minus8 = 1
+            if num == -16:
+                pos.rookWhite2Clicked_minus16 = 1
+            if num == -24:
+                pos.rookWhite2Clicked_minus24 = 1
+            if num == -32:
+                pos.rookWhite2Clicked_minus32 = 1
+            if num == -40:
+                pos.rookWhite2Clicked_minus40 = 1
+            if num == -48:
+                pos.rookWhite2Clicked_minus48 = 1
+            if num == -1:
+                pos.rookWhite2Clicked_minus1 = 1
+            if num == -2:
+                pos.rookWhite2Clicked_minus2 = 1
+            if num == -3:
+                pos.rookWhite2Clicked_minus3 = 1
+            if num == -4:
+                pos.rookWhite2Clicked_minus4 = 1
+            if num == -5:
+                pos.rookWhite2Clicked_minus5 = 1
+            if num == -6:
+                pos.rookWhite2Clicked_minus6 = 1
+
+        elif which_rook_clicked == pos.rw2:
+            if num == 8:
+                pos.rookWhite2Clicked_plus8 = 1
+            if num == 16:
+                pos.rookWhite2Clicked_plus16 = 1
+            if num == 24:
+                pos.rookWhite2Clicked_plus24 = 1
+            if num == 32:
+                pos.rookWhite2Clicked_plus32 = 1
+            if num == 40:
+                pos.rookWhite2Clicked_plus40 = 1
+            if num == 48:
+                pos.rookWhite2Clicked_plus48 = 1
+            if num == 1:
+                pos.rookWhite2Clicked_plus1 = 1
+            if num == 2:
+                pos.rookWhite2Clicked_plus2 = 1
+            if num == 3:
+                pos.rookWhite2Clicked_plus3 = 1
+            if num == 4:
+                pos.rookWhite2Clicked_plus4 = 1
+            if num == 5:
+                pos.rookWhite2Clicked_plus5 = 1
+            if num == 6:
+                pos.rookWhite2Clicked_plus6 = 1
+            if num == -8:
+                pos.rookWhite2Clicked_minus8 = 1
+            if num == -16:
+                pos.rookWhite2Clicked_minus16 = 1
+            if num == -24:
+                pos.rookWhite2Clicked_minus24 = 1
+            if num == -32:
+                pos.rookWhite2Clicked_minus32 = 1
+            if num == -40:
+                pos.rookWhite2Clicked_minus40 = 1
+            if num == -48:
+                pos.rookWhite2Clicked_minus48 = 1
+            if num == -1:
+                pos.rookWhite2Clicked_minus1 = 1
+            if num == -2:
+                pos.rookWhite2Clicked_minus2 = 1
+            if num == -3:
+                pos.rookWhite2Clicked_minus3 = 1
+            if num == -4:
+                pos.rookWhite2Clicked_minus4 = 1
+            if num == -5:
+                pos.rookWhite2Clicked_minus5 = 1
+            if num == -6:
+                pos.rookWhite2Clicked_minus6 = 1
+
+
+def rook_conditions(which_rook_clicked):
+    if which_rook_clicked == pos.rb1:
+        pos.rookBlack1Clicked = 1
+        pos.rookBlack2Clicked = 0
+        pos.pawnBlack1Clicked = 0
+        pos.pawnBlack2Clicked = 0
+        pos.pawnBlack3Clicked = 0
+        pos.pawnBlack4Clicked = 0
+        pos.pawnBlack5Clicked = 0
+        pos.pawnBlack6Clicked = 0
+        pos.pawnBlack7Clicked = 0
+        pos.pawnBlack8Clicked = 0
+        pos.KingBlackClicked = 0
+        pos.QueenBlackClicked = 0
+        pos.knightBlack1Clicked = 0
+        pos.knightBlack2Clicked = 0
+        pos.bishopBlack1Clicked = 0
+        pos.bishopBlack2Clicked = 0
+    elif which_rook_clicked == pos.rb2:
+        pos.rookBlack2Clicked = 1
+        pos.rookBlack1Clicked = 0
+        pos.pawnBlack1Clicked = 0
+        pos.pawnBlack2Clicked = 0
+        pos.pawnBlack3Clicked = 0
+        pos.pawnBlack4Clicked = 0
+        pos.pawnBlack5Clicked = 0
+        pos.pawnBlack6Clicked = 0
+        pos.pawnBlack7Clicked = 0
+        pos.pawnBlack8Clicked = 0
+        pos.KingBlackClicked = 0
+        pos.QueenBlackClicked = 0
+        pos.knightBlack1Clicked = 0
+        pos.knightBlack2Clicked = 0
+        pos.bishopBlack1Clicked = 0
+        pos.bishopBlack2Clicked = 0
+    if which_rook_clicked == pos.rw1:
+        pos.rookWhite1Clicked = 1
+        pos.rookWhite2Clicked = 0
+        pos.pawnWhite1Clicked = 0
+        pos.pawnWhite2Clicked = 0
+        pos.pawnWhite3Clicked = 0
+        pos.pawnWhite4Clicked = 0
+        pos.pawnWhite5Clicked = 0
+        pos.pawnWhite6Clicked = 0
+        pos.pawnWhite7Clicked = 0
+        pos.pawnWhite8Clicked = 0
+        pos.KingWhiteClicked = 0
+        pos.QueenWhiteClicked = 0
+        pos.knightWhite1Clicked = 0
+        pos.knightWhite2Clicked = 0
+        pos.bishopWhite1Clicked = 0
+        pos.bishopWhite2Clicked = 0
+    elif which_rook_clicked == pos.rw2:
+        pos.rookWhite2Clicked = 1
+        pos.rookWhite1Clicked = 0
+        pos.pawnWhite1Clicked = 0
+        pos.pawnWhite2Clicked = 0
+        pos.pawnWhite3Clicked = 0
+        pos.pawnWhite4Clicked = 0
+        pos.pawnWhite5Clicked = 0
+        pos.pawnWhite6Clicked = 0
+        pos.pawnWhite7Clicked = 0
+        pos.pawnWhite8Clicked = 0
+        pos.KingWhiteClicked = 0
+        pos.QueenWhiteClicked = 0
+        pos.knightWhite1Clicked = 0
+        pos.knightWhite2Clicked = 0
+        pos.bishopWhite1Clicked = 0
+        pos.bishopWhite2Clicked = 0
+
+
+def check_rook_canMove_restrictions(which_rook_clicked):
+    # along y-axis
+    if which_rook_clicked.y < pos.box_dict["box57"].y:
+        check_rook_canMove(which_rook_clicked, 8)
+        rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box49"].y:
+        if pos.rookBlack1Clicked_plus8 == 1 or \
+                pos.rookBlack2Clicked_plus8 == 1:
+            check_rook_canMove(which_rook_clicked, 16)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box41"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1):
+            check_rook_canMove(which_rook_clicked, 24)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box33"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1):
+            check_rook_canMove(which_rook_clicked, 32)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box25"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1):
+            check_rook_canMove(which_rook_clicked, 40)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box17"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1 and pos.rookBlack1Clicked_plus40 == 1) \
+                or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1 and
+                 pos.rookBlack2Clicked_plus40 == 1):
+            check_rook_canMove(which_rook_clicked, 48)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box9"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1 and pos.rookBlack1Clicked_plus40 == 1
+            and pos.rookBlack1Clicked_plus48 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1 and
+                 pos.rookBlack2Clicked_plus40 == 1 and pos.rookBlack2Clicked_plus48 == 1):
+            check_rook_canMove(which_rook_clicked, 56)
+            rook_conditions(which_rook_clicked)
+
+    if which_rook_clicked.y > pos.box_dict["box1"].y:
+        check_rook_canMove(which_rook_clicked, -8)
+        rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box9"].y:
+        if pos.rookBlack1Clicked_minus8 == 1 or pos.rookBlack2Clicked_minus8 == 1:
+            check_rook_canMove(which_rook_clicked, -16)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box17"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1) or (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1):
+            check_rook_canMove(which_rook_clicked, -24)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box25"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1) or (
+                pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1):
+            check_rook_canMove(which_rook_clicked, -32)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box33"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1):
+            check_rook_canMove(which_rook_clicked, -40)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box41"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1 and
+            pos.rookBlack1Clicked_minus40 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1 and
+                 pos.rookBlack2Clicked_minus40 == 1):
+            check_rook_canMove(which_rook_clicked, -48)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box49"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1 and
+            pos.rookBlack1Clicked_minus40 and pos.rookBlack1Clicked_minus48 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1 and
+                 pos.rookBlack2Clicked_minus40 and pos.rookBlack2Clicked_minus48 == 1):
+            check_rook_canMove(which_rook_clicked, -56)
+            rook_conditions(which_rook_clicked)
+
+    # along x-axis
+    if which_rook_clicked.x < pos.box_dict["box8"].x:
+        check_rook_canMove(which_rook_clicked, 1)
+        rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box7"].x:
+        if pos.rookBlack1Clicked_plus1 == 1 or pos.rookBlack2Clicked_plus1 == 1:
+            check_rook_canMove(which_rook_clicked, 2)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box6"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1):
+            check_rook_canMove(which_rook_clicked, 3)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box5"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1):
+            check_rook_canMove(which_rook_clicked, 4)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box4"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1):
+            check_rook_canMove(which_rook_clicked, 5)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box3"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1 and
+            pos.rookBlack1Clicked_plus5 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1 and pos.rookBlack2Clicked_plus5 == 1):
+            check_rook_canMove(which_rook_clicked, 6)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box2"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1 and
+            pos.rookBlack1Clicked_plus5 == 1 and pos.rookBlack1Clicked_plus6 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1 and pos.rookBlack2Clicked_plus5 == 1
+                 and pos.rookBlack2Clicked_plus6 == 1):
+            check_rook_canMove(which_rook_clicked, 7)
+            rook_conditions(which_rook_clicked)
+
+    if which_rook_clicked.x > pos.box_dict["box1"].x:
+        check_rook_canMove(which_rook_clicked, -1)
+        rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box2"].x:
+        if pos.rookBlack1Clicked_minus1 == 1 or pos.rookBlack2Clicked_minus1 == 1:
+            check_rook_canMove(which_rook_clicked, -2)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box3"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1):
+            check_rook_canMove(which_rook_clicked, -3)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box4"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1):
+            check_rook_canMove(which_rook_clicked, -4)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box5"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1):
+            check_rook_canMove(which_rook_clicked, -5)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box6"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and
+            pos.rookBlack1Clicked_minus5 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
+                 == 1):
+            check_rook_canMove(which_rook_clicked, -6)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box7"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and
+            pos.rookBlack1Clicked_minus5 == 1 and pos.rookBlack1Clicked_minus6 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and
+                 pos.rookBlack2Clicked_minus5 == 1 and pos.rookBlack2Clicked_minus6 == 1):
+            check_rook_canMove(which_rook_clicked, -7)
+            rook_conditions(which_rook_clicked)
+
+
+# check white pieces can cut or not
+def check_rook_canCut(who_cuts, num):
+    if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw3) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw4) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw5) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw6) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw7) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw8) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Kw) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Qw) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rw1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rw2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kw1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kw2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bw1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bw2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(who_cuts) + num], border_radius=100)
+        if who_cuts == pos.rb1:
+            pos.rookBlack1Clicked = 1
+            pos.rookBlack1Clicked_cut = 1
+            pos.rookBlack2Clicked = 0
+        elif who_cuts == pos.rb2:
+            pos.rookBlack2Clicked = 1
+            pos.rookBlack2Clicked_cut = 1
+            pos.rookBlack1Clicked = 0
+        pos.pawnBlack1Clicked = 0
+        pos.pawnBlack2Clicked = 0
+        pos.pawnBlack3Clicked = 0
+        pos.pawnBlack4Clicked = 0
+        pos.pawnBlack5Clicked = 0
+        pos.pawnBlack6Clicked = 0
+        pos.pawnBlack7Clicked = 0
+        pos.pawnBlack8Clicked = 0
+        pos.KingBlackClicked = 0
+        pos.knightBlack1Clicked = 0
+        pos.knightBlack2Clicked = 0
+        pos.bishopBlack1Clicked = 0
+        pos.bishopBlack2Clicked = 0
+        pos.QueenBlackClicked = 0
+
+
+# restrictions on cutting
+def check_rook_canCut_restrictions(who_cuts):
+    if who_cuts.y < pos.box_dict["box57"].y:
+        check_rook_canCut(who_cuts, 8)
+    if who_cuts.y < pos.box_dict["box49"].y:
+        if pos.rookBlack1Clicked_plus8 == 1 or \
+                pos.rookBlack2Clicked_plus8 == 1:
+            check_rook_canCut(who_cuts, 16)
+    if who_cuts.y < pos.box_dict["box41"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1):
+            check_rook_canCut(who_cuts, 24)
+    if who_cuts.y < pos.box_dict["box33"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1) or \
+               (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1):
+            check_rook_canCut(who_cuts, 32)
+    if who_cuts.y < pos.box_dict["box25"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1):
+            check_rook_canCut(who_cuts, 40)
+    if who_cuts.y < pos.box_dict["box17"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1 and
+                pos.rookBlack1Clicked_plus40 == 1) \
+                or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1 and pos.rookBlack2Clicked_plus40
+                 == 1):
+            check_rook_canCut(who_cuts, 48)
+    if who_cuts.y < pos.box_dict["box9"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1 and
+                pos.rookBlack1Clicked_plus40 == 1 and pos.rookBlack1Clicked_plus48 == 1) \
+                or\
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1 and pos.rookBlack2Clicked_plus40
+                 == 1 and pos.rookBlack2Clicked_plus48 == 1):
+            check_rook_canCut(who_cuts, 56)
+
+    if who_cuts.y > pos.box_dict["box1"].y:
+        check_rook_canCut(who_cuts, -8)
+    if who_cuts.y > pos.box_dict["box9"].y:
+        if pos.rookBlack1Clicked_minus8 == 1 or \
+                pos.rookBlack2Clicked_minus8 == 1:
+            check_rook_canCut(who_cuts, -16)
+    if who_cuts.y > pos.box_dict["box17"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1):
+            check_rook_canCut(who_cuts, -24)
+    if who_cuts.y > pos.box_dict["box25"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1):
+            check_rook_canCut(who_cuts, -32)
+    if who_cuts.y > pos.box_dict["box33"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1):
+            check_rook_canCut(who_cuts, -40)
+    if who_cuts.y > pos.box_dict["box41"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1 and
+                pos.rookBlack1Clicked_minus40 == 1) \
+                or\
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1 and
+                 pos.rookBlack2Clicked_minus40 == 1):
+            check_rook_canCut(who_cuts, -48)
+    if who_cuts.y > pos.box_dict["box49"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1 and
+                pos.rookBlack1Clicked_minus40 == 1 and pos.rookBlack1Clicked_minus48 == 1) \
+                or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1 and
+                 pos.rookBlack2Clicked_minus40 == 1 and pos.rookBlack2Clicked_minus48 == 1):
+            check_rook_canCut(who_cuts, -56)
+
+    if who_cuts.x < pos.box_dict["box8"].x:
+        check_rook_canCut(who_cuts, 1)
+    if who_cuts.x < pos.box_dict["box7"].x:
+        if pos.rookBlack1Clicked_plus1 == 1 or \
+                pos.rookBlack2Clicked_plus1 == 1:
+            check_rook_canCut(who_cuts, 2)
+    if who_cuts.x < pos.box_dict["box6"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1):
+            check_rook_canCut(who_cuts, 3)
+    if who_cuts.x < pos.box_dict["box5"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1):
+            check_rook_canCut(who_cuts, 4)
+    if who_cuts.x < pos.box_dict["box4"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1):
+            check_rook_canCut(who_cuts, 5)
+    if who_cuts.x < pos.box_dict["box3"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1 and
+                pos.rookBlack1Clicked_plus5 == 1) \
+                or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1 and pos.rookBlack2Clicked_plus5 == 1):
+            check_rook_canCut(who_cuts, 6)
+    if who_cuts.x < pos.box_dict["box2"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1 and
+                pos.rookBlack1Clicked_plus5 == 1 and pos.rookBlack1Clicked_plus6 == 1) \
+                or\
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1 and pos.rookBlack2Clicked_plus5 == 1
+                 and pos.rookBlack2Clicked_plus6 == 1):
+            check_rook_canCut(who_cuts, 7)
+
+    if who_cuts.x > pos.box_dict["box1"].x:
+        check_rook_canCut(who_cuts, -1)
+    if who_cuts.x > pos.box_dict["box2"].x:
+        if pos.rookBlack1Clicked_minus1 == 1 or \
+                pos.rookBlack2Clicked_minus1 == 1:
+            check_rook_canCut(who_cuts, -2)
+    if who_cuts.x > pos.box_dict["box3"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1):
+            check_rook_canCut(who_cuts, -3)
+    if who_cuts.x > pos.box_dict["box4"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1):
+            check_rook_canCut(who_cuts, -4)
+    if who_cuts.x > pos.box_dict["box5"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1):
+            check_rook_canCut(who_cuts, -5)
+    if who_cuts.x > pos.box_dict["box6"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and
+                pos.rookBlack1Clicked_minus5 == 1) \
+                or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
+                 == 1):
+            check_rook_canCut(who_cuts, -6)
+    if who_cuts.x > pos.box_dict["box7"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and
+                pos.rookBlack1Clicked_minus5 == 1 and pos.rookBlack1Clicked_minus6 == 1) \
+                or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
+                 == 1 and pos.rookBlack2Clicked_minus6 == 1):
+            check_rook_canCut(who_cuts, -7)
+
+
+# move the rook
+def move_rook(who_moves, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(who_moves) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if who_moves == pos.rb1:
+            pos.rb1 = pos.boxLst[pos.boxLst.index(who_moves) + num]
+            pos.rookBlack1Clicked = 0
+            pos.turn = "white"
+        elif who_moves == pos.rb2:
+            pos.rb2 = pos.boxLst[pos.boxLst.index(who_moves) + num]
+            pos.rookBlack2Clicked = 0
+            pos.turn = "white"
+        if who_moves == pos.rw1:
+            pos.rw1 = pos.boxLst[pos.boxLst.index(who_moves) + num]
+            pos.rookWhite1Clicked = 0
+            pos.turn = "black"
+        elif who_moves == pos.rw2:
+            pos.rw2 = pos.boxLst[pos.boxLst.index(who_moves) + num]
+            pos.rookWhite2Clicked = 0
+            pos.turn = "black"
+
+
+# restrictions on movements
+def move_rook_restrictions(who_moves):
+    # along y-axis(+)
+    if who_moves.y < pos.box_dict["box57"].y:
+        move_rook(who_moves, 8)
+    if who_moves.y < pos.box_dict["box49"].y:
+        if pos.rookBlack1Clicked_plus8 == 1 or \
+                pos.rookBlack2Clicked_plus8 == 1:
+            move_rook(who_moves, 16)
+    if who_moves.y < pos.box_dict["box41"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1):
+            move_rook(who_moves, 24)
+    if who_moves.y < pos.box_dict["box33"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1):
+            move_rook(who_moves, 32)
+    if who_moves.y < pos.box_dict["box25"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1) or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1):
+            move_rook(who_moves, 40)
+    if who_moves.y < pos.box_dict["box17"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1 and pos.rookBlack1Clicked_plus40 == 1) \
+                or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1 and pos.rookBlack2Clicked_plus40 == 1):
+            move_rook(who_moves, 48)
+    if who_moves.y < pos.box_dict["box9"].y:
+        if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1 and pos.rookBlack1Clicked_plus40 == 1
+            and pos.rookBlack1Clicked_plus48 == 1) \
+                or \
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1 and pos.rookBlack2Clicked_plus40 == 1 and pos.rookBlack2Clicked_plus48
+                 == 1):
+            move_rook(who_moves, 56)
+
+    # along y-axis(-)
+    if who_moves.y > pos.box_dict["box1"].y:
+        move_rook(who_moves, -8)
+    if who_moves.y > pos.box_dict["box9"].y:
+        if pos.rookBlack1Clicked_minus8 == 1 or \
+                pos.rookBlack2Clicked_minus8 == 1:
+            move_rook(who_moves, -16)
+    if who_moves.y > pos.box_dict["box17"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1):
+            move_rook(who_moves, -24)
+    if who_moves.y > pos.box_dict["box25"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1):
+            move_rook(who_moves, -32)
+    if who_moves.y > pos.box_dict["box33"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1) or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1):
+            move_rook(who_moves, -40)
+    if who_moves.y > pos.box_dict["box41"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1 and
+            pos.rookBlack1Clicked_minus40 == 1) \
+                or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1 and pos.rookBlack2Clicked_minus40 == 1):
+            move_rook(who_moves, -48)
+    if who_moves.y > pos.box_dict["box49"].y:
+        if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1 and pos.rookBlack1Clicked_minus40
+            == 1 and pos.rookBlack1Clicked_minus48 == 1) \
+                or \
+                (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1 and pos.rookBlack2Clicked_minus40 == 1 and
+                 pos.rookBlack2Clicked_minus48 == 1):
+            move_rook(who_moves, -56)
+
+    # along x-axis(+)
+    if who_moves.x < pos.box_dict["box8"].x:
+        move_rook(who_moves, 1)
+    if who_moves.x < pos.box_dict["box7"].x:
+        if pos.rookBlack1Clicked_plus1 == 1 or \
+                pos.rookBlack2Clicked_plus1 == 1:
+            move_rook(who_moves, 2)
+    if who_moves.x < pos.box_dict["box6"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1):
+            move_rook(who_moves, 3)
+    if who_moves.x < pos.box_dict["box5"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1):
+            move_rook(who_moves, 4)
+    if who_moves.x < pos.box_dict["box4"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1):
+            move_rook(who_moves, 5)
+    if who_moves.x < pos.box_dict["box3"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1 and pos.rookBlack1Clicked_plus5 == 1) or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1 and pos.rookBlack2Clicked_plus5 == 1):
+            move_rook(who_moves, 6)
+    if who_moves.x < pos.box_dict["box2"].x:
+        if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1 and pos.rookBlack1Clicked_plus5 == 1 and
+            pos.rookBlack1Clicked_plus6 == 1) \
+                or \
+                (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1 and pos.rookBlack2Clicked_plus5 == 1
+                 and pos.rookBlack2Clicked_plus6 == 1):
+            move_rook(who_moves, 7)
+
+    # along x-axis(-)
+    if who_moves.x > pos.box_dict["box1"].x:
+        move_rook(who_moves, -1)
+    if who_moves.x > pos.box_dict["box2"].x:
+        if pos.rookBlack1Clicked_minus1 == 1 or \
+                pos.rookBlack2Clicked_minus1 == 1:
+            move_rook(who_moves, -2)
+    if who_moves.x > pos.box_dict["box3"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1):
+            move_rook(who_moves, -3)
+    if who_moves.x > pos.box_dict["box4"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1):
+            move_rook(who_moves, -4)
+    if who_moves.x > pos.box_dict["box5"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1) or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1):
+            move_rook(who_moves, -5)
+    if who_moves.x > pos.box_dict["box6"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and pos.rookBlack1Clicked_minus5 ==
+            1) or \
+              (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
+               == 1):
+            move_rook(who_moves, -6)
+    if who_moves.x > pos.box_dict["box7"].x:
+        if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and pos.rookBlack1Clicked_minus5 == 1
+            and pos.rookBlack1Clicked_minus6 == 1) \
+                or \
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
+                 == 1 and pos.rookBlack2Clicked_minus6 == 1):
+            move_rook(who_moves, -7)
+
+
+# remove white pieces
+def rook_remove(who_removes, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(who_removes) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw1):
+            pos.pw1 = pos.white_deadPieceRect_dict["whiteCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw2):
+            pos.pw2 = pos.white_deadPieceRect_dict["whiteCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw3):
+            pos.pw3 = pos.white_deadPieceRect_dict["whiteCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw4):
+            pos.pw4 = pos.white_deadPieceRect_dict["whiteCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw5):
+            pos.pw5 = pos.white_deadPieceRect_dict["whiteCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw6):
+            pos.pw6 = pos.white_deadPieceRect_dict["whiteCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw7):
+            pos.pw7 = pos.white_deadPieceRect_dict["whiteCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw8):
+            pos.pw8 = pos.white_deadPieceRect_dict["whiteCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rw1):
+            pos.rw1 = pos.white_deadPieceRect_dict["whiteCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rw2):
+            pos.rw2 = pos.white_deadPieceRect_dict["whiteCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kw1):
+            pos.kw1 = pos.white_deadPieceRect_dict["whiteCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kw2):
+            pos.kw2 = pos.white_deadPieceRect_dict["whiteCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bw1):
+            pos.bw1 = pos.white_deadPieceRect_dict["whiteCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bw2):
+            pos.bw2 = pos.white_deadPieceRect_dict["whiteCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Kw):
+            pos.Kw = pos.white_deadPieceRect_dict["whiteCutPiece_15"]
+            pos.KingWhite_isDead = 1
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Qw):
+            pos.Qw = pos.white_deadPieceRect_dict["whiteCutPiece_16"]
+
+        if who_removes == pos.rb1:
+            pos.rb1 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack1Clicked_cut = 0
+        elif who_removes == pos.rb2:
+            pos.rb2 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.rookBlack2Clicked = 0
+            pos.rookBlack2Clicked_cut = 0
+        pos.turn = "white"
+
+
+# remove white pieces restrictions
+def rook_remove_restrictions(who_removes):
+    # along y-axis
+    if who_removes.y < pos.box_dict["box57"].y:
+        rook_remove(who_removes, 8)
+    if who_removes.y < pos.box_dict["box49"].y:
+        rook_remove(who_removes, 16)
+    if who_removes.y < pos.box_dict["box41"].y:
+        rook_remove(who_removes, 24)
+    if who_removes.y < pos.box_dict["box33"].y:
+        rook_remove(who_removes, 32)
+    if who_removes.y < pos.box_dict["box25"].y:
+        rook_remove(who_removes, 40)
+    if who_removes.y < pos.box_dict["box17"].y:
+        rook_remove(who_removes, 48)
+    if who_removes.y < pos.box_dict["box9"].y:
+        rook_remove(who_removes, 56)
+
+    if who_removes.y > pos.box_dict["box1"].y:
+        rook_remove(who_removes, -8)
+    if who_removes.y > pos.box_dict["box9"].y:
+        rook_remove(who_removes, -16)
+    if who_removes.y > pos.box_dict["box17"].y:
+        rook_remove(who_removes, -24)
+    if who_removes.y > pos.box_dict["box25"].y:
+        rook_remove(who_removes, -32)
+    if who_removes.y > pos.box_dict["box33"].y:
+        rook_remove(who_removes, -40)
+    if who_removes.y > pos.box_dict["box41"].y:
+        rook_remove(who_removes, -48)
+    if who_removes.y > pos.box_dict["box49"].y:
+        rook_remove(who_removes, -56)
+
+    # along x-axis
+    if who_removes.x < pos.box_dict["box8"].x:
+        rook_remove(who_removes, 1)
+    if who_removes.x < pos.box_dict["box7"].x:
+        rook_remove(who_removes, 2)
+    if who_removes.x < pos.box_dict["box6"].x:
+        rook_remove(who_removes, 3)
+    if who_removes.x < pos.box_dict["box5"].x:
+        rook_remove(who_removes, 4)
+    if who_removes.x < pos.box_dict["box4"].x:
+        rook_remove(who_removes, 5)
+    if who_removes.x < pos.box_dict["box3"].x:
+        rook_remove(who_removes, 6)
+    if who_removes.x < pos.box_dict["box2"].x:
+        rook_remove(who_removes, 7)
+
+    if who_removes.x > pos.box_dict["box1"].x:
+        rook_remove(who_removes, -1)
+    if who_removes.x > pos.box_dict["box2"].x:
+        rook_remove(who_removes, -2)
+    if who_removes.x > pos.box_dict["box3"].x:
+        rook_remove(who_removes, -3)
+    if who_removes.x > pos.box_dict["box4"].x:
+        rook_remove(who_removes, -4)
+    if who_removes.x > pos.box_dict["box5"].x:
+        rook_remove(who_removes, -5)
+    if who_removes.x > pos.box_dict["box6"].x:
+        rook_remove(who_removes, -6)
+    if who_removes.x > pos.box_dict["box7"].x:
+        rook_remove(who_removes, -7)
+
+
 def rookBMovements():
-    pass
+    mouse_pos = get_pos()
+
+    if pos.turn == "white":
+        pos.rookBlack1Clicked_plus8 = 0
+        pos.rookBlack1Clicked_plus16 = 0
+        pos.rookBlack1Clicked_plus24 = 0
+        pos.rookBlack1Clicked_plus32 = 0
+        pos.rookBlack1Clicked_plus40 = 0
+        pos.rookBlack1Clicked_plus48 = 0
+        pos.rookBlack1Clicked_plus1 = 0
+        pos.rookBlack1Clicked_plus2 = 0
+        pos.rookBlack1Clicked_plus3 = 0
+        pos.rookBlack1Clicked_plus4 = 0
+        pos.rookBlack1Clicked_plus5 = 0
+        pos.rookBlack1Clicked_plus6 = 0
+        pos.rookBlack1Clicked_minus8 = 0
+        pos.rookBlack1Clicked_minus16 = 0
+        pos.rookBlack1Clicked_minus24 = 0
+        pos.rookBlack1Clicked_minus32 = 0
+        pos.rookBlack1Clicked_minus40 = 0
+        pos.rookBlack1Clicked_minus48 = 0
+        pos.rookBlack1Clicked_minus1 = 0
+        pos.rookBlack1Clicked_minus2 = 0
+        pos.rookBlack1Clicked_minus3 = 0
+        pos.rookBlack1Clicked_minus4 = 0
+        pos.rookBlack1Clicked_minus5 = 0
+        pos.rookBlack1Clicked_minus6 = 0
+
+        pos.rookBlack2Clicked_plus8 = 0
+        pos.rookBlack2Clicked_plus16 = 0
+        pos.rookBlack2Clicked_plus24 = 0
+        pos.rookBlack2Clicked_plus32 = 0
+        pos.rookBlack2Clicked_plus40 = 0
+        pos.rookBlack2Clicked_plus48 = 0
+        pos.rookBlack2Clicked_plus1 = 0
+        pos.rookBlack2Clicked_plus2 = 0
+        pos.rookBlack2Clicked_plus3 = 0
+        pos.rookBlack2Clicked_plus4 = 0
+        pos.rookBlack2Clicked_plus5 = 0
+        pos.rookBlack2Clicked_plus6 = 0
+        pos.rookBlack2Clicked_minus8 = 0
+        pos.rookBlack2Clicked_minus16 = 0
+        pos.rookBlack2Clicked_minus24 = 0
+        pos.rookBlack2Clicked_minus32 = 0
+        pos.rookBlack2Clicked_minus40 = 0
+        pos.rookBlack2Clicked_minus48 = 0
+        pos.rookBlack2Clicked_minus1 = 0
+        pos.rookBlack2Clicked_minus2 = 0
+        pos.rookBlack2Clicked_minus3 = 0
+        pos.rookBlack2Clicked_minus4 = 0
+        pos.rookBlack2Clicked_minus5 = 0
+        pos.rookBlack2Clicked_minus6 = 0
+
+    if pos.turn == "black":
+        if pos.rb1.collidepoint(mouse_pos[0], mouse_pos[1]):
+            check_rook_canMove_restrictions(pos.rb1)
+            check_rook_canCut_restrictions(pos.rb1)
+        elif pos.rb2.collidepoint(mouse_pos[0], mouse_pos[1]):
+            check_rook_canMove_restrictions(pos.rb2)
+            check_rook_canCut_restrictions(pos.rb2)
+
+    if pos.rookBlack1Clicked == 1:
+        if pos.rookBlack1Clicked_cut == 1:
+            rook_remove_restrictions(pos.rb1)
+        move_rook_restrictions(pos.rb1)
+    elif pos.rookBlack2Clicked == 1:
+        if pos.rookBlack2Clicked_cut == 1:
+            rook_remove_restrictions(pos.rb2)
+        move_rook_restrictions(pos.rb2)
+
+
+# restrictions on white rook movements
+def check_white_rook_canMove_restrictions(which_rook_clicked):
+    # along y-axis
+    if which_rook_clicked.y < pos.box_dict["box57"].y:
+        check_rook_canMove(which_rook_clicked, 8)
+        rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box49"].y:
+        if pos.rookWhite1Clicked_plus8 == 1 or \
+                pos.rookWhite2Clicked_plus8 == 1:
+            check_rook_canMove(which_rook_clicked, 16)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box41"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1) or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1):
+            check_rook_canMove(which_rook_clicked, 24)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box33"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1) or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1 and pos.rookWhite2Clicked_plus24 == 1):
+            check_rook_canMove(which_rook_clicked, 32)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box25"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1) or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1 and pos.rookWhite2Clicked_plus24 == 1 and pos.rookWhite2Clicked_plus32 == 1):
+            check_rook_canMove(which_rook_clicked, 40)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box17"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1 and pos.rookWhite1Clicked_plus40 == 1) \
+                or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1 and pos.rookWhite2Clicked_plus24 == 1 and pos.rookWhite2Clicked_plus32 == 1 and
+                 pos.rookWhite2Clicked_plus40 == 1):
+            check_rook_canMove(which_rook_clicked, 48)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y < pos.box_dict["box9"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1 and pos.rookWhite1Clicked_plus40 == 1
+            and pos.rookWhite1Clicked_plus48 == 1) or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1 and pos.rookWhite2Clicked_plus24 == 1 and pos.rookWhite2Clicked_plus32 == 1 and
+                 pos.rookWhite2Clicked_plus40 == 1 and pos.rookWhite2Clicked_plus48 == 1):
+            check_rook_canMove(which_rook_clicked, 56)
+            rook_conditions(which_rook_clicked)
+
+    if which_rook_clicked.y > pos.box_dict["box1"].y:
+        check_rook_canMove(which_rook_clicked, -8)
+        rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box9"].y:
+        if pos.rookWhite1Clicked_minus8 == 1 or pos.rookWhite2Clicked_minus8 == 1:
+            check_rook_canMove(which_rook_clicked, -16)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box17"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1) or (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1):
+            check_rook_canMove(which_rook_clicked, -24)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box25"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1) or (
+                pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1):
+            check_rook_canMove(which_rook_clicked, -32)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box33"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1) or \
+                (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32 == 1):
+            check_rook_canMove(which_rook_clicked, -40)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box41"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 and
+            pos.rookWhite1Clicked_minus40 == 1) or \
+                (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32 == 1 and
+                 pos.rookWhite2Clicked_minus40 == 1):
+            check_rook_canMove(which_rook_clicked, -48)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.y > pos.box_dict["box49"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 and
+            pos.rookWhite1Clicked_minus40 and pos.rookWhite1Clicked_minus48 == 1) or \
+                (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32 == 1 and
+                 pos.rookWhite2Clicked_minus40 and pos.rookWhite2Clicked_minus48 == 1):
+            check_rook_canMove(which_rook_clicked, -56)
+            rook_conditions(which_rook_clicked)
+
+    # along x-axis
+    if which_rook_clicked.x < pos.box_dict["box8"].x:
+        check_rook_canMove(which_rook_clicked, 1)
+        rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box7"].x:
+        if pos.rookWhite1Clicked_plus1 == 1 or pos.rookWhite2Clicked_plus1 == 1:
+            check_rook_canMove(which_rook_clicked, 2)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box6"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1):
+            check_rook_canMove(which_rook_clicked, 3)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box5"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1):
+            check_rook_canMove(which_rook_clicked, 4)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box4"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and pos.rookWhite2Clicked_plus4 == 1):
+            check_rook_canMove(which_rook_clicked, 5)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box3"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1 and
+            pos.rookWhite1Clicked_plus5 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and pos.rookWhite2Clicked_plus4 == 1 and pos.rookWhite2Clicked_plus5 == 1):
+            check_rook_canMove(which_rook_clicked, 6)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x < pos.box_dict["box2"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1 and
+            pos.rookWhite1Clicked_plus5 == 1 and pos.rookWhite1Clicked_plus6 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and pos.rookWhite2Clicked_plus4 == 1 and pos.rookWhite2Clicked_plus5 == 1
+                 and pos.rookWhite2Clicked_plus6 == 1):
+            check_rook_canMove(which_rook_clicked, 7)
+            rook_conditions(which_rook_clicked)
+
+    if which_rook_clicked.x > pos.box_dict["box1"].x:
+        check_rook_canMove(which_rook_clicked, -1)
+        rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box2"].x:
+        if pos.rookWhite1Clicked_minus1 == 1 or pos.rookWhite2Clicked_minus1 == 1:
+            check_rook_canMove(which_rook_clicked, -2)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box3"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1) or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1):
+            check_rook_canMove(which_rook_clicked, -3)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box4"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1) or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1):
+            check_rook_canMove(which_rook_clicked, -4)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box5"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1) or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1):
+            check_rook_canMove(which_rook_clicked, -5)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box6"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and
+            pos.rookWhite1Clicked_minus5 == 1) or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1 and pos.rookWhite2Clicked_minus5
+                 == 1):
+            check_rook_canMove(which_rook_clicked, -6)
+            rook_conditions(which_rook_clicked)
+    if which_rook_clicked.x > pos.box_dict["box7"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and
+            pos.rookWhite1Clicked_minus5 == 1 and pos.rookWhite1Clicked_minus6 == 1) or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1 and
+                 pos.rookWhite2Clicked_minus5 == 1 and pos.rookWhite2Clicked_minus6 == 1):
+            check_rook_canMove(which_rook_clicked, -7)
+            rook_conditions(which_rook_clicked)
+
+
+# check white rooks can cut or not
+def check_white_rook_canCut(who_cuts, num):
+    if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb3) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb4) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb5) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb6) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb7) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb8) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Kb) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Qb) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rb1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rb2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kb1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kb2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bb1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(who_cuts) + num], border_radius=100)
+        if who_cuts == pos.rw1:
+            pos.rookWhite1Clicked = 1
+            pos.rookWhite1Clicked_cut = 1
+            pos.rookWhite2Clicked = 0
+        elif who_cuts == pos.rw2:
+            pos.rookWhite2Clicked = 1
+            pos.rookWhite2Clicked_cut = 1
+            pos.rookWhite1Clicked = 0
+        pos.pawnWhite1Clicked = 0
+        pos.pawnWhite2Clicked = 0
+        pos.pawnWhite3Clicked = 0
+        pos.pawnWhite4Clicked = 0
+        pos.pawnWhite5Clicked = 0
+        pos.pawnWhite6Clicked = 0
+        pos.pawnWhite7Clicked = 0
+        pos.pawnWhite8Clicked = 0
+        pos.KingWhiteClicked = 0
+        pos.knightWhite1Clicked = 0
+        pos.knightWhite2Clicked = 0
+        pos.bishopWhite1Clicked = 0
+        pos.bishopWhite2Clicked = 0
+        pos.QueenWhiteClicked = 0
+
+
+# restrictions on checking
+def check_white_rook_canCut_restrictions(who_cuts):
+    if who_cuts.y < pos.box_dict["box57"].y:
+        check_white_rook_canCut(who_cuts, 8)
+    if who_cuts.y < pos.box_dict["box49"].y:
+        if pos.rookWhite1Clicked_plus8 == 1 or pos.rookWhite2Clicked_plus8 == 1:
+            check_white_rook_canCut(who_cuts, 16)
+    if who_cuts.y < pos.box_dict["box41"].y:
+        if pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 or pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1:
+            check_white_rook_canCut(who_cuts, 24)
+    if who_cuts.y < pos.box_dict["box33"].y:
+        if pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 or pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1 and \
+                pos.rookWhite2Clicked_plus24 == 1:
+            check_white_rook_canCut(who_cuts, 32)
+    if who_cuts.y < pos.box_dict["box25"].y:
+        if pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1 or pos.rookWhite2Clicked_plus8 == 1 and \
+                pos.rookWhite2Clicked_plus16 == 1 and pos.rookWhite2Clicked_plus24 == 1 and pos.rookWhite2Clicked_plus32 == 1:
+            check_white_rook_canCut(who_cuts, 40)
+    if who_cuts.y < pos.box_dict["box17"].y:
+        if pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1 and \
+                pos.rookWhite1Clicked_plus40 == 1 or pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1 and pos.rookWhite2Clicked_plus24 == 1 and pos.rookWhite2Clicked_plus32 == 1\
+                and pos.rookWhite2Clicked_plus40 == 1:
+            check_white_rook_canCut(who_cuts, 48)
+    if who_cuts.y < pos.box_dict["box9"].y:
+        if pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1 and \
+                pos.rookWhite1Clicked_plus40 == 1 and pos.rookWhite1Clicked_plus48 == 1 or pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1 and pos.rookWhite2Clicked_plus24 == 1\
+                and pos.rookWhite2Clicked_plus32 == 1 and pos.rookWhite2Clicked_plus40 == 1 and pos.rookWhite2Clicked_plus48 == 1:
+            check_white_rook_canCut(who_cuts, 56)
+
+    if who_cuts.y > pos.box_dict["box1"].y:
+        check_white_rook_canCut(who_cuts, -8)
+    if who_cuts.y > pos.box_dict["box9"].y:
+        if pos.rookWhite1Clicked_minus8 == 1 or pos.rookWhite2Clicked_minus8 == 1:
+            check_white_rook_canCut(who_cuts, -16)
+    if who_cuts.y > pos.box_dict["box17"].y:
+        if pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 or pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1:
+            check_white_rook_canCut(who_cuts, -24)
+    if who_cuts.y > pos.box_dict["box25"].y:
+        if pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 or pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 \
+                and pos.rookWhite2Clicked_minus24 == 1:
+            check_white_rook_canCut(who_cuts, -32)
+    if who_cuts.y > pos.box_dict["box33"].y:
+        if pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 or pos.rookWhite2Clicked_minus8 == 1 \
+                and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32 == 1:
+            check_white_rook_canCut(who_cuts, -40)
+    if who_cuts.y > pos.box_dict["box41"].y:
+        if pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 and \
+                pos.rookWhite1Clicked_minus40 == 1 or pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32\
+                == 1 and pos.rookWhite2Clicked_minus40 == 1:
+            check_white_rook_canCut(who_cuts, -48)
+    if who_cuts.y > pos.box_dict["box49"].y:
+        if pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 and \
+                pos.rookWhite1Clicked_minus40 == 1 and pos.rookWhite1Clicked_minus48 == 1 or pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24\
+                == 1 and pos.rookWhite2Clicked_minus32 == 1 and pos.rookWhite2Clicked_minus40 == 1 and pos.rookWhite2Clicked_minus48 == 1:
+            check_white_rook_canCut(who_cuts, -56)
+
+    if who_cuts.x < pos.box_dict["box8"].x:
+        check_white_rook_canCut(who_cuts, 1)
+    if who_cuts.x < pos.box_dict["box7"].x:
+        if pos.rookWhite1Clicked_plus1 == 1 or pos.rookWhite2Clicked_plus1 == 1:
+            check_white_rook_canCut(who_cuts, 2)
+    if who_cuts.x < pos.box_dict["box6"].x:
+        if pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 or pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1:
+            check_white_rook_canCut(who_cuts, 3)
+    if who_cuts.x < pos.box_dict["box5"].x:
+        if pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 or pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and \
+                pos.rookWhite2Clicked_plus3 == 1:
+            check_white_rook_canCut(who_cuts, 4)
+    if who_cuts.x < pos.box_dict["box4"].x:
+        if pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1 or pos.rookWhite2Clicked_plus1 == 1 and \
+                pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and pos.rookWhite2Clicked_plus4 == 1:
+            check_white_rook_canCut(who_cuts, 5)
+    if who_cuts.x < pos.box_dict["box3"].x:
+        if pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1 and \
+                pos.rookWhite1Clicked_plus5 == 1 or pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and pos.rookWhite2Clicked_plus4 == 1 \
+                and pos.rookWhite2Clicked_plus5 == 1:
+            check_white_rook_canCut(who_cuts, 6)
+    if who_cuts.x < pos.box_dict["box2"].x:
+        if pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1 and \
+                pos.rookWhite1Clicked_plus5 == 1 and pos.rookWhite1Clicked_plus6 == 1 or pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and\
+                pos.rookWhite2Clicked_plus4 == 1 and pos.rookWhite2Clicked_plus5 == 1 and pos.rookWhite2Clicked_plus6 == 1:
+            check_white_rook_canCut(who_cuts, 7)
+
+    if who_cuts.x > pos.box_dict["box1"].x:
+        check_white_rook_canCut(who_cuts, -1)
+    if who_cuts.x > pos.box_dict["box2"].x:
+        if pos.rookWhite1Clicked_minus1 == 1 or pos.rookWhite2Clicked_minus1 == 1:
+            check_white_rook_canCut(who_cuts, -2)
+    if who_cuts.x > pos.box_dict["box3"].x:
+        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 or pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1:
+            check_white_rook_canCut(who_cuts, -3)
+    if who_cuts.x > pos.box_dict["box4"].x:
+        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 or pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and\
+                pos.rookWhite2Clicked_minus3 == 1:
+            check_white_rook_canCut(who_cuts, -4)
+    if who_cuts.x > pos.box_dict["box5"].x:
+        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 or pos.rookWhite2Clicked_minus1 == 1 and\
+                pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1:
+            check_white_rook_canCut(who_cuts, -5)
+    if who_cuts.x > pos.box_dict["box6"].x:
+        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and \
+                pos.rookWhite1Clicked_minus5 == 1 or pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == \
+                1 and pos.rookWhite2Clicked_minus5 == 1:
+            check_white_rook_canCut(who_cuts, -6)
+    if who_cuts.x > pos.box_dict["box7"].x:
+        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and \
+                pos.rookWhite1Clicked_minus5 == 1 and pos.rookWhite1Clicked_minus6 == 1 or pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == \
+                1 and pos.rookWhite2Clicked_minus4 == 1 and pos.rookWhite2Clicked_minus5 == 1 and pos.rookWhite2Clicked_minus6 == 1:
+            check_white_rook_canCut(who_cuts, -7)
+
+
+# movement restrictions
+def move_white_rook_restrictions(who_moves):
+    # along y-axis(+)
+    if who_moves.y < pos.box_dict["box57"].y:
+        move_rook(who_moves, 8)
+    if who_moves.y < pos.box_dict["box49"].y:
+        if pos.rookWhite1Clicked_plus8 == 1 or \
+                pos.rookWhite2Clicked_plus8 == 1:
+            move_rook(who_moves, 16)
+    if who_moves.y < pos.box_dict["box41"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1) or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1):
+            move_rook(who_moves, 24)
+    if who_moves.y < pos.box_dict["box33"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1) or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus16 == 1 and pos.rookWhite2Clicked_plus24 == 1):
+            move_rook(who_moves, 32)
+    if who_moves.y < pos.box_dict["box25"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1) or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus24 == 1 and pos.rookWhite2Clicked_plus32 == 1):
+            move_rook(who_moves, 40)
+    if who_moves.y < pos.box_dict["box17"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1 and pos.rookWhite1Clicked_plus40 == 1) \
+                or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus24 == 1 and pos.rookWhite2Clicked_plus32 == 1 and pos.rookWhite2Clicked_plus40 == 1):
+            move_rook(who_moves, 48)
+    if who_moves.y < pos.box_dict["box9"].y:
+        if (pos.rookWhite1Clicked_plus8 == 1 and pos.rookWhite1Clicked_plus16 == 1 and pos.rookWhite1Clicked_plus24 == 1 and pos.rookWhite1Clicked_plus32 == 1 and pos.rookWhite1Clicked_plus40 == 1
+            and pos.rookWhite1Clicked_plus48 == 1) \
+                or \
+                (pos.rookWhite2Clicked_plus8 == 1 and pos.rookWhite2Clicked_plus24 == 1 and pos.rookWhite2Clicked_plus32 == 1 and pos.rookWhite2Clicked_plus40 == 1 and pos.rookWhite2Clicked_plus48
+                 == 1):
+            move_rook(who_moves, 56)
+
+    # along y-axis(-)
+    if who_moves.y > pos.box_dict["box1"].y:
+        move_rook(who_moves, -8)
+    if who_moves.y > pos.box_dict["box9"].y:
+        if pos.rookWhite1Clicked_minus8 == 1 or \
+                pos.rookWhite2Clicked_minus8 == 1:
+            move_rook(who_moves, -16)
+    if who_moves.y > pos.box_dict["box17"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1) or \
+                (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1):
+            move_rook(who_moves, -24)
+    if who_moves.y > pos.box_dict["box25"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1) or \
+                (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1):
+            move_rook(who_moves, -32)
+    if who_moves.y > pos.box_dict["box33"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1) or \
+                (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32 == 1):
+            move_rook(who_moves, -40)
+    if who_moves.y > pos.box_dict["box41"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 and
+            pos.rookWhite1Clicked_minus40 == 1) \
+                or \
+                (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32 == 1 and pos.rookWhite2Clicked_minus40 == 1):
+            move_rook(who_moves, -48)
+    if who_moves.y > pos.box_dict["box49"].y:
+        if (pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 and pos.rookWhite1Clicked_minus40
+            == 1 and pos.rookWhite1Clicked_minus48 == 1) \
+                or \
+                (pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32 == 1 and pos.rookWhite2Clicked_minus40 == 1 and
+                 pos.rookWhite2Clicked_minus48 == 1):
+            move_rook(who_moves, -56)
+
+    # along x-axis(+)
+    if who_moves.x < pos.box_dict["box8"].x:
+        move_rook(who_moves, 1)
+    if who_moves.x < pos.box_dict["box7"].x:
+        if pos.rookWhite1Clicked_plus1 == 1 or \
+                pos.rookWhite2Clicked_plus1 == 1:
+            move_rook(who_moves, 2)
+    if who_moves.x < pos.box_dict["box6"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1):
+            move_rook(who_moves, 3)
+    if who_moves.x < pos.box_dict["box5"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1):
+            move_rook(who_moves, 4)
+    if who_moves.x < pos.box_dict["box4"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and pos.rookWhite2Clicked_plus4 == 1):
+            move_rook(who_moves, 5)
+    if who_moves.x < pos.box_dict["box3"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1 and pos.rookWhite1Clicked_plus5 == 1) or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and pos.rookWhite2Clicked_plus4 == 1 and pos.rookWhite2Clicked_plus5 == 1):
+            move_rook(who_moves, 6)
+    if who_moves.x < pos.box_dict["box2"].x:
+        if (pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1 and pos.rookWhite1Clicked_plus5 == 1 and
+            pos.rookWhite1Clicked_plus6 == 1) \
+                or \
+                (pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and pos.rookWhite2Clicked_plus4 == 1 and pos.rookWhite2Clicked_plus5 == 1
+                 and pos.rookWhite2Clicked_plus6 == 1):
+            move_rook(who_moves, 7)
+
+    # along x-axis(-)
+    if who_moves.x > pos.box_dict["box1"].x:
+        move_rook(who_moves, -1)
+    if who_moves.x > pos.box_dict["box2"].x:
+        if pos.rookWhite1Clicked_minus1 == 1 or \
+                pos.rookWhite2Clicked_minus1 == 1:
+            move_rook(who_moves, -2)
+    if who_moves.x > pos.box_dict["box3"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1) or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1):
+            move_rook(who_moves, -3)
+    if who_moves.x > pos.box_dict["box4"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1) or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1):
+            move_rook(who_moves, -4)
+    if who_moves.x > pos.box_dict["box5"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1) or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1):
+            move_rook(who_moves, -5)
+    if who_moves.x > pos.box_dict["box6"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and pos.rookWhite1Clicked_minus5 ==
+            1) or \
+              (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1 and pos.rookWhite2Clicked_minus5
+               == 1):
+            move_rook(who_moves, -6)
+    if who_moves.x > pos.box_dict["box7"].x:
+        if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and pos.rookWhite1Clicked_minus5 == 1
+            and pos.rookWhite1Clicked_minus6 == 1) \
+                or \
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1 and pos.rookWhite2Clicked_minus5
+                 == 1 and pos.rookWhite2Clicked_minus6 == 1):
+            move_rook(who_moves, -7)
+
+
+# remove the black pieces
+def white_rook_remove(who_removes, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(who_removes) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb1):
+            pos.pb1 = pos.black_deadPieceRect_dict["blackCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb2):
+            pos.pb2 = pos.black_deadPieceRect_dict["blackCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb3):
+            pos.pb3 = pos.black_deadPieceRect_dict["blackCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb4):
+            pos.pb4 = pos.black_deadPieceRect_dict["blackCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb5):
+            pos.pb5 = pos.black_deadPieceRect_dict["blackCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb6):
+            pos.pb6 = pos.black_deadPieceRect_dict["blackCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb7):
+            pos.pb7 = pos.black_deadPieceRect_dict["blackCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb8):
+            pos.pb8 = pos.black_deadPieceRect_dict["blackCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rb1):
+            pos.rb1 = pos.black_deadPieceRect_dict["blackCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rb2):
+            pos.rb2 = pos.black_deadPieceRect_dict["blackCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kb1):
+            pos.kb1 = pos.black_deadPieceRect_dict["blackCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kb2):
+            pos.kb2 = pos.black_deadPieceRect_dict["blackCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bb1):
+            pos.bb1 = pos.black_deadPieceRect_dict["blackCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bb2):
+            pos.bb2 = pos.black_deadPieceRect_dict["blackCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Kb):
+            pos.Kb = pos.black_deadPieceRect_dict["blackCutPiece_15"]
+            pos.KingBlack_isDead = 1
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Qb):
+            pos.Qb = pos.black_deadPieceRect_dict["blackCutPiece_16"]
+
+        if who_removes == pos.rw1:
+            pos.rw1 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite1Clicked_cut = 0
+        elif who_removes == pos.rw2:
+            pos.rw2 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.rookWhite2Clicked = 0
+            pos.rookWhite2Clicked_cut = 0
+        pos.turn = "black"
+
+
+# removing restrictions
+def white_rook_remove_restrictions(who_removes):
+    # along y-axis
+    if who_removes.y < pos.box_dict["box57"].y:
+        white_rook_remove(who_removes, 8)
+    if who_removes.y < pos.box_dict["box49"].y:
+        white_rook_remove(who_removes, 16)
+    if who_removes.y < pos.box_dict["box41"].y:
+        white_rook_remove(who_removes, 24)
+    if who_removes.y < pos.box_dict["box33"].y:
+        white_rook_remove(who_removes, 32)
+    if who_removes.y < pos.box_dict["box25"].y:
+        white_rook_remove(who_removes, 40)
+    if who_removes.y < pos.box_dict["box17"].y:
+        white_rook_remove(who_removes, 48)
+    if who_removes.y < pos.box_dict["box9"].y:
+        white_rook_remove(who_removes, 56)
+
+    if who_removes.y > pos.box_dict["box1"].y:
+        white_rook_remove(who_removes, -8)
+    if who_removes.y > pos.box_dict["box9"].y:
+        white_rook_remove(who_removes, -16)
+    if who_removes.y > pos.box_dict["box17"].y:
+        white_rook_remove(who_removes, -24)
+    if who_removes.y > pos.box_dict["box25"].y:
+        white_rook_remove(who_removes, -32)
+    if who_removes.y > pos.box_dict["box33"].y:
+        white_rook_remove(who_removes, -40)
+    if who_removes.y > pos.box_dict["box41"].y:
+        white_rook_remove(who_removes, -48)
+    if who_removes.y > pos.box_dict["box49"].y:
+        white_rook_remove(who_removes, -56)
+
+    # along x-axis
+    if who_removes.x < pos.box_dict["box8"].x:
+        white_rook_remove(who_removes, 1)
+    if who_removes.x < pos.box_dict["box7"].x:
+        white_rook_remove(who_removes, 2)
+    if who_removes.x < pos.box_dict["box6"].x:
+        white_rook_remove(who_removes, 3)
+    if who_removes.x < pos.box_dict["box5"].x:
+        white_rook_remove(who_removes, 4)
+    if who_removes.x < pos.box_dict["box4"].x:
+        white_rook_remove(who_removes, 5)
+    if who_removes.x < pos.box_dict["box3"].x:
+        white_rook_remove(who_removes, 6)
+    if who_removes.x < pos.box_dict["box2"].x:
+        white_rook_remove(who_removes, 7)
+
+    if who_removes.x > pos.box_dict["box1"].x:
+        white_rook_remove(who_removes, -1)
+    if who_removes.x > pos.box_dict["box2"].x:
+        white_rook_remove(who_removes, -2)
+    if who_removes.x > pos.box_dict["box3"].x:
+        white_rook_remove(who_removes, -3)
+    if who_removes.x > pos.box_dict["box4"].x:
+        white_rook_remove(who_removes, -4)
+    if who_removes.x > pos.box_dict["box5"].x:
+        white_rook_remove(who_removes, -5)
+    if who_removes.x > pos.box_dict["box6"].x:
+        white_rook_remove(who_removes, -6)
+    if who_removes.x > pos.box_dict["box7"].x:
+        white_rook_remove(who_removes, -7)
 
 
 def rookWMovements():
+    mouse_pos = get_pos()
+
+    if pos.turn == "black":
+        pos.rookWhite1Clicked_plus8 = 0
+        pos.rookWhite1Clicked_plus16 = 0
+        pos.rookWhite1Clicked_plus24 = 0
+        pos.rookWhite1Clicked_plus32 = 0
+        pos.rookWhite1Clicked_plus40 = 0
+        pos.rookWhite1Clicked_plus48 = 0
+        pos.rookWhite1Clicked_plus1 = 0
+        pos.rookWhite1Clicked_plus2 = 0
+        pos.rookWhite1Clicked_plus3 = 0
+        pos.rookWhite1Clicked_plus4 = 0
+        pos.rookWhite1Clicked_plus5 = 0
+        pos.rookWhite1Clicked_plus6 = 0
+        pos.rookWhite1Clicked_minus8 = 0
+        pos.rookWhite1Clicked_minus16 = 0
+        pos.rookWhite1Clicked_minus24 = 0
+        pos.rookWhite1Clicked_minus32 = 0
+        pos.rookWhite1Clicked_minus40 = 0
+        pos.rookWhite1Clicked_minus48 = 0
+        pos.rookWhite1Clicked_minus1 = 0
+        pos.rookWhite1Clicked_minus2 = 0
+        pos.rookWhite1Clicked_minus3 = 0
+        pos.rookWhite1Clicked_minus4 = 0
+        pos.rookWhite1Clicked_minus5 = 0
+        pos.rookWhite1Clicked_minus6 = 0
+
+        pos.rookWhite2Clicked_plus8 = 0
+        pos.rookWhite2Clicked_plus16 = 0
+        pos.rookWhite2Clicked_plus24 = 0
+        pos.rookWhite2Clicked_plus32 = 0
+        pos.rookWhite2Clicked_plus40 = 0
+        pos.rookWhite2Clicked_plus48 = 0
+        pos.rookWhite2Clicked_plus1 = 0
+        pos.rookWhite2Clicked_plus2 = 0
+        pos.rookWhite2Clicked_plus3 = 0
+        pos.rookWhite2Clicked_plus4 = 0
+        pos.rookWhite2Clicked_plus5 = 0
+        pos.rookWhite2Clicked_plus6 = 0
+        pos.rookWhite2Clicked_minus8 = 0
+        pos.rookWhite2Clicked_minus16 = 0
+        pos.rookWhite2Clicked_minus24 = 0
+        pos.rookWhite2Clicked_minus32 = 0
+        pos.rookWhite2Clicked_minus40 = 0
+        pos.rookWhite2Clicked_minus48 = 0
+        pos.rookWhite2Clicked_minus1 = 0
+        pos.rookWhite2Clicked_minus2 = 0
+        pos.rookWhite2Clicked_minus3 = 0
+        pos.rookWhite2Clicked_minus4 = 0
+        pos.rookWhite2Clicked_minus5 = 0
+        pos.rookWhite2Clicked_minus6 = 0
+
+    if pos.turn == "white":
+        if pos.rw1.collidepoint(mouse_pos[0], mouse_pos[1]):
+            check_white_rook_canMove_restrictions(pos.rw1)
+            check_white_rook_canCut_restrictions(pos.rw1)
+        elif pos.rw2.collidepoint(mouse_pos[0], mouse_pos[1]):
+            check_white_rook_canMove_restrictions(pos.rw2)
+            check_white_rook_canCut_restrictions(pos.rw2)
+
+    if pos.rookWhite1Clicked == 1:
+        if pos.rookWhite1Clicked_cut == 1:
+            white_rook_remove_restrictions(pos.rw1)
+        move_white_rook_restrictions(pos.rw1)
+    elif pos.rookWhite2Clicked == 1:
+        if pos.rookWhite2Clicked_cut == 1:
+            white_rook_remove_restrictions(pos.rw2)
+        move_white_rook_restrictions(pos.rw2)
+
+
+def bishopBMovements():
+    pass
+
+
+def bishopWMovements():
     pass
 
 
@@ -3440,6 +5043,8 @@ def drawGameWindow():
     knightWMovements()
     rookBMovements()
     rookWMovements()
+    bishopBMovements()
+    bishopWMovements()
 
 
 game = MainGame()
