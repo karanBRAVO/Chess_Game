@@ -3935,7 +3935,7 @@ def check_rook_canCut_restrictions(who_cuts):
             check_rook_canCut(who_cuts, 24)
     if who_cuts.y < pos.box_dict["box33"].y:
         if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1) or \
-               (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1):
+                (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1):
             check_rook_canCut(who_cuts, 32)
     if who_cuts.y < pos.box_dict["box25"].y:
         if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1) or \
@@ -3943,15 +3943,15 @@ def check_rook_canCut_restrictions(who_cuts):
             check_rook_canCut(who_cuts, 40)
     if who_cuts.y < pos.box_dict["box17"].y:
         if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1 and
-                pos.rookBlack1Clicked_plus40 == 1) \
+            pos.rookBlack1Clicked_plus40 == 1) \
                 or \
                 (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1 and pos.rookBlack2Clicked_plus40
                  == 1):
             check_rook_canCut(who_cuts, 48)
     if who_cuts.y < pos.box_dict["box9"].y:
         if (pos.rookBlack1Clicked_plus8 == 1 and pos.rookBlack1Clicked_plus16 == 1 and pos.rookBlack1Clicked_plus24 == 1 and pos.rookBlack1Clicked_plus32 == 1 and
-                pos.rookBlack1Clicked_plus40 == 1 and pos.rookBlack1Clicked_plus48 == 1) \
-                or\
+            pos.rookBlack1Clicked_plus40 == 1 and pos.rookBlack1Clicked_plus48 == 1) \
+                or \
                 (pos.rookBlack2Clicked_plus8 == 1 and pos.rookBlack2Clicked_plus16 == 1 and pos.rookBlack2Clicked_plus24 == 1 and pos.rookBlack2Clicked_plus32 == 1 and pos.rookBlack2Clicked_plus40
                  == 1 and pos.rookBlack2Clicked_plus48 == 1):
             check_rook_canCut(who_cuts, 56)
@@ -3976,14 +3976,14 @@ def check_rook_canCut_restrictions(who_cuts):
             check_rook_canCut(who_cuts, -40)
     if who_cuts.y > pos.box_dict["box41"].y:
         if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1 and
-                pos.rookBlack1Clicked_minus40 == 1) \
-                or\
+            pos.rookBlack1Clicked_minus40 == 1) \
+                or \
                 (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1 and
                  pos.rookBlack2Clicked_minus40 == 1):
             check_rook_canCut(who_cuts, -48)
     if who_cuts.y > pos.box_dict["box49"].y:
         if (pos.rookBlack1Clicked_minus8 == 1 and pos.rookBlack1Clicked_minus16 == 1 and pos.rookBlack1Clicked_minus24 == 1 and pos.rookBlack1Clicked_minus32 == 1 and
-                pos.rookBlack1Clicked_minus40 == 1 and pos.rookBlack1Clicked_minus48 == 1) \
+            pos.rookBlack1Clicked_minus40 == 1 and pos.rookBlack1Clicked_minus48 == 1) \
                 or \
                 (pos.rookBlack2Clicked_minus8 == 1 and pos.rookBlack2Clicked_minus16 == 1 and pos.rookBlack2Clicked_minus24 == 1 and pos.rookBlack2Clicked_minus32 == 1 and
                  pos.rookBlack2Clicked_minus40 == 1 and pos.rookBlack2Clicked_minus48 == 1):
@@ -4009,14 +4009,14 @@ def check_rook_canCut_restrictions(who_cuts):
             check_rook_canCut(who_cuts, 5)
     if who_cuts.x < pos.box_dict["box3"].x:
         if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1 and
-                pos.rookBlack1Clicked_plus5 == 1) \
+            pos.rookBlack1Clicked_plus5 == 1) \
                 or \
                 (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1 and pos.rookBlack2Clicked_plus5 == 1):
             check_rook_canCut(who_cuts, 6)
     if who_cuts.x < pos.box_dict["box2"].x:
         if (pos.rookBlack1Clicked_plus1 == 1 and pos.rookBlack1Clicked_plus2 == 1 and pos.rookBlack1Clicked_plus3 == 1 and pos.rookBlack1Clicked_plus4 == 1 and
-                pos.rookBlack1Clicked_plus5 == 1 and pos.rookBlack1Clicked_plus6 == 1) \
-                or\
+            pos.rookBlack1Clicked_plus5 == 1 and pos.rookBlack1Clicked_plus6 == 1) \
+                or \
                 (pos.rookBlack2Clicked_plus1 == 1 and pos.rookBlack2Clicked_plus2 == 1 and pos.rookBlack2Clicked_plus3 == 1 and pos.rookBlack2Clicked_plus4 == 1 and pos.rookBlack2Clicked_plus5 == 1
                  and pos.rookBlack2Clicked_plus6 == 1):
             check_rook_canCut(who_cuts, 7)
@@ -4041,14 +4041,14 @@ def check_rook_canCut_restrictions(who_cuts):
             check_rook_canCut(who_cuts, -5)
     if who_cuts.x > pos.box_dict["box6"].x:
         if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and
-                pos.rookBlack1Clicked_minus5 == 1) \
+            pos.rookBlack1Clicked_minus5 == 1) \
                 or \
                 (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
                  == 1):
             check_rook_canCut(who_cuts, -6)
     if who_cuts.x > pos.box_dict["box7"].x:
         if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and
-                pos.rookBlack1Clicked_minus5 == 1 and pos.rookBlack1Clicked_minus6 == 1) \
+            pos.rookBlack1Clicked_minus5 == 1 and pos.rookBlack1Clicked_minus6 == 1) \
                 or \
                 (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
                  == 1 and pos.rookBlack2Clicked_minus6 == 1):
@@ -4198,8 +4198,8 @@ def move_rook_restrictions(who_moves):
     if who_moves.x > pos.box_dict["box6"].x:
         if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and pos.rookBlack1Clicked_minus5 ==
             1) or \
-              (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
-               == 1):
+                (pos.rookBlack2Clicked_minus1 == 1 and pos.rookBlack2Clicked_minus2 == 1 and pos.rookBlack2Clicked_minus3 == 1 and pos.rookBlack2Clicked_minus4 == 1 and pos.rookBlack2Clicked_minus5
+                 == 1):
             move_rook(who_moves, -6)
     if who_moves.x > pos.box_dict["box7"].x:
         if (pos.rookBlack1Clicked_minus1 == 1 and pos.rookBlack1Clicked_minus2 == 1 and pos.rookBlack1Clicked_minus3 == 1 and pos.rookBlack1Clicked_minus4 == 1 and pos.rookBlack1Clicked_minus5 == 1
@@ -4639,13 +4639,13 @@ def check_white_rook_canCut_restrictions(who_cuts):
             check_white_rook_canCut(who_cuts, -40)
     if who_cuts.y > pos.box_dict["box41"].y:
         if pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 and \
-                pos.rookWhite1Clicked_minus40 == 1 or pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32\
-                == 1 and pos.rookWhite2Clicked_minus40 == 1:
+                pos.rookWhite1Clicked_minus40 == 1 or pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24 == 1 and  \
+                pos.rookWhite2Clicked_minus32 == 1 and pos.rookWhite2Clicked_minus40 == 1:
             check_white_rook_canCut(who_cuts, -48)
     if who_cuts.y > pos.box_dict["box49"].y:
         if pos.rookWhite1Clicked_minus8 == 1 and pos.rookWhite1Clicked_minus16 == 1 and pos.rookWhite1Clicked_minus24 == 1 and pos.rookWhite1Clicked_minus32 == 1 and \
-                pos.rookWhite1Clicked_minus40 == 1 and pos.rookWhite1Clicked_minus48 == 1 or pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and pos.rookWhite2Clicked_minus24\
-                == 1 and pos.rookWhite2Clicked_minus32 == 1 and pos.rookWhite2Clicked_minus40 == 1 and pos.rookWhite2Clicked_minus48 == 1:
+                pos.rookWhite1Clicked_minus40 == 1 and pos.rookWhite1Clicked_minus48 == 1 or pos.rookWhite2Clicked_minus8 == 1 and pos.rookWhite2Clicked_minus16 == 1 and  \
+                pos.rookWhite2Clicked_minus24 == 1 and pos.rookWhite2Clicked_minus32 == 1 and pos.rookWhite2Clicked_minus40 == 1 and pos.rookWhite2Clicked_minus48 == 1:
             check_white_rook_canCut(who_cuts, -56)
 
     if who_cuts.x < pos.box_dict["box8"].x:
@@ -4671,8 +4671,8 @@ def check_white_rook_canCut_restrictions(who_cuts):
             check_white_rook_canCut(who_cuts, 6)
     if who_cuts.x < pos.box_dict["box2"].x:
         if pos.rookWhite1Clicked_plus1 == 1 and pos.rookWhite1Clicked_plus2 == 1 and pos.rookWhite1Clicked_plus3 == 1 and pos.rookWhite1Clicked_plus4 == 1 and \
-                pos.rookWhite1Clicked_plus5 == 1 and pos.rookWhite1Clicked_plus6 == 1 or pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1 and\
-                pos.rookWhite2Clicked_plus4 == 1 and pos.rookWhite2Clicked_plus5 == 1 and pos.rookWhite2Clicked_plus6 == 1:
+                pos.rookWhite1Clicked_plus5 == 1 and pos.rookWhite1Clicked_plus6 == 1 or pos.rookWhite2Clicked_plus1 == 1 and pos.rookWhite2Clicked_plus2 == 1 and pos.rookWhite2Clicked_plus3 == 1  \
+                and pos.rookWhite2Clicked_plus4 == 1 and pos.rookWhite2Clicked_plus5 == 1 and pos.rookWhite2Clicked_plus6 == 1:
             check_white_rook_canCut(who_cuts, 7)
 
     if who_cuts.x > pos.box_dict["box1"].x:
@@ -4684,12 +4684,12 @@ def check_white_rook_canCut_restrictions(who_cuts):
         if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 or pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1:
             check_white_rook_canCut(who_cuts, -3)
     if who_cuts.x > pos.box_dict["box4"].x:
-        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 or pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and\
-                pos.rookWhite2Clicked_minus3 == 1:
+        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 or pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1  \
+                and pos.rookWhite2Clicked_minus3 == 1:
             check_white_rook_canCut(who_cuts, -4)
     if who_cuts.x > pos.box_dict["box5"].x:
-        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 or pos.rookWhite2Clicked_minus1 == 1 and\
-                pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1:
+        if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 or pos.rookWhite2Clicked_minus1 == 1  \
+                and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1:
             check_white_rook_canCut(who_cuts, -5)
     if who_cuts.x > pos.box_dict["box6"].x:
         if pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and \
@@ -4823,8 +4823,8 @@ def move_white_rook_restrictions(who_moves):
     if who_moves.x > pos.box_dict["box6"].x:
         if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and pos.rookWhite1Clicked_minus5 ==
             1) or \
-              (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1 and pos.rookWhite2Clicked_minus5
-               == 1):
+                (pos.rookWhite2Clicked_minus1 == 1 and pos.rookWhite2Clicked_minus2 == 1 and pos.rookWhite2Clicked_minus3 == 1 and pos.rookWhite2Clicked_minus4 == 1 and pos.rookWhite2Clicked_minus5
+                 == 1):
             move_rook(who_moves, -6)
     if who_moves.x > pos.box_dict["box7"].x:
         if (pos.rookWhite1Clicked_minus1 == 1 and pos.rookWhite1Clicked_minus2 == 1 and pos.rookWhite1Clicked_minus3 == 1 and pos.rookWhite1Clicked_minus4 == 1 and pos.rookWhite1Clicked_minus5 == 1
@@ -5022,11 +5022,1598 @@ def rookWMovements():
         move_white_rook_restrictions(pos.rw2)
 
 
+# check bishop can move
+def check_bishop_canMove(which_bishop_clicked, num):
+    if not pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pw1) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pw2) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pw3) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pw4) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pw5) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pw6) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pw7) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pw8) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.Kw) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.Qw) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.rw1) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.rw2) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.kw1) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.kw2) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.bw1) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.bw2) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pb1) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pb2) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pb3) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pb4) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pb5) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pb6) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pb7) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.pb8) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.Kb) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.Qb) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.kb1) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.kb2) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.rb1) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.rb2) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.bb1) and not \
+            pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, blue, pos.boxLst[pos.boxLst.index(which_bishop_clicked) + num], border_radius=100)
+
+        if which_bishop_clicked == pos.bb1 or which_bishop_clicked == pos.bb2:
+            if which_bishop_clicked == pos.bb1:
+                pos.bishopBlack1Clicked = 1
+                pos.bishopBlack2Clicked = 0
+                if num == 8 + 1:
+                    pos.bishopBlack1Clicked_plus8_plus1 = 1
+                if num == 16 + 2:
+                    pos.bishopBlack1Clicked_plus16_plus2 = 1
+                if num == 24 + 3:
+                    pos.bishopBlack1Clicked_plus24_plus3 = 1
+                if num == 32 + 4:
+                    pos.bishopBlack1Clicked_plus32_plus4 = 1
+                if num == 40 + 5:
+                    pos.bishopBlack1Clicked_plus40_plus5 = 1
+                if num == 48 + 6:
+                    pos.bishopBlack1Clicked_plus48_plus6 = 1
+
+                if num == 8 - 1:
+                    pos.bishopBlack1Clicked_plus8_minus1 = 1
+                if num == 16 - 2:
+                    pos.bishopBlack1Clicked_plus16_minus2 = 1
+                if num == 24 - 3:
+                    pos.bishopBlack1Clicked_plus24_minus3 = 1
+                if num == 32 - 4:
+                    pos.bishopBlack1Clicked_plus32_minus4 = 1
+                if num == 40 - 5:
+                    pos.bishopBlack1Clicked_plus40_minus5 = 1
+                if num == 48 - 6:
+                    pos.bishopBlack1Clicked_plus48_minus6 = 1
+
+                if num == -8 + 1:
+                    pos.bishopBlack1Clicked_minus8_plus1 = 1
+                if num == -16 + 2:
+                    pos.bishopBlack1Clicked_minus16_plus2 = 1
+                if num == -24 + 3:
+                    pos.bishopBlack1Clicked_minus24_plus3 = 1
+                if num == -32 + 4:
+                    pos.bishopBlack1Clicked_minus32_plus4 = 1
+                if num == -40 + 5:
+                    pos.bishopBlack1Clicked_minus40_plus5 = 1
+                if num == -48 + 6:
+                    pos.bishopBlack1Clicked_minus48_plus6 = 1
+
+                if num == -8 - 1:
+                    pos.bishopBlack1Clicked_minus8_minus1 = 1
+                if num == -16 - 2:
+                    pos.bishopBlack1Clicked_minus16_minus2 = 1
+                if num == -24 - 3:
+                    pos.bishopBlack1Clicked_minus24_minus3 = 1
+                if num == -32 - 4:
+                    pos.bishopBlack1Clicked_minus32_minus4 = 1
+                if num == -40 - 5:
+                    pos.bishopBlack1Clicked_minus40_minus5 = 1
+                if num == -48 - 6:
+                    pos.bishopBlack1Clicked_minus48_minus6 = 1
+            elif which_bishop_clicked == pos.bb2:
+                pos.bishopBlack1Clicked = 0
+                pos.bishopBlack2Clicked = 1
+                if num == 8 + 1:
+                    pos.bishopBlack2Clicked_plus8_plus1 = 1
+                if num == 16 + 2:
+                    pos.bishopBlack2Clicked_plus16_plus2 = 1
+                if num == 24 + 3:
+                    pos.bishopBlack2Clicked_plus24_plus3 = 1
+                if num == 32 + 4:
+                    pos.bishopBlack2Clicked_plus32_plus4 = 1
+                if num == 40 + 5:
+                    pos.bishopBlack2Clicked_plus40_plus5 = 1
+                if num == 48 + 6:
+                    pos.bishopBlack2Clicked_plus48_plus6 = 1
+
+                if num == 8 - 1:
+                    pos.bishopBlack2Clicked_plus8_minus1 = 1
+                if num == 16 - 2:
+                    pos.bishopBlack2Clicked_plus16_minus2 = 1
+                if num == 24 - 3:
+                    pos.bishopBlack2Clicked_plus24_minus3 = 1
+                if num == 32 - 4:
+                    pos.bishopBlack2Clicked_plus32_minus4 = 1
+                if num == 40 - 5:
+                    pos.bishopBlack2Clicked_plus40_minus5 = 1
+                if num == 48 - 6:
+                    pos.bishopBlack2Clicked_plus48_minus6 = 1
+
+                if num == -8 + 1:
+                    pos.bishopBlack2Clicked_minus8_plus1 = 1
+                if num == -16 + 2:
+                    pos.bishopBlack2Clicked_minus16_plus2 = 1
+                if num == -24 + 3:
+                    pos.bishopBlack2Clicked_minus24_plus3 = 1
+                if num == -32 + 4:
+                    pos.bishopBlack2Clicked_minus32_plus4 = 1
+                if num == -40 + 5:
+                    pos.bishopBlack2Clicked_minus40_plus5 = 1
+                if num == -48 + 6:
+                    pos.bishopBlack2Clicked_minus48_plus6 = 1
+
+                if num == -8 - 1:
+                    pos.bishopBlack2Clicked_minus8_minus1 = 1
+                if num == -16 - 2:
+                    pos.bishopBlack2Clicked_minus16_minus2 = 1
+                if num == -24 - 3:
+                    pos.bishopBlack2Clicked_minus24_minus3 = 1
+                if num == -32 - 4:
+                    pos.bishopBlack2Clicked_minus32_minus4 = 1
+                if num == -40 - 5:
+                    pos.bishopBlack2Clicked_minus40_minus5 = 1
+                if num == -48 - 6:
+                    pos.bishopBlack2Clicked_minus48_minus6 = 1
+            pos.pawnBlack1Clicked = 0
+            pos.pawnBlack2Clicked = 0
+            pos.pawnBlack3Clicked = 0
+            pos.pawnBlack4Clicked = 0
+            pos.pawnBlack5Clicked = 0
+            pos.pawnBlack6Clicked = 0
+            pos.pawnBlack7Clicked = 0
+            pos.pawnBlack8Clicked = 0
+            pos.rookBlack1Clicked = 0
+            pos.rookBlack2Clicked = 0
+            pos.KingBlackClicked = 0
+            pos.QueenBlackClicked = 0
+            pos.knightBlack1Clicked = 0
+            pos.knightBlack2Clicked = 0
+
+        elif which_bishop_clicked == pos.bw1 or which_bishop_clicked == pos.bw2:
+            if which_bishop_clicked == pos.bw1:
+                pos.bishopWhite1Clicked = 1
+                pos.bishopWhite2Clicked = 0
+                if num == 8 + 1:
+                    pos.bishopWhite1Clicked_plus8_plus1 = 1
+                if num == 16 + 2:
+                    pos.bishopWhite1Clicked_plus16_plus2 = 1
+                if num == 24 + 3:
+                    pos.bishopWhite1Clicked_plus24_plus3 = 1
+                if num == 32 + 4:
+                    pos.bishopWhite1Clicked_plus32_plus4 = 1
+                if num == 40 + 5:
+                    pos.bishopWhite1Clicked_plus40_plus5 = 1
+                if num == 48 + 6:
+                    pos.bishopWhite1Clicked_plus48_plus6 = 1
+
+                if num == 8 - 1:
+                    pos.bishopWhite1Clicked_plus8_minus1 = 1
+                if num == 16 - 2:
+                    pos.bishopWhite1Clicked_plus16_minus2 = 1
+                if num == 24 - 3:
+                    pos.bishopWhite1Clicked_plus24_minus3 = 1
+                if num == 32 - 4:
+                    pos.bishopWhite1Clicked_plus32_minus4 = 1
+                if num == 40 - 5:
+                    pos.bishopWhite1Clicked_plus40_minus5 = 1
+                if num == 48 - 6:
+                    pos.bishopWhite1Clicked_plus48_minus6 = 1
+
+                if num == -8 + 1:
+                    pos.bishopWhite1Clicked_minus8_plus1 = 1
+                if num == -16 + 2:
+                    pos.bishopWhite1Clicked_minus16_plus2 = 1
+                if num == -24 + 3:
+                    pos.bishopWhite1Clicked_minus24_plus3 = 1
+                if num == -32 + 4:
+                    pos.bishopWhite1Clicked_minus32_plus4 = 1
+                if num == -40 + 5:
+                    pos.bishopWhite1Clicked_minus40_plus5 = 1
+                if num == -48 + 6:
+                    pos.bishopWhite1Clicked_minus48_plus6 = 1
+
+                if num == -8 - 1:
+                    pos.bishopWhite1Clicked_minus8_minus1 = 1
+                if num == -16 - 2:
+                    pos.bishopWhite1Clicked_minus16_minus2 = 1
+                if num == -24 - 3:
+                    pos.bishopWhite1Clicked_minus24_minus3 = 1
+                if num == -32 - 4:
+                    pos.bishopWhite1Clicked_minus32_minus4 = 1
+                if num == -40 - 5:
+                    pos.bishopWhite1Clicked_minus40_minus5 = 1
+                if num == -48 - 6:
+                    pos.bishopWhite1Clicked_minus48_minus6 = 1
+            elif which_bishop_clicked == pos.bw2:
+                pos.bishopWhite1Clicked = 0
+                pos.bishopWhite2Clicked = 1
+                if num == 8 + 1:
+                    pos.bishopWhite2Clicked_plus8_plus1 = 1
+                if num == 16 + 2:
+                    pos.bishopWhite2Clicked_plus16_plus2 = 1
+                if num == 24 + 3:
+                    pos.bishopWhite2Clicked_plus24_plus3 = 1
+                if num == 32 + 4:
+                    pos.bishopWhite2Clicked_plus32_plus4 = 1
+                if num == 40 + 5:
+                    pos.bishopWhite2Clicked_plus40_plus5 = 1
+                if num == 48 + 6:
+                    pos.bishopWhite2Clicked_plus48_plus6 = 1
+
+                if num == 8 - 1:
+                    pos.bishopWhite2Clicked_plus8_minus1 = 1
+                if num == 16 - 2:
+                    pos.bishopWhite2Clicked_plus16_minus2 = 1
+                if num == 24 - 3:
+                    pos.bishopWhite2Clicked_plus24_minus3 = 1
+                if num == 32 - 4:
+                    pos.bishopWhite2Clicked_plus32_minus4 = 1
+                if num == 40 - 5:
+                    pos.bishopWhite2Clicked_plus40_minus5 = 1
+                if num == 48 - 6:
+                    pos.bishopWhite2Clicked_plus48_minus6 = 1
+
+                if num == -8 + 1:
+                    pos.bishopWhite2Clicked_minus8_plus1 = 1
+                if num == -16 + 2:
+                    pos.bishopWhite2Clicked_minus16_plus2 = 1
+                if num == -24 + 3:
+                    pos.bishopWhite2Clicked_minus24_plus3 = 1
+                if num == -32 + 4:
+                    pos.bishopWhite2Clicked_minus32_plus4 = 1
+                if num == -40 + 5:
+                    pos.bishopWhite2Clicked_minus40_plus5 = 1
+                if num == -48 + 6:
+                    pos.bishopWhite2Clicked_minus48_plus6 = 1
+
+                if num == -8 - 1:
+                    pos.bishopWhite2Clicked_minus8_minus1 = 1
+                if num == -16 - 2:
+                    pos.bishopWhite2Clicked_minus16_minus2 = 1
+                if num == -24 - 3:
+                    pos.bishopWhite2Clicked_minus24_minus3 = 1
+                if num == -32 - 4:
+                    pos.bishopWhite2Clicked_minus32_minus4 = 1
+                if num == -40 - 5:
+                    pos.bishopWhite2Clicked_minus40_minus5 = 1
+                if num == -48 - 6:
+                    pos.bishopWhite2Clicked_minus48_minus6 = 1
+            pos.pawnWhite1Clicked = 0
+            pos.pawnWhite2Clicked = 0
+            pos.pawnWhite3Clicked = 0
+            pos.pawnWhite4Clicked = 0
+            pos.pawnWhite5Clicked = 0
+            pos.pawnWhite6Clicked = 0
+            pos.pawnWhite7Clicked = 0
+            pos.pawnWhite8Clicked = 0
+            pos.KingWhiteClicked = 0
+            pos.QueenWhiteClicked = 0
+            pos.rookWhite1Clicked = 0
+            pos.rookWhite2Clicked = 0
+            pos.knightWhite1Clicked = 0
+            pos.knightWhite2Clicked = 0
+
+
+def check_bishop_canCut(who_cuts, num):
+    if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw3) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw4) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw5) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw6) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw7) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pw8) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Kw) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Qw) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rw1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rw2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kw1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kw2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bw1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bw2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(who_cuts) + num], border_radius=100)
+        if who_cuts == pos.bb1:
+            pos.bishopBlack1Clicked = 1
+            pos.bishopBlack1Clicked_cut = 1
+            pos.bishopBlack2Clicked = 0
+        elif who_cuts == pos.bb2:
+            pos.bishopBlack2Clicked = 1
+            pos.bishopBlack2Clicked_cut = 1
+            pos.bishopBlack1Clicked = 0
+        pos.pawnBlack1Clicked = 0
+        pos.pawnBlack2Clicked = 0
+        pos.pawnBlack3Clicked = 0
+        pos.pawnBlack4Clicked = 0
+        pos.pawnBlack5Clicked = 0
+        pos.pawnBlack6Clicked = 0
+        pos.pawnBlack7Clicked = 0
+        pos.pawnBlack8Clicked = 0
+        pos.KingBlackClicked = 0
+        pos.QueenBlackClicked = 0
+        pos.rookBlack1Clicked = 0
+        pos.rookBlack2Clicked = 0
+        pos.knightBlack1Clicked = 0
+        pos.knightBlack2Clicked = 0
+
+
+def move_bishop(who_moves, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(who_moves) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if who_moves == pos.bb1 or who_moves == pos.bb2:
+            if who_moves == pos.bb1:
+                pos.bb1 = pos.boxLst[pos.boxLst.index(who_moves) + num]
+                pos.bishopBlack1Clicked = 0
+            elif who_moves == pos.bb2:
+                pos.bb2 = pos.boxLst[pos.boxLst.index(who_moves) + num]
+                pos.bishopBlack2Clicked = 0
+            pos.turn = "white"
+        elif who_moves == pos.bw1 or who_moves == pos.bw2:
+            if who_moves == pos.bw1:
+                pos.bw1 = pos.boxLst[pos.boxLst.index(who_moves) + num]
+                pos.bishopWhite1Clicked = 0
+            elif who_moves == pos.bw2:
+                pos.bw2 = pos.boxLst[pos.boxLst.index(who_moves) + num]
+                pos.bishopWhite2Clicked = 0
+            pos.turn = "black"
+
+
+def move_bishop_restrictions(who_moves):
+    if who_moves.y < pos.box_dict["box57"].y and who_moves.x < pos.box_dict["box8"].x:
+        move_bishop(who_moves, 8+1)
+    if who_moves.y < pos.box_dict["box49"].y and who_moves.x < pos.box_dict["box7"].x:
+        move_bishop(who_moves, 16+2)
+    if who_moves.y < pos.box_dict["box41"].y and who_moves.x < pos.box_dict["box6"].x:
+        move_bishop(who_moves, 24+3)
+    if who_moves.y < pos.box_dict["box33"].y and who_moves.x < pos.box_dict["box5"].x:
+        move_bishop(who_moves, 32+4)
+    if who_moves.y < pos.box_dict["box25"].y and who_moves.x < pos.box_dict["box4"].x:
+        move_bishop(who_moves, 40+5)
+    if who_moves.y < pos.box_dict["box17"].y and who_moves.x < pos.box_dict["box3"].x:
+        move_bishop(who_moves, 48+6)
+    if who_moves.y < pos.box_dict["box9"].y and who_moves.x < pos.box_dict["box2"].x:
+        move_bishop(who_moves, 56+7)
+
+    if who_moves.y < pos.box_dict["box57"].y and who_moves.x > pos.box_dict["box1"].x:
+        move_bishop(who_moves, 8-1)
+    if who_moves.y < pos.box_dict["box49"].y and who_moves.x > pos.box_dict["box2"].x:
+        move_bishop(who_moves, 16-2)
+    if who_moves.y < pos.box_dict["box41"].y and who_moves.x > pos.box_dict["box3"].x:
+        move_bishop(who_moves, 24-3)
+    if who_moves.y < pos.box_dict["box33"].y and who_moves.x > pos.box_dict["box4"].x:
+        move_bishop(who_moves, 32-4)
+    if who_moves.y < pos.box_dict["box25"].y and who_moves.x > pos.box_dict["box5"].x:
+        move_bishop(who_moves, 40-5)
+    if who_moves.y < pos.box_dict["box17"].y and who_moves.x > pos.box_dict["box6"].x:
+        move_bishop(who_moves, 48-6)
+    if who_moves.y < pos.box_dict["box9"].y and who_moves.x > pos.box_dict["box7"].x:
+        move_bishop(who_moves, 56-7)
+
+    if who_moves.y > pos.box_dict["box1"].y and who_moves.x < pos.box_dict["box8"].x:
+        move_bishop(who_moves, -8+1)
+    if who_moves.y > pos.box_dict["box9"].y and who_moves.x < pos.box_dict["box7"].x:
+        move_bishop(who_moves, -16+2)
+    if who_moves.y > pos.box_dict["box17"].y and who_moves.x < pos.box_dict["box6"].x:
+        move_bishop(who_moves, -24+3)
+    if who_moves.y > pos.box_dict["box25"].y and who_moves.x < pos.box_dict["box5"].x:
+        move_bishop(who_moves, -32+4)
+    if who_moves.y > pos.box_dict["box33"].y and who_moves.x < pos.box_dict["box4"].x:
+        move_bishop(who_moves, -40+5)
+    if who_moves.y > pos.box_dict["box41"].y and who_moves.x < pos.box_dict["box3"].x:
+        move_bishop(who_moves, -48+6)
+    if who_moves.y > pos.box_dict["box49"].y and who_moves.x < pos.box_dict["box2"].x:
+        move_bishop(who_moves, -56+7)
+
+    if who_moves.y > pos.box_dict["box1"].y and who_moves.x > pos.box_dict["box1"].x:
+        move_bishop(who_moves, -8-1)
+    if who_moves.y > pos.box_dict["box9"].y and who_moves.x > pos.box_dict["box2"].x:
+        move_bishop(who_moves, -16-2)
+    if who_moves.y > pos.box_dict["box17"].y and who_moves.x > pos.box_dict["box3"].x:
+        move_bishop(who_moves, -24-3)
+    if who_moves.y > pos.box_dict["box25"].y and who_moves.x > pos.box_dict["box4"].x:
+        move_bishop(who_moves, -32-4)
+    if who_moves.y > pos.box_dict["box33"].y and who_moves.x > pos.box_dict["box5"].x:
+        move_bishop(who_moves, -40-5)
+    if who_moves.y > pos.box_dict["box41"].y and who_moves.x > pos.box_dict["box6"].x:
+        move_bishop(who_moves, -48-6)
+    if who_moves.y > pos.box_dict["box49"].y and who_moves.x > pos.box_dict["box7"].x:
+        move_bishop(who_moves, -56-7)
+
+
+def bishop_remove_white_pieces(who_removes, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(who_removes) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw1):
+            pos.pw1 = pos.white_deadPieceRect_dict["whiteCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw2):
+            pos.pw2 = pos.white_deadPieceRect_dict["whiteCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw3):
+            pos.pw3 = pos.white_deadPieceRect_dict["whiteCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw4):
+            pos.pw4 = pos.white_deadPieceRect_dict["whiteCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw5):
+            pos.pw5 = pos.white_deadPieceRect_dict["whiteCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw6):
+            pos.pw6 = pos.white_deadPieceRect_dict["whiteCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw7):
+            pos.pw7 = pos.white_deadPieceRect_dict["whiteCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pw8):
+            pos.pw8 = pos.white_deadPieceRect_dict["whiteCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rw1):
+            pos.rw1 = pos.white_deadPieceRect_dict["whiteCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rw2):
+            pos.rw2 = pos.white_deadPieceRect_dict["whiteCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kw1):
+            pos.kw1 = pos.white_deadPieceRect_dict["whiteCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kw2):
+            pos.kw2 = pos.white_deadPieceRect_dict["whiteCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bw1):
+            pos.bw1 = pos.white_deadPieceRect_dict["whiteCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bw2):
+            pos.bw2 = pos.white_deadPieceRect_dict["whiteCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Kw):
+            pos.Kw = pos.white_deadPieceRect_dict["whiteCutPiece_15"]
+            pos.KingWhite_isDead = 1
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Qw):
+            pos.Qw = pos.white_deadPieceRect_dict["whiteCutPiece_16"]
+
+        if who_removes == pos.bb1:
+            pos.bb1 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.bishopBlack1Clicked = 0
+            pos.bishopBlack1Clicked_cut = 0
+        if who_removes == pos.bb2:
+            pos.bb2 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.bishopBlack2Clicked = 0
+            pos.bishopBlack2Clicked_cut = 0
+        pos.turn = "white"
+
+
+def bishop_remove_white_pieces_restrictions(who_removes):
+    if who_removes.y < pos.box_dict["box57"].y and who_removes.x < pos.box_dict["box8"].x:
+        bishop_remove_white_pieces(who_removes, 8 + 1)
+    if who_removes.y < pos.box_dict["box49"].y and who_removes.x < pos.box_dict["box7"].x:
+        bishop_remove_white_pieces(who_removes, 16 + 2)
+    if who_removes.y < pos.box_dict["box41"].y and who_removes.x < pos.box_dict["box6"].x:
+        bishop_remove_white_pieces(who_removes, 24 + 3)
+    if who_removes.y < pos.box_dict["box33"].y and who_removes.x < pos.box_dict["box5"].x:
+        bishop_remove_white_pieces(who_removes, 32 + 4)
+    if who_removes.y < pos.box_dict["box25"].y and who_removes.x < pos.box_dict["box4"].x:
+        bishop_remove_white_pieces(who_removes, 40 + 5)
+    if who_removes.y < pos.box_dict["box17"].y and who_removes.x < pos.box_dict["box3"].x:
+        bishop_remove_white_pieces(who_removes, 48 + 6)
+    if who_removes.y < pos.box_dict["box9"].y and who_removes.x < pos.box_dict["box2"].x:
+        bishop_remove_white_pieces(who_removes, 56 + 7)
+
+    if who_removes.y < pos.box_dict["box57"].y and who_removes.x > pos.box_dict["box1"].x:
+        bishop_remove_white_pieces(who_removes, 8 - 1)
+    if who_removes.y < pos.box_dict["box49"].y and who_removes.x > pos.box_dict["box2"].x:
+        bishop_remove_white_pieces(who_removes, 16 - 2)
+    if who_removes.y < pos.box_dict["box41"].y and who_removes.x > pos.box_dict["box3"].x:
+        bishop_remove_white_pieces(who_removes, 24 - 3)
+    if who_removes.y < pos.box_dict["box33"].y and who_removes.x > pos.box_dict["box4"].x:
+        bishop_remove_white_pieces(who_removes, 32 - 4)
+    if who_removes.y < pos.box_dict["box25"].y and who_removes.x > pos.box_dict["box5"].x:
+        bishop_remove_white_pieces(who_removes, 40 - 5)
+    if who_removes.y < pos.box_dict["box17"].y and who_removes.x > pos.box_dict["box6"].x:
+        bishop_remove_white_pieces(who_removes, 48 - 6)
+    if who_removes.y < pos.box_dict["box9"].y and who_removes.x > pos.box_dict["box7"].x:
+        bishop_remove_white_pieces(who_removes, 56 - 7)
+
+    if who_removes.y > pos.box_dict["box1"].y and who_removes.x < pos.box_dict["box8"].x:
+        bishop_remove_white_pieces(who_removes, -8 + 1)
+    if who_removes.y > pos.box_dict["box9"].y and who_removes.x < pos.box_dict["box7"].x:
+        bishop_remove_white_pieces(who_removes, -16 + 2)
+    if who_removes.y > pos.box_dict["box17"].y and who_removes.x < pos.box_dict["box6"].x:
+        bishop_remove_white_pieces(who_removes, -24 + 3)
+    if who_removes.y > pos.box_dict["box25"].y and who_removes.x < pos.box_dict["box5"].x:
+        bishop_remove_white_pieces(who_removes, -32 + 4)
+    if who_removes.y > pos.box_dict["box33"].y and who_removes.x < pos.box_dict["box4"].x:
+        bishop_remove_white_pieces(who_removes, -40 + 5)
+    if who_removes.y > pos.box_dict["box41"].y and who_removes.x < pos.box_dict["box3"].x:
+        bishop_remove_white_pieces(who_removes, -48 + 6)
+    if who_removes.y > pos.box_dict["box49"].y and who_removes.x < pos.box_dict["box2"].x:
+        bishop_remove_white_pieces(who_removes, -56 + 7)
+
+    if who_removes.y > pos.box_dict["box1"].y and who_removes.x > pos.box_dict["box1"].x:
+        bishop_remove_white_pieces(who_removes, -8 - 1)
+    if who_removes.y > pos.box_dict["box9"].y and who_removes.x > pos.box_dict["box2"].x:
+        bishop_remove_white_pieces(who_removes, -16 - 2)
+    if who_removes.y > pos.box_dict["box17"].y and who_removes.x > pos.box_dict["box3"].x:
+        bishop_remove_white_pieces(who_removes, -24 - 3)
+    if who_removes.y > pos.box_dict["box25"].y and who_removes.x > pos.box_dict["box4"].x:
+        bishop_remove_white_pieces(who_removes, -32 - 4)
+    if who_removes.y > pos.box_dict["box33"].y and who_removes.x > pos.box_dict["box5"].x:
+        bishop_remove_white_pieces(who_removes, -40 - 5)
+    if who_removes.y > pos.box_dict["box41"].y and who_removes.x > pos.box_dict["box6"].x:
+        bishop_remove_white_pieces(who_removes, -48 - 6)
+    if who_removes.y > pos.box_dict["box49"].y and who_removes.x > pos.box_dict["box7"].x:
+        bishop_remove_white_pieces(who_removes, -56 - 7)
+
+
 def bishopBMovements():
-    pass
+    mouse_pos = get_pos()
+
+    if pos.turn == "white":
+        pos.bishopBlack1Clicked_plus8_plus1 = 0
+        pos.bishopBlack1Clicked_plus16_plus2 = 0
+        pos.bishopBlack1Clicked_plus24_plus3 = 0
+        pos.bishopBlack1Clicked_plus32_plus4 = 0
+        pos.bishopBlack1Clicked_plus40_plus5 = 0
+        pos.bishopBlack1Clicked_plus48_plus6 = 0
+        pos.bishopBlack1Clicked_plus8_minus1 = 0
+        pos.bishopBlack1Clicked_plus16_minus2 = 0
+        pos.bishopBlack1Clicked_plus24_minus3 = 0
+        pos.bishopBlack1Clicked_plus32_minus4 = 0
+        pos.bishopBlack1Clicked_plus40_minus5 = 0
+        pos.bishopBlack1Clicked_plus48_minus6 = 0
+        pos.bishopBlack1Clicked_minus8_plus1 = 0
+        pos.bishopBlack1Clicked_minus16_plus2 = 0
+        pos.bishopBlack1Clicked_minus24_plus3 = 0
+        pos.bishopBlack1Clicked_minus32_plus4 = 0
+        pos.bishopBlack1Clicked_minus40_plus5 = 0
+        pos.bishopBlack1Clicked_minus48_plus6 = 0
+        pos.bishopBlack1Clicked_minus8_minus1 = 0
+        pos.bishopBlack1Clicked_minus16_minus2 = 0
+        pos.bishopBlack1Clicked_minus24_minus3 = 0
+        pos.bishopBlack1Clicked_minus32_minus4 = 0
+        pos.bishopBlack1Clicked_minus40_minus5 = 0
+        pos.bishopBlack1Clicked_minus48_minus6 = 0
+
+        pos.bishopBlack2Clicked_plus8_plus1 = 0
+        pos.bishopBlack2Clicked_plus16_plus2 = 0
+        pos.bishopBlack2Clicked_plus24_plus3 = 0
+        pos.bishopBlack2Clicked_plus32_plus4 = 0
+        pos.bishopBlack2Clicked_plus40_plus5 = 0
+        pos.bishopBlack2Clicked_plus48_plus6 = 0
+        pos.bishopBlack2Clicked_plus8_minus1 = 0
+        pos.bishopBlack2Clicked_plus16_minus2 = 0
+        pos.bishopBlack2Clicked_plus24_minus3 = 0
+        pos.bishopBlack2Clicked_plus32_minus4 = 0
+        pos.bishopBlack2Clicked_plus40_minus5 = 0
+        pos.bishopBlack2Clicked_plus48_minus6 = 0
+        pos.bishopBlack2Clicked_minus8_plus1 = 0
+        pos.bishopBlack2Clicked_minus16_plus2 = 0
+        pos.bishopBlack2Clicked_minus24_plus3 = 0
+        pos.bishopBlack2Clicked_minus32_plus4 = 0
+        pos.bishopBlack2Clicked_minus40_plus5 = 0
+        pos.bishopBlack2Clicked_minus48_plus6 = 0
+        pos.bishopBlack2Clicked_minus8_minus1 = 0
+        pos.bishopBlack2Clicked_minus16_minus2 = 0
+        pos.bishopBlack2Clicked_minus24_minus3 = 0
+        pos.bishopBlack2Clicked_minus32_minus4 = 0
+        pos.bishopBlack2Clicked_minus40_minus5 = 0
+        pos.bishopBlack2Clicked_minus48_minus6 = 0
+
+    if pos.turn == "black":
+        if pos.bb1.collidepoint(mouse_pos[0], mouse_pos[1]):
+            if pos.bb1.y < pos.box_dict["box57"].y and pos.bb1.x < pos.box_dict["box8"].x:
+                check_bishop_canMove(pos.bb1, 8 + 1)
+            if pos.bb1.y < pos.box_dict["box49"].y and pos.bb1.x < pos.box_dict["box7"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1:
+                    check_bishop_canMove(pos.bb1, 16 + 2)
+            if pos.bb1.y < pos.box_dict["box41"].y and pos.bb1.x < pos.box_dict["box6"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1:
+                    check_bishop_canMove(pos.bb1, 24 + 3)
+            if pos.bb1.y < pos.box_dict["box33"].y and pos.bb1.x < pos.box_dict["box5"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1 and pos.bishopBlack1Clicked_plus24_plus3 == 1:
+                    check_bishop_canMove(pos.bb1, 32 + 4)
+            if pos.bb1.y < pos.box_dict["box25"].y and pos.bb1.x < pos.box_dict["box4"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1 and pos.bishopBlack1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_plus4 == 1:
+                    check_bishop_canMove(pos.bb1, 40 + 5)
+            if pos.bb1.y < pos.box_dict["box17"].y and pos.bb1.x < pos.box_dict["box3"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1 and pos.bishopBlack1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_plus4 == 1 and pos.bishopBlack1Clicked_plus40_plus5 == 1:
+                    check_bishop_canMove(pos.bb1, 48 + 6)
+            if pos.bb1.y < pos.box_dict["box9"].y and pos.bb1.x < pos.box_dict["box2"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1 and pos.bishopBlack1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_plus4 == 1 and pos.bishopBlack1Clicked_plus40_plus5 == 1 and pos.bishopBlack1Clicked_plus48_plus6 == 1:
+                    check_bishop_canMove(pos.bb1, 56 + 7)
+
+            if pos.bb1.y < pos.box_dict["box57"].y and pos.bb1.x > pos.box_dict["box1"].x:
+                check_bishop_canMove(pos.bb1, 8 - 1)
+            if pos.bb1.y < pos.box_dict["box49"].y and pos.bb1.x > pos.box_dict["box2"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1:
+                    check_bishop_canMove(pos.bb1, 16 - 2)
+            if pos.bb1.y < pos.box_dict["box41"].y and pos.bb1.x > pos.box_dict["box3"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1:
+                    check_bishop_canMove(pos.bb1, 24 - 3)
+            if pos.bb1.y < pos.box_dict["box33"].y and pos.bb1.x > pos.box_dict["box4"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1 and pos.bishopBlack1Clicked_plus24_minus3 == 1:
+                    check_bishop_canMove(pos.bb1, 32 - 4)
+            if pos.bb1.y < pos.box_dict["box25"].y and pos.bb1.x > pos.box_dict["box5"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1 and pos.bishopBlack1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_minus4 == 1:
+                    check_bishop_canMove(pos.bb1, 40 - 5)
+            if pos.bb1.y < pos.box_dict["box17"].y and pos.bb1.x > pos.box_dict["box6"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1 and pos.bishopBlack1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_minus4 == 1 and pos.bishopBlack1Clicked_plus40_minus5 == 1:
+                    check_bishop_canMove(pos.bb1, 48 - 6)
+            if pos.bb1.y < pos.box_dict["box9"].y and pos.bb1.x > pos.box_dict["box7"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1 and pos.bishopBlack1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_minus4 == 1 and pos.bishopBlack1Clicked_plus40_minus5 == 1 and pos.bishopBlack1Clicked_plus48_minus6 == 1:
+                    check_bishop_canMove(pos.bb1, 56 - 7)
+
+            if pos.bb1.y > pos.box_dict["box1"].y and pos.bb1.x < pos.box_dict["box8"].x:
+                check_bishop_canMove(pos.bb1, -8 + 1)
+            if pos.bb1.y > pos.box_dict["box9"].y and pos.bb1.x < pos.box_dict["box7"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1:
+                    check_bishop_canMove(pos.bb1, -16 + 2)
+            if pos.bb1.y > pos.box_dict["box17"].y and pos.bb1.x < pos.box_dict["box6"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1:
+                    check_bishop_canMove(pos.bb1, -24 + 3)
+            if pos.bb1.y > pos.box_dict["box25"].y and pos.bb1.x < pos.box_dict["box5"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1 and pos.bishopBlack1Clicked_minus24_plus3 == 1:
+                    check_bishop_canMove(pos.bb1, -32 + 4)
+            if pos.bb1.y > pos.box_dict["box33"].y and pos.bb1.x < pos.box_dict["box4"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1 and pos.bishopBlack1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_plus4 == 1:
+                    check_bishop_canMove(pos.bb1, -40 + 5)
+            if pos.bb1.y > pos.box_dict["box41"].y and pos.bb1.x < pos.box_dict["box3"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1 and pos.bishopBlack1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_plus4 == 1 and pos.bishopBlack1Clicked_minus40_plus5 == 1:
+                    check_bishop_canMove(pos.bb1, -48 + 6)
+            if pos.bb1.y > pos.box_dict["box49"].y and pos.bb1.x < pos.box_dict["box2"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1 and pos.bishopBlack1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_plus4 == 1 and pos.bishopBlack1Clicked_minus40_plus5 == 1 and pos.bishopBlack1Clicked_minus48_plus6 == 1:
+                    check_bishop_canMove(pos.bb1, -56 + 7)
+
+            if pos.bb1.y > pos.box_dict["box1"].y and pos.bb1.x > pos.box_dict["box1"].x:
+                check_bishop_canMove(pos.bb1, -8 - 1)
+            if pos.bb1.y > pos.box_dict["box9"].y and pos.bb1.x > pos.box_dict["box2"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1:
+                    check_bishop_canMove(pos.bb1, -16 - 2)
+            if pos.bb1.y > pos.box_dict["box17"].y and pos.bb1.x > pos.box_dict["box3"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1:
+                    check_bishop_canMove(pos.bb1, -24 - 3)
+            if pos.bb1.y > pos.box_dict["box25"].y and pos.bb1.x > pos.box_dict["box4"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1 and pos.bishopBlack1Clicked_minus24_minus3 == 1:
+                    check_bishop_canMove(pos.bb1, -32 - 4)
+            if pos.bb1.y > pos.box_dict["box33"].y and pos.bb1.x > pos.box_dict["box5"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1 and pos.bishopBlack1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_minus4 == 1:
+                    check_bishop_canMove(pos.bb1, -40 - 5)
+            if pos.bb1.y > pos.box_dict["box41"].y and pos.bb1.x > pos.box_dict["box6"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1 and pos.bishopBlack1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_minus4 == 1 and pos.bishopBlack1Clicked_minus40_minus5 == 1:
+                    check_bishop_canMove(pos.bb1, -48 - 6)
+            if pos.bb1.y > pos.box_dict["box49"].y and pos.bb1.x > pos.box_dict["box7"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1 and pos.bishopBlack1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_minus4 == 1 and pos.bishopBlack1Clicked_minus40_minus5 == 1 and pos.bishopBlack1Clicked_minus48_minus6 == 1:
+                    check_bishop_canMove(pos.bb1, -56 - 7)
+
+            # check if white pieces can be cut or not
+            if pos.bb1.y < pos.box_dict["box57"].y and pos.bb1.x < pos.box_dict["box8"].x:
+                check_bishop_canCut(pos.bb1, 8 + 1)
+            if pos.bb1.y < pos.box_dict["box49"].y and pos.bb1.x < pos.box_dict["box7"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1:
+                    check_bishop_canCut(pos.bb1, 16 + 2)
+            if pos.bb1.y < pos.box_dict["box41"].y and pos.bb1.x < pos.box_dict["box6"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1:
+                    check_bishop_canCut(pos.bb1, 24 + 3)
+            if pos.bb1.y < pos.box_dict["box33"].y and pos.bb1.x < pos.box_dict["box5"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1 and pos.bishopBlack1Clicked_plus24_plus3 == 1:
+                    check_bishop_canCut(pos.bb1, 32 + 4)
+            if pos.bb1.y < pos.box_dict["box25"].y and pos.bb1.x < pos.box_dict["box4"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1 and pos.bishopBlack1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_plus4 == 1:
+                    check_bishop_canCut(pos.bb1, 40 + 5)
+            if pos.bb1.y < pos.box_dict["box17"].y and pos.bb1.x < pos.box_dict["box3"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1 and pos.bishopBlack1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_plus4 == 1 and pos.bishopBlack1Clicked_plus40_plus5 == 1:
+                    check_bishop_canCut(pos.bb1, 48 + 6)
+            if pos.bb1.y < pos.box_dict["box9"].y and pos.bb1.x < pos.box_dict["box2"].x:
+                if pos.bishopBlack1Clicked_plus8_plus1 == 1 and pos.bishopBlack1Clicked_plus16_plus2 == 1 and pos.bishopBlack1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_plus4 == 1 and pos.bishopBlack1Clicked_plus40_plus5 == 1 and pos.bishopBlack1Clicked_plus48_plus6 == 1:
+                    check_bishop_canCut(pos.bb1, 56 + 7)
+
+            if pos.bb1.y < pos.box_dict["box57"].y and pos.bb1.x > pos.box_dict["box1"].x:
+                check_bishop_canCut(pos.bb1, 8 - 1)
+            if pos.bb1.y < pos.box_dict["box49"].y and pos.bb1.x > pos.box_dict["box2"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1:
+                    check_bishop_canCut(pos.bb1, 16 - 2)
+            if pos.bb1.y < pos.box_dict["box41"].y and pos.bb1.x > pos.box_dict["box3"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1:
+                    check_bishop_canCut(pos.bb1, 24 - 3)
+            if pos.bb1.y < pos.box_dict["box33"].y and pos.bb1.x > pos.box_dict["box4"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1 and pos.bishopBlack1Clicked_plus24_minus3 == 1:
+                    check_bishop_canCut(pos.bb1, 32 - 4)
+            if pos.bb1.y < pos.box_dict["box25"].y and pos.bb1.x > pos.box_dict["box5"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1 and pos.bishopBlack1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_minus4 == 1:
+                    check_bishop_canCut(pos.bb1, 40 - 5)
+            if pos.bb1.y < pos.box_dict["box17"].y and pos.bb1.x > pos.box_dict["box6"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1 and pos.bishopBlack1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_minus4 == 1 and pos.bishopBlack1Clicked_plus40_minus5 == 1:
+                    check_bishop_canCut(pos.bb1, 48 - 6)
+            if pos.bb1.y < pos.box_dict["box9"].y and pos.bb1.x > pos.box_dict["box7"].x:
+                if pos.bishopBlack1Clicked_plus8_minus1 == 1 and pos.bishopBlack1Clicked_plus16_minus2 == 1 and pos.bishopBlack1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_plus32_minus4 == 1 and pos.bishopBlack1Clicked_plus40_minus5 == 1 and pos.bishopBlack1Clicked_plus48_minus6 == 1:
+                    check_bishop_canCut(pos.bb1, 56 - 7)
+
+            if pos.bb1.y > pos.box_dict["box1"].y and pos.bb1.x < pos.box_dict["box8"].x:
+                check_bishop_canCut(pos.bb1, -8 + 1)
+            if pos.bb1.y > pos.box_dict["box9"].y and pos.bb1.x < pos.box_dict["box7"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1:
+                    check_bishop_canCut(pos.bb1, -16 + 2)
+            if pos.bb1.y > pos.box_dict["box17"].y and pos.bb1.x < pos.box_dict["box6"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1:
+                    check_bishop_canCut(pos.bb1, -24 + 3)
+            if pos.bb1.y > pos.box_dict["box25"].y and pos.bb1.x < pos.box_dict["box5"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1 and pos.bishopBlack1Clicked_minus24_plus3 == 1:
+                    check_bishop_canCut(pos.bb1, -32 + 4)
+            if pos.bb1.y > pos.box_dict["box33"].y and pos.bb1.x < pos.box_dict["box4"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1 and pos.bishopBlack1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_plus4 == 1:
+                    check_bishop_canCut(pos.bb1, -40 + 5)
+            if pos.bb1.y > pos.box_dict["box41"].y and pos.bb1.x < pos.box_dict["box3"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1 and pos.bishopBlack1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_plus4 == 1 and pos.bishopBlack1Clicked_minus40_plus5 == 1:
+                    check_bishop_canCut(pos.bb1, -48 + 6)
+            if pos.bb1.y > pos.box_dict["box49"].y and pos.bb1.x < pos.box_dict["box2"].x:
+                if pos.bishopBlack1Clicked_minus8_plus1 == 1 and pos.bishopBlack1Clicked_minus16_plus2 == 1 and pos.bishopBlack1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_plus4 == 1 and pos.bishopBlack1Clicked_minus40_plus5 == 1 and pos.bishopBlack1Clicked_minus48_plus6 == 1:
+                    check_bishop_canCut(pos.bb1, -56 + 7)
+
+            if pos.bb1.y > pos.box_dict["box1"].y and pos.bb1.x > pos.box_dict["box1"].x:
+                check_bishop_canCut(pos.bb1, -8 - 1)
+            if pos.bb1.y > pos.box_dict["box9"].y and pos.bb1.x > pos.box_dict["box2"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1:
+                    check_bishop_canCut(pos.bb1, -16 - 2)
+            if pos.bb1.y > pos.box_dict["box17"].y and pos.bb1.x > pos.box_dict["box3"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1:
+                    check_bishop_canCut(pos.bb1, -24 - 3)
+            if pos.bb1.y > pos.box_dict["box25"].y and pos.bb1.x > pos.box_dict["box4"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1 and pos.bishopBlack1Clicked_minus24_minus3 == 1:
+                    check_bishop_canCut(pos.bb1, -32 - 4)
+            if pos.bb1.y > pos.box_dict["box33"].y and pos.bb1.x > pos.box_dict["box5"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1 and pos.bishopBlack1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_minus4 == 1:
+                    check_bishop_canCut(pos.bb1, -40 - 5)
+            if pos.bb1.y > pos.box_dict["box41"].y and pos.bb1.x > pos.box_dict["box6"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1 and pos.bishopBlack1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_minus4 == 1 and pos.bishopBlack1Clicked_minus40_minus5 == 1:
+                    check_bishop_canCut(pos.bb1, -48 - 6)
+            if pos.bb1.y > pos.box_dict["box49"].y and pos.bb1.x > pos.box_dict["box7"].x:
+                if pos.bishopBlack1Clicked_minus8_minus1 == 1 and pos.bishopBlack1Clicked_minus16_minus2 == 1 and pos.bishopBlack1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack1Clicked_minus32_minus4 == 1 and pos.bishopBlack1Clicked_minus40_minus5 == 1 and pos.bishopBlack1Clicked_minus48_minus6 == 1:
+                    check_bishop_canCut(pos.bb1, -56 - 7)
+
+        if pos.bb2.collidepoint(mouse_pos[0], mouse_pos[1]):
+            if pos.bb2.y < pos.box_dict["box57"].y and pos.bb2.x < pos.box_dict["box8"].x:
+                check_bishop_canMove(pos.bb2, 8 + 1)
+            if pos.bb2.y < pos.box_dict["box49"].y and pos.bb2.x < pos.box_dict["box7"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1:
+                    check_bishop_canMove(pos.bb2, 16 + 2)
+            if pos.bb2.y < pos.box_dict["box41"].y and pos.bb2.x < pos.box_dict["box6"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1:
+                    check_bishop_canMove(pos.bb2, 24 + 3)
+            if pos.bb2.y < pos.box_dict["box33"].y and pos.bb2.x < pos.box_dict["box5"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1 and pos.bishopBlack2Clicked_plus24_plus3 == 1:
+                    check_bishop_canMove(pos.bb2, 32 + 4)
+            if pos.bb2.y < pos.box_dict["box25"].y and pos.bb2.x < pos.box_dict["box4"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1 and pos.bishopBlack2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_plus4 == 1:
+                    check_bishop_canMove(pos.bb2, 40 + 5)
+            if pos.bb2.y < pos.box_dict["box17"].y and pos.bb2.x < pos.box_dict["box3"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1 and pos.bishopBlack2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_plus4 == 1 and pos.bishopBlack2Clicked_plus40_plus5 == 1:
+                    check_bishop_canMove(pos.bb2, 48 + 6)
+            if pos.bb2.y < pos.box_dict["box9"].y and pos.bb2.x < pos.box_dict["box2"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1 and pos.bishopBlack2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_plus4 == 1 and pos.bishopBlack2Clicked_plus40_plus5 == 1 and pos.bishopBlack2Clicked_plus48_plus6 == 1:
+                    check_bishop_canMove(pos.bb2, 56 + 7)
+
+            if pos.bb2.y < pos.box_dict["box57"].y and pos.bb2.x > pos.box_dict["box1"].x:
+                check_bishop_canMove(pos.bb2, 8 - 1)
+            if pos.bb2.y < pos.box_dict["box49"].y and pos.bb2.x > pos.box_dict["box2"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1:
+                    check_bishop_canMove(pos.bb2, 16 - 2)
+            if pos.bb2.y < pos.box_dict["box41"].y and pos.bb2.x > pos.box_dict["box3"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1:
+                    check_bishop_canMove(pos.bb2, 24 - 3)
+            if pos.bb2.y < pos.box_dict["box33"].y and pos.bb2.x > pos.box_dict["box4"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1 and pos.bishopBlack2Clicked_plus24_minus3 == 1:
+                    check_bishop_canMove(pos.bb2, 32 - 4)
+            if pos.bb2.y < pos.box_dict["box25"].y and pos.bb2.x > pos.box_dict["box5"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1 and pos.bishopBlack2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_minus4 == 1:
+                    check_bishop_canMove(pos.bb2, 40 - 5)
+            if pos.bb2.y < pos.box_dict["box17"].y and pos.bb2.x > pos.box_dict["box6"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1 and pos.bishopBlack2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_minus4 == 1 and pos.bishopBlack2Clicked_plus40_minus5 == 1:
+                    check_bishop_canMove(pos.bb2, 48 - 6)
+            if pos.bb2.y < pos.box_dict["box9"].y and pos.bb2.x > pos.box_dict["box7"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1 and pos.bishopBlack2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_minus4 == 1 and pos.bishopBlack2Clicked_plus40_minus5 == 1 and pos.bishopBlack2Clicked_plus48_minus6 == 1:
+                    check_bishop_canMove(pos.bb2, 56 - 7)
+
+            if pos.bb2.y > pos.box_dict["box1"].y and pos.bb2.x < pos.box_dict["box8"].x:
+                check_bishop_canMove(pos.bb2, -8 + 1)
+            if pos.bb2.y > pos.box_dict["box9"].y and pos.bb2.x < pos.box_dict["box7"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1:
+                    check_bishop_canMove(pos.bb2, -16 + 2)
+            if pos.bb2.y > pos.box_dict["box17"].y and pos.bb2.x < pos.box_dict["box6"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1:
+                    check_bishop_canMove(pos.bb2, -24 + 3)
+            if pos.bb2.y > pos.box_dict["box25"].y and pos.bb2.x < pos.box_dict["box5"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1 and pos.bishopBlack2Clicked_minus24_plus3 == 1:
+                    check_bishop_canMove(pos.bb2, -32 + 4)
+            if pos.bb2.y > pos.box_dict["box33"].y and pos.bb2.x < pos.box_dict["box4"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1 and pos.bishopBlack2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_plus4 == 1:
+                    check_bishop_canMove(pos.bb2, -40 + 5)
+            if pos.bb2.y > pos.box_dict["box41"].y and pos.bb2.x < pos.box_dict["box3"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1 and pos.bishopBlack2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_plus4 == 1 and pos.bishopBlack2Clicked_minus40_plus5 == 1:
+                    check_bishop_canMove(pos.bb2, -48 + 6)
+            if pos.bb2.y > pos.box_dict["box49"].y and pos.bb2.x < pos.box_dict["box2"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1 and pos.bishopBlack2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_plus4 == 1 and pos.bishopBlack2Clicked_minus40_plus5 == 1 and pos.bishopBlack2Clicked_minus48_plus6 == 1:
+                    check_bishop_canMove(pos.bb2, -56 + 7)
+
+            if pos.bb2.y > pos.box_dict["box1"].y and pos.bb2.x > pos.box_dict["box1"].x:
+                check_bishop_canMove(pos.bb2, -8 - 1)
+            if pos.bb2.y > pos.box_dict["box9"].y and pos.bb2.x > pos.box_dict["box2"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1:
+                    check_bishop_canMove(pos.bb2, -16 - 2)
+            if pos.bb2.y > pos.box_dict["box17"].y and pos.bb2.x > pos.box_dict["box3"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1:
+                    check_bishop_canMove(pos.bb2, -24 - 3)
+            if pos.bb2.y > pos.box_dict["box25"].y and pos.bb2.x > pos.box_dict["box4"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1 and pos.bishopBlack2Clicked_minus24_minus3 == 1:
+                    check_bishop_canMove(pos.bb2, -32 - 4)
+            if pos.bb2.y > pos.box_dict["box33"].y and pos.bb2.x > pos.box_dict["box5"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1 and pos.bishopBlack2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_minus4 == 1:
+                    check_bishop_canMove(pos.bb2, -40 - 5)
+            if pos.bb2.y > pos.box_dict["box41"].y and pos.bb2.x > pos.box_dict["box6"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1 and pos.bishopBlack2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_minus4 == 1 and pos.bishopBlack2Clicked_minus40_minus5 == 1:
+                    check_bishop_canMove(pos.bb2, -48 - 6)
+            if pos.bb2.y > pos.box_dict["box49"].y and pos.bb2.x > pos.box_dict["box7"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1 and pos.bishopBlack2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_minus4 == 1 and pos.bishopBlack2Clicked_minus40_minus5 == 1 and pos.bishopBlack2Clicked_minus48_minus6 == 1:
+                    check_bishop_canMove(pos.bb2, -56 - 7)
+
+            # check if white pieces can be cut or not
+            if pos.bb2.y < pos.box_dict["box57"].y and pos.bb2.x < pos.box_dict["box8"].x:
+                check_bishop_canCut(pos.bb2, 8 + 1)
+            if pos.bb2.y < pos.box_dict["box49"].y and pos.bb2.x < pos.box_dict["box7"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1:
+                    check_bishop_canCut(pos.bb2, 16 + 2)
+            if pos.bb2.y < pos.box_dict["box41"].y and pos.bb2.x < pos.box_dict["box6"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1:
+                    check_bishop_canCut(pos.bb2, 24 + 3)
+            if pos.bb2.y < pos.box_dict["box33"].y and pos.bb2.x < pos.box_dict["box5"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1 and pos.bishopBlack2Clicked_plus24_plus3 == 1:
+                    check_bishop_canCut(pos.bb2, 32 + 4)
+            if pos.bb2.y < pos.box_dict["box25"].y and pos.bb2.x < pos.box_dict["box4"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1 and pos.bishopBlack2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_plus4 == 1:
+                    check_bishop_canCut(pos.bb2, 40 + 5)
+            if pos.bb2.y < pos.box_dict["box17"].y and pos.bb2.x < pos.box_dict["box3"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1 and pos.bishopBlack2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_plus4 == 1 and pos.bishopBlack2Clicked_plus40_plus5 == 1:
+                    check_bishop_canCut(pos.bb2, 48 + 6)
+            if pos.bb2.y < pos.box_dict["box9"].y and pos.bb2.x < pos.box_dict["box2"].x:
+                if pos.bishopBlack2Clicked_plus8_plus1 == 1 and pos.bishopBlack2Clicked_plus16_plus2 == 1 and pos.bishopBlack2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_plus4 == 1 and pos.bishopBlack2Clicked_plus40_plus5 == 1 and pos.bishopBlack2Clicked_plus48_plus6 == 1:
+                    check_bishop_canCut(pos.bb2, 56 + 7)
+
+            if pos.bb2.y < pos.box_dict["box57"].y and pos.bb2.x > pos.box_dict["box1"].x:
+                check_bishop_canCut(pos.bb2, 8 - 1)
+            if pos.bb2.y < pos.box_dict["box49"].y and pos.bb2.x > pos.box_dict["box2"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1:
+                    check_bishop_canCut(pos.bb2, 16 - 2)
+            if pos.bb2.y < pos.box_dict["box41"].y and pos.bb2.x > pos.box_dict["box3"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1:
+                    check_bishop_canCut(pos.bb2, 24 - 3)
+            if pos.bb2.y < pos.box_dict["box33"].y and pos.bb2.x > pos.box_dict["box4"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1 and pos.bishopBlack2Clicked_plus24_minus3 == 1:
+                    check_bishop_canCut(pos.bb2, 32 - 4)
+            if pos.bb2.y < pos.box_dict["box25"].y and pos.bb2.x > pos.box_dict["box5"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1 and pos.bishopBlack2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_minus4 == 1:
+                    check_bishop_canCut(pos.bb2, 40 - 5)
+            if pos.bb2.y < pos.box_dict["box17"].y and pos.bb2.x > pos.box_dict["box6"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1 and pos.bishopBlack2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_minus4 == 1 and pos.bishopBlack2Clicked_plus40_minus5 == 1:
+                    check_bishop_canCut(pos.bb2, 48 - 6)
+            if pos.bb2.y < pos.box_dict["box9"].y and pos.bb2.x > pos.box_dict["box7"].x:
+                if pos.bishopBlack2Clicked_plus8_minus1 == 1 and pos.bishopBlack2Clicked_plus16_minus2 == 1 and pos.bishopBlack2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_plus32_minus4 == 1 and pos.bishopBlack2Clicked_plus40_minus5 == 1 and pos.bishopBlack2Clicked_plus48_minus6 == 1:
+                    check_bishop_canCut(pos.bb2, 56 - 7)
+
+            if pos.bb2.y > pos.box_dict["box1"].y and pos.bb2.x < pos.box_dict["box8"].x:
+                check_bishop_canCut(pos.bb2, -8 + 1)
+            if pos.bb2.y > pos.box_dict["box9"].y and pos.bb2.x < pos.box_dict["box7"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1:
+                    check_bishop_canCut(pos.bb2, -16 + 2)
+            if pos.bb2.y > pos.box_dict["box17"].y and pos.bb2.x < pos.box_dict["box6"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1:
+                    check_bishop_canCut(pos.bb2, -24 + 3)
+            if pos.bb2.y > pos.box_dict["box25"].y and pos.bb2.x < pos.box_dict["box5"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1 and pos.bishopBlack2Clicked_minus24_plus3 == 1:
+                    check_bishop_canCut(pos.bb2, -32 + 4)
+            if pos.bb2.y > pos.box_dict["box33"].y and pos.bb2.x < pos.box_dict["box4"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1 and pos.bishopBlack2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_plus4 == 1:
+                    check_bishop_canCut(pos.bb2, -40 + 5)
+            if pos.bb2.y > pos.box_dict["box41"].y and pos.bb2.x < pos.box_dict["box3"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1 and pos.bishopBlack2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_plus4 == 1 and pos.bishopBlack2Clicked_minus40_plus5 == 1:
+                    check_bishop_canCut(pos.bb2, -48 + 6)
+            if pos.bb2.y > pos.box_dict["box49"].y and pos.bb2.x < pos.box_dict["box2"].x:
+                if pos.bishopBlack2Clicked_minus8_plus1 == 1 and pos.bishopBlack2Clicked_minus16_plus2 == 1 and pos.bishopBlack2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_plus4 == 1 and pos.bishopBlack2Clicked_minus40_plus5 == 1 and pos.bishopBlack2Clicked_minus48_plus6 == 1:
+                    check_bishop_canCut(pos.bb2, -56 + 7)
+
+            if pos.bb2.y > pos.box_dict["box1"].y and pos.bb2.x > pos.box_dict["box1"].x:
+                check_bishop_canCut(pos.bb2, -8 - 1)
+            if pos.bb2.y > pos.box_dict["box9"].y and pos.bb2.x > pos.box_dict["box2"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1:
+                    check_bishop_canCut(pos.bb2, -16 - 2)
+            if pos.bb2.y > pos.box_dict["box17"].y and pos.bb2.x > pos.box_dict["box3"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1:
+                    check_bishop_canCut(pos.bb2, -24 - 3)
+            if pos.bb2.y > pos.box_dict["box25"].y and pos.bb2.x > pos.box_dict["box4"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1 and pos.bishopBlack2Clicked_minus24_minus3 == 1:
+                    check_bishop_canCut(pos.bb2, -32 - 4)
+            if pos.bb2.y > pos.box_dict["box33"].y and pos.bb2.x > pos.box_dict["box5"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1 and pos.bishopBlack2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_minus4 == 1:
+                    check_bishop_canCut(pos.bb2, -40 - 5)
+            if pos.bb2.y > pos.box_dict["box41"].y and pos.bb2.x > pos.box_dict["box6"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1 and pos.bishopBlack2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_minus4 == 1 and pos.bishopBlack2Clicked_minus40_minus5 == 1:
+                    check_bishop_canCut(pos.bb2, -48 - 6)
+            if pos.bb2.y > pos.box_dict["box49"].y and pos.bb2.x > pos.box_dict["box7"].x:
+                if pos.bishopBlack2Clicked_minus8_minus1 == 1 and pos.bishopBlack2Clicked_minus16_minus2 == 1 and pos.bishopBlack2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopBlack2Clicked_minus32_minus4 == 1 and pos.bishopBlack2Clicked_minus40_minus5 == 1 and pos.bishopBlack2Clicked_minus48_minus6 == 1:
+                    check_bishop_canCut(pos.bb2, -56 - 7)
+
+    # what will happen if bishop is clicked
+    if pos.bishopBlack1Clicked == 1:
+        # remove the white pieces
+        if pos.bishopBlack1Clicked_cut == 1:
+            bishop_remove_white_pieces_restrictions(pos.bb1)
+        move_bishop_restrictions(pos.bb1)
+    if pos.bishopBlack2Clicked == 1:
+        # remove the white pieces
+        if pos.bishopBlack2Clicked_cut == 1:
+            bishop_remove_white_pieces_restrictions(pos.bb2)
+        move_bishop_restrictions(pos.bb2)
+
+
+def check_white_bishop_canCut(who_cuts, num):
+    if pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb3) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb4) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb5) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb6) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb7) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.pb8) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Kb) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.Qb) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rb1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.rb2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kb1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.kb2) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bb1) or \
+            pos.boxLst[pos.boxLst.index(who_cuts) + num].colliderect(pos.bb2):
+        pygame.draw.rect(window, red, pos.boxLst[pos.boxLst.index(who_cuts) + num], border_radius=100)
+        if who_cuts == pos.bw1:
+            pos.bishopWhite1Clicked = 1
+            pos.bishopWhite1Clicked_cut = 1
+            pos.bishopWhite2Clicked = 0
+        elif who_cuts == pos.bw2:
+            pos.bishopWhite2Clicked = 1
+            pos.bishopWhite2Clicked_cut = 1
+            pos.bishopWhite1Clicked = 0
+        pos.pawnWhite1Clicked = 0
+        pos.pawnWhite2Clicked = 0
+        pos.pawnWhite3Clicked = 0
+        pos.pawnWhite4Clicked = 0
+        pos.pawnWhite5Clicked = 0
+        pos.pawnWhite6Clicked = 0
+        pos.pawnWhite7Clicked = 0
+        pos.pawnWhite8Clicked = 0
+        pos.KingWhiteClicked = 0
+        pos.QueenWhiteClicked = 0
+        pos.rookWhite1Clicked = 0
+        pos.rookWhite2Clicked = 0
+        pos.knightWhite1Clicked = 0
+        pos.knightWhite2Clicked = 0
+
+
+def bishop_remove_black_pieces(who_removes, num):
+    mouse_pos = get_pos()
+
+    if pos.boxLst[pos.boxLst.index(who_removes) + num].collidepoint(mouse_pos[0], mouse_pos[1]):
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb1):
+            pos.pb1 = pos.black_deadPieceRect_dict["blackCutPiece_1"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb2):
+            pos.pb2 = pos.black_deadPieceRect_dict["blackCutPiece_2"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb3):
+            pos.pb3 = pos.black_deadPieceRect_dict["blackCutPiece_3"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb4):
+            pos.pb4 = pos.black_deadPieceRect_dict["blackCutPiece_4"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb5):
+            pos.pb5 = pos.black_deadPieceRect_dict["blackCutPiece_5"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb6):
+            pos.pb6 = pos.black_deadPieceRect_dict["blackCutPiece_6"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb7):
+            pos.pb7 = pos.black_deadPieceRect_dict["blackCutPiece_7"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.pb8):
+            pos.pb8 = pos.black_deadPieceRect_dict["blackCutPiece_8"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rb1):
+            pos.rb1 = pos.black_deadPieceRect_dict["blackCutPiece_9"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.rb2):
+            pos.rb2 = pos.black_deadPieceRect_dict["blackCutPiece_10"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kb1):
+            pos.kb1 = pos.black_deadPieceRect_dict["blackCutPiece_11"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.kb2):
+            pos.kb2 = pos.black_deadPieceRect_dict["blackCutPiece_12"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bb1):
+            pos.bb1 = pos.black_deadPieceRect_dict["blackCutPiece_13"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.bb2):
+            pos.bb2 = pos.black_deadPieceRect_dict["blackCutPiece_14"]
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Kb):
+            pos.Kb = pos.black_deadPieceRect_dict["blackCutPiece_15"]
+            pos.KingBlack_isDead = 1
+        if pos.boxLst[pos.boxLst.index(who_removes) + num].colliderect(pos.Qb):
+            pos.Qb = pos.black_deadPieceRect_dict["blackCutPiece_16"]
+
+        if who_removes == pos.bw1:
+            pos.bw1 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.bishopWhite1Clicked = 0
+            pos.bishopWhite1Clicked_cut = 0
+        if who_removes == pos.bw2:
+            pos.bw2 = pos.boxLst[pos.boxLst.index(who_removes) + num]
+            pos.bishopWhite2Clicked = 0
+            pos.bishopWhite2Clicked_cut = 0
+        pos.turn = "black"
+
+
+def bishop_remove_black_pieces_restrictions(who_removes):
+    if who_removes.y < pos.box_dict["box57"].y and who_removes.x < pos.box_dict["box8"].x:
+        bishop_remove_black_pieces(who_removes, 8 + 1)
+    if who_removes.y < pos.box_dict["box49"].y and who_removes.x < pos.box_dict["box7"].x:
+        bishop_remove_black_pieces(who_removes, 16 + 2)
+    if who_removes.y < pos.box_dict["box41"].y and who_removes.x < pos.box_dict["box6"].x:
+        bishop_remove_black_pieces(who_removes, 24 + 3)
+    if who_removes.y < pos.box_dict["box33"].y and who_removes.x < pos.box_dict["box5"].x:
+        bishop_remove_black_pieces(who_removes, 32 + 4)
+    if who_removes.y < pos.box_dict["box25"].y and who_removes.x < pos.box_dict["box4"].x:
+        bishop_remove_black_pieces(who_removes, 40 + 5)
+    if who_removes.y < pos.box_dict["box17"].y and who_removes.x < pos.box_dict["box3"].x:
+        bishop_remove_black_pieces(who_removes, 48 + 6)
+    if who_removes.y < pos.box_dict["box9"].y and who_removes.x < pos.box_dict["box2"].x:
+        bishop_remove_black_pieces(who_removes, 56 + 7)
+
+    if who_removes.y < pos.box_dict["box57"].y and who_removes.x > pos.box_dict["box1"].x:
+        bishop_remove_black_pieces(who_removes, 8 - 1)
+    if who_removes.y < pos.box_dict["box49"].y and who_removes.x > pos.box_dict["box2"].x:
+        bishop_remove_black_pieces(who_removes, 16 - 2)
+    if who_removes.y < pos.box_dict["box41"].y and who_removes.x > pos.box_dict["box3"].x:
+        bishop_remove_black_pieces(who_removes, 24 - 3)
+    if who_removes.y < pos.box_dict["box33"].y and who_removes.x > pos.box_dict["box4"].x:
+        bishop_remove_black_pieces(who_removes, 32 - 4)
+    if who_removes.y < pos.box_dict["box25"].y and who_removes.x > pos.box_dict["box5"].x:
+        bishop_remove_black_pieces(who_removes, 40 - 5)
+    if who_removes.y < pos.box_dict["box17"].y and who_removes.x > pos.box_dict["box6"].x:
+        bishop_remove_black_pieces(who_removes, 48 - 6)
+    if who_removes.y < pos.box_dict["box9"].y and who_removes.x > pos.box_dict["box7"].x:
+        bishop_remove_black_pieces(who_removes, 56 - 7)
+
+    if who_removes.y > pos.box_dict["box1"].y and who_removes.x < pos.box_dict["box8"].x:
+        bishop_remove_black_pieces(who_removes, -8 + 1)
+    if who_removes.y > pos.box_dict["box9"].y and who_removes.x < pos.box_dict["box7"].x:
+        bishop_remove_black_pieces(who_removes, -16 + 2)
+    if who_removes.y > pos.box_dict["box17"].y and who_removes.x < pos.box_dict["box6"].x:
+        bishop_remove_black_pieces(who_removes, -24 + 3)
+    if who_removes.y > pos.box_dict["box25"].y and who_removes.x < pos.box_dict["box5"].x:
+        bishop_remove_black_pieces(who_removes, -32 + 4)
+    if who_removes.y > pos.box_dict["box33"].y and who_removes.x < pos.box_dict["box4"].x:
+        bishop_remove_black_pieces(who_removes, -40 + 5)
+    if who_removes.y > pos.box_dict["box41"].y and who_removes.x < pos.box_dict["box3"].x:
+        bishop_remove_black_pieces(who_removes, -48 + 6)
+    if who_removes.y > pos.box_dict["box49"].y and who_removes.x < pos.box_dict["box2"].x:
+        bishop_remove_black_pieces(who_removes, -56 + 7)
+
+    if who_removes.y > pos.box_dict["box1"].y and who_removes.x > pos.box_dict["box1"].x:
+        bishop_remove_black_pieces(who_removes, -8 - 1)
+    if who_removes.y > pos.box_dict["box9"].y and who_removes.x > pos.box_dict["box2"].x:
+        bishop_remove_black_pieces(who_removes, -16 - 2)
+    if who_removes.y > pos.box_dict["box17"].y and who_removes.x > pos.box_dict["box3"].x:
+        bishop_remove_black_pieces(who_removes, -24 - 3)
+    if who_removes.y > pos.box_dict["box25"].y and who_removes.x > pos.box_dict["box4"].x:
+        bishop_remove_black_pieces(who_removes, -32 - 4)
+    if who_removes.y > pos.box_dict["box33"].y and who_removes.x > pos.box_dict["box5"].x:
+        bishop_remove_black_pieces(who_removes, -40 - 5)
+    if who_removes.y > pos.box_dict["box41"].y and who_removes.x > pos.box_dict["box6"].x:
+        bishop_remove_black_pieces(who_removes, -48 - 6)
+    if who_removes.y > pos.box_dict["box49"].y and who_removes.x > pos.box_dict["box7"].x:
+        bishop_remove_black_pieces(who_removes, -56 - 7)
 
 
 def bishopWMovements():
+    mouse_pos = get_pos()
+
+    if pos.turn == "black":
+        pos.bishopWhite1Clicked_plus8_plus1 = 0
+        pos.bishopWhite1Clicked_plus16_plus2 = 0
+        pos.bishopWhite1Clicked_plus24_plus3 = 0
+        pos.bishopWhite1Clicked_plus32_plus4 = 0
+        pos.bishopWhite1Clicked_plus40_plus5 = 0
+        pos.bishopWhite1Clicked_plus48_plus6 = 0
+        pos.bishopWhite1Clicked_plus8_minus1 = 0
+        pos.bishopWhite1Clicked_plus16_minus2 = 0
+        pos.bishopWhite1Clicked_plus24_minus3 = 0
+        pos.bishopWhite1Clicked_plus32_minus4 = 0
+        pos.bishopWhite1Clicked_plus40_minus5 = 0
+        pos.bishopWhite1Clicked_plus48_minus6 = 0
+        pos.bishopWhite1Clicked_minus8_plus1 = 0
+        pos.bishopWhite1Clicked_minus16_plus2 = 0
+        pos.bishopWhite1Clicked_minus24_plus3 = 0
+        pos.bishopWhite1Clicked_minus32_plus4 = 0
+        pos.bishopWhite1Clicked_minus40_plus5 = 0
+        pos.bishopWhite1Clicked_minus48_plus6 = 0
+        pos.bishopWhite1Clicked_minus8_minus1 = 0
+        pos.bishopWhite1Clicked_minus16_minus2 = 0
+        pos.bishopWhite1Clicked_minus24_minus3 = 0
+        pos.bishopWhite1Clicked_minus32_minus4 = 0
+        pos.bishopWhite1Clicked_minus40_minus5 = 0
+        pos.bishopWhite1Clicked_minus48_minus6 = 0
+
+        pos.bishopWhite2Clicked_plus8_plus1 = 0
+        pos.bishopWhite2Clicked_plus16_plus2 = 0
+        pos.bishopWhite2Clicked_plus24_plus3 = 0
+        pos.bishopWhite2Clicked_plus32_plus4 = 0
+        pos.bishopWhite2Clicked_plus40_plus5 = 0
+        pos.bishopWhite2Clicked_plus48_plus6 = 0
+        pos.bishopWhite2Clicked_plus8_minus1 = 0
+        pos.bishopWhite2Clicked_plus16_minus2 = 0
+        pos.bishopWhite2Clicked_plus24_minus3 = 0
+        pos.bishopWhite2Clicked_plus32_minus4 = 0
+        pos.bishopWhite2Clicked_plus40_minus5 = 0
+        pos.bishopWhite2Clicked_plus48_minus6 = 0
+        pos.bishopWhite2Clicked_minus8_plus1 = 0
+        pos.bishopWhite2Clicked_minus16_plus2 = 0
+        pos.bishopWhite2Clicked_minus24_plus3 = 0
+        pos.bishopWhite2Clicked_minus32_plus4 = 0
+        pos.bishopWhite2Clicked_minus40_plus5 = 0
+        pos.bishopWhite2Clicked_minus48_plus6 = 0
+        pos.bishopWhite2Clicked_minus8_minus1 = 0
+        pos.bishopWhite2Clicked_minus16_minus2 = 0
+        pos.bishopWhite2Clicked_minus24_minus3 = 0
+        pos.bishopWhite2Clicked_minus32_minus4 = 0
+        pos.bishopWhite2Clicked_minus40_minus5 = 0
+        pos.bishopWhite2Clicked_minus48_minus6 = 0
+
+    if pos.turn == "white":
+        if pos.bw1.collidepoint(mouse_pos[0], mouse_pos[1]):
+            if pos.bw1.y < pos.box_dict["box57"].y and pos.bw1.x < pos.box_dict["box8"].x:
+                check_bishop_canMove(pos.bw1, 8 + 1)
+            if pos.bw1.y < pos.box_dict["box49"].y and pos.bw1.x < pos.box_dict["box7"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1:
+                    check_bishop_canMove(pos.bw1, 16 + 2)
+            if pos.bw1.y < pos.box_dict["box41"].y and pos.bw1.x < pos.box_dict["box6"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1:
+                    check_bishop_canMove(pos.bw1, 24 + 3)
+            if pos.bw1.y < pos.box_dict["box33"].y and pos.bw1.x < pos.box_dict["box5"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1 and pos.bishopWhite1Clicked_plus24_plus3 == 1:
+                    check_bishop_canMove(pos.bw1, 32 + 4)
+            if pos.bw1.y < pos.box_dict["box25"].y and pos.bw1.x < pos.box_dict["box4"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1 and pos.bishopWhite1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_plus4 == 1:
+                    check_bishop_canMove(pos.bw1, 40 + 5)
+            if pos.bw1.y < pos.box_dict["box17"].y and pos.bw1.x < pos.box_dict["box3"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1 and pos.bishopWhite1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_plus4 == 1 and pos.bishopWhite1Clicked_plus40_plus5 == 1:
+                    check_bishop_canMove(pos.bw1, 48 + 6)
+            if pos.bw1.y < pos.box_dict["box9"].y and pos.bw1.x < pos.box_dict["box2"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1 and pos.bishopWhite1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_plus4 == 1 and pos.bishopWhite1Clicked_plus40_plus5 == 1 and pos.bishopWhite1Clicked_plus48_plus6 == 1:
+                    check_bishop_canMove(pos.bw1, 56 + 7)
+
+            if pos.bw1.y < pos.box_dict["box57"].y and pos.bw1.x > pos.box_dict["box1"].x:
+                check_bishop_canMove(pos.bw1, 8 - 1)
+            if pos.bw1.y < pos.box_dict["box49"].y and pos.bw1.x > pos.box_dict["box2"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1:
+                    check_bishop_canMove(pos.bw1, 16 - 2)
+            if pos.bw1.y < pos.box_dict["box41"].y and pos.bw1.x > pos.box_dict["box3"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1:
+                    check_bishop_canMove(pos.bw1, 24 - 3)
+            if pos.bw1.y < pos.box_dict["box33"].y and pos.bw1.x > pos.box_dict["box4"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1 and pos.bishopWhite1Clicked_plus24_minus3 == 1:
+                    check_bishop_canMove(pos.bw1, 32 - 4)
+            if pos.bw1.y < pos.box_dict["box25"].y and pos.bw1.x > pos.box_dict["box5"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1 and pos.bishopWhite1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_minus4 == 1:
+                    check_bishop_canMove(pos.bw1, 40 - 5)
+            if pos.bw1.y < pos.box_dict["box17"].y and pos.bw1.x > pos.box_dict["box6"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1 and pos.bishopWhite1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_minus4 == 1 and pos.bishopWhite1Clicked_plus40_minus5 == 1:
+                    check_bishop_canMove(pos.bw1, 48 - 6)
+            if pos.bw1.y < pos.box_dict["box9"].y and pos.bw1.x > pos.box_dict["box7"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1 and pos.bishopWhite1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_minus4 == 1 and pos.bishopWhite1Clicked_plus40_minus5 == 1 and pos.bishopWhite1Clicked_plus48_minus6 == 1:
+                    check_bishop_canMove(pos.bw1, 56 - 7)
+
+            if pos.bw1.y > pos.box_dict["box1"].y and pos.bw1.x < pos.box_dict["box8"].x:
+                check_bishop_canMove(pos.bw1, -8 + 1)
+            if pos.bw1.y > pos.box_dict["box9"].y and pos.bw1.x < pos.box_dict["box7"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1:
+                    check_bishop_canMove(pos.bw1, -16 + 2)
+            if pos.bw1.y > pos.box_dict["box17"].y and pos.bw1.x < pos.box_dict["box6"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1:
+                    check_bishop_canMove(pos.bw1, -24 + 3)
+            if pos.bw1.y > pos.box_dict["box25"].y and pos.bw1.x < pos.box_dict["box5"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1 and pos.bishopWhite1Clicked_minus24_plus3 == 1:
+                    check_bishop_canMove(pos.bw1, -32 + 4)
+            if pos.bw1.y > pos.box_dict["box33"].y and pos.bw1.x < pos.box_dict["box4"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1 and pos.bishopWhite1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_plus4 == 1:
+                    check_bishop_canMove(pos.bw1, -40 + 5)
+            if pos.bw1.y > pos.box_dict["box41"].y and pos.bw1.x < pos.box_dict["box3"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1 and pos.bishopWhite1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_plus4 == 1 and pos.bishopWhite1Clicked_minus40_plus5 == 1:
+                    check_bishop_canMove(pos.bw1, -48 + 6)
+            if pos.bw1.y > pos.box_dict["box49"].y and pos.bw1.x < pos.box_dict["box2"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1 and pos.bishopWhite1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_plus4 == 1 and pos.bishopWhite1Clicked_minus40_plus5 == 1 and pos.bishopWhite1Clicked_minus48_plus6 == 1:
+                    check_bishop_canMove(pos.bw1, -56 + 7)
+
+            if pos.bw1.y > pos.box_dict["box1"].y and pos.bw1.x > pos.box_dict["box1"].x:
+                check_bishop_canMove(pos.bw1, -8 - 1)
+            if pos.bw1.y > pos.box_dict["box9"].y and pos.bw1.x > pos.box_dict["box2"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1:
+                    check_bishop_canMove(pos.bw1, -16 - 2)
+            if pos.bw1.y > pos.box_dict["box17"].y and pos.bw1.x > pos.box_dict["box3"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1:
+                    check_bishop_canMove(pos.bw1, -24 - 3)
+            if pos.bw1.y > pos.box_dict["box25"].y and pos.bw1.x > pos.box_dict["box4"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1 and pos.bishopWhite1Clicked_minus24_minus3 == 1:
+                    check_bishop_canMove(pos.bw1, -32 - 4)
+            if pos.bw1.y > pos.box_dict["box33"].y and pos.bw1.x > pos.box_dict["box5"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1 and pos.bishopWhite1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_minus4 == 1:
+                    check_bishop_canMove(pos.bw1, -40 - 5)
+            if pos.bw1.y > pos.box_dict["box41"].y and pos.bw1.x > pos.box_dict["box6"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1 and pos.bishopWhite1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_minus4 == 1 and pos.bishopWhite1Clicked_minus40_minus5 == 1:
+                    check_bishop_canMove(pos.bw1, -48 - 6)
+            if pos.bw1.y > pos.box_dict["box49"].y and pos.bw1.x > pos.box_dict["box7"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1 and pos.bishopWhite1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_minus4 == 1 and pos.bishopWhite1Clicked_minus40_minus5 == 1 and pos.bishopWhite1Clicked_minus48_minus6 == 1:
+                    check_bishop_canMove(pos.bw1, -56 - 7)
+
+            # check if black pieces can be cut or not
+            if pos.bw1.y < pos.box_dict["box57"].y and pos.bw1.x < pos.box_dict["box8"].x:
+                check_white_bishop_canCut(pos.bw1, 8 + 1)
+            if pos.bw1.y < pos.box_dict["box49"].y and pos.bw1.x < pos.box_dict["box7"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1:
+                    check_white_bishop_canCut(pos.bw1, 16 + 2)
+            if pos.bw1.y < pos.box_dict["box41"].y and pos.bw1.x < pos.box_dict["box6"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1:
+                    check_white_bishop_canCut(pos.bw1, 24 + 3)
+            if pos.bw1.y < pos.box_dict["box33"].y and pos.bw1.x < pos.box_dict["box5"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1 and pos.bishopWhite1Clicked_plus24_plus3 == 1:
+                    check_white_bishop_canCut(pos.bw1, 32 + 4)
+            if pos.bw1.y < pos.box_dict["box25"].y and pos.bw1.x < pos.box_dict["box4"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1 and pos.bishopWhite1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_plus4 == 1:
+                    check_white_bishop_canCut(pos.bw1, 40 + 5)
+            if pos.bw1.y < pos.box_dict["box17"].y and pos.bw1.x < pos.box_dict["box3"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1 and pos.bishopWhite1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_plus4 == 1 and pos.bishopWhite1Clicked_plus40_plus5 == 1:
+                    check_white_bishop_canCut(pos.bw1, 48 + 6)
+            if pos.bw1.y < pos.box_dict["box9"].y and pos.bw1.x < pos.box_dict["box2"].x:
+                if pos.bishopWhite1Clicked_plus8_plus1 == 1 and pos.bishopWhite1Clicked_plus16_plus2 == 1 and pos.bishopWhite1Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_plus4 == 1 and pos.bishopWhite1Clicked_plus40_plus5 == 1 and pos.bishopWhite1Clicked_plus48_plus6 == 1:
+                    check_white_bishop_canCut(pos.bw1, 56 + 7)
+
+            if pos.bw1.y < pos.box_dict["box57"].y and pos.bw1.x > pos.box_dict["box1"].x:
+                check_white_bishop_canCut(pos.bw1, 8 - 1)
+            if pos.bw1.y < pos.box_dict["box49"].y and pos.bw1.x > pos.box_dict["box2"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1:
+                    check_white_bishop_canCut(pos.bw1, 16 - 2)
+            if pos.bw1.y < pos.box_dict["box41"].y and pos.bw1.x > pos.box_dict["box3"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1:
+                    check_white_bishop_canCut(pos.bw1, 24 - 3)
+            if pos.bw1.y < pos.box_dict["box33"].y and pos.bw1.x > pos.box_dict["box4"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1 and pos.bishopWhite1Clicked_plus24_minus3 == 1:
+                    check_white_bishop_canCut(pos.bw1, 32 - 4)
+            if pos.bw1.y < pos.box_dict["box25"].y and pos.bw1.x > pos.box_dict["box5"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1 and pos.bishopWhite1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_minus4 == 1:
+                    check_white_bishop_canCut(pos.bw1, 40 - 5)
+            if pos.bw1.y < pos.box_dict["box17"].y and pos.bw1.x > pos.box_dict["box6"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1 and pos.bishopWhite1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_minus4 == 1 and pos.bishopWhite1Clicked_plus40_minus5 == 1:
+                    check_white_bishop_canCut(pos.bw1, 48 - 6)
+            if pos.bw1.y < pos.box_dict["box9"].y and pos.bw1.x > pos.box_dict["box7"].x:
+                if pos.bishopWhite1Clicked_plus8_minus1 == 1 and pos.bishopWhite1Clicked_plus16_minus2 == 1 and pos.bishopWhite1Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_plus32_minus4 == 1 and pos.bishopWhite1Clicked_plus40_minus5 == 1 and pos.bishopWhite1Clicked_plus48_minus6 == 1:
+                    check_white_bishop_canCut(pos.bw1, 56 - 7)
+
+            if pos.bw1.y > pos.box_dict["box1"].y and pos.bw1.x < pos.box_dict["box8"].x:
+                check_white_bishop_canCut(pos.bw1, -8 + 1)
+            if pos.bw1.y > pos.box_dict["box9"].y and pos.bw1.x < pos.box_dict["box7"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1:
+                    check_white_bishop_canCut(pos.bw1, -16 + 2)
+            if pos.bw1.y > pos.box_dict["box17"].y and pos.bw1.x < pos.box_dict["box6"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1:
+                    check_white_bishop_canCut(pos.bw1, -24 + 3)
+            if pos.bw1.y > pos.box_dict["box25"].y and pos.bw1.x < pos.box_dict["box5"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1 and pos.bishopWhite1Clicked_minus24_plus3 == 1:
+                    check_white_bishop_canCut(pos.bw1, -32 + 4)
+            if pos.bw1.y > pos.box_dict["box33"].y and pos.bw1.x < pos.box_dict["box4"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1 and pos.bishopWhite1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_plus4 == 1:
+                    check_white_bishop_canCut(pos.bw1, -40 + 5)
+            if pos.bw1.y > pos.box_dict["box41"].y and pos.bw1.x < pos.box_dict["box3"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1 and pos.bishopWhite1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_plus4 == 1 and pos.bishopWhite1Clicked_minus40_plus5 == 1:
+                    check_white_bishop_canCut(pos.bw1, -48 + 6)
+            if pos.bw1.y > pos.box_dict["box49"].y and pos.bw1.x < pos.box_dict["box2"].x:
+                if pos.bishopWhite1Clicked_minus8_plus1 == 1 and pos.bishopWhite1Clicked_minus16_plus2 == 1 and pos.bishopWhite1Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_plus4 == 1 and pos.bishopWhite1Clicked_minus40_plus5 == 1 and pos.bishopWhite1Clicked_minus48_plus6 == 1:
+                    check_white_bishop_canCut(pos.bw1, -56 + 7)
+
+            if pos.bw1.y > pos.box_dict["box1"].y and pos.bw1.x > pos.box_dict["box1"].x:
+                check_white_bishop_canCut(pos.bw1, -8 - 1)
+            if pos.bw1.y > pos.box_dict["box9"].y and pos.bw1.x > pos.box_dict["box2"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1:
+                    check_white_bishop_canCut(pos.bw1, -16 - 2)
+            if pos.bw1.y > pos.box_dict["box17"].y and pos.bw1.x > pos.box_dict["box3"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1:
+                    check_white_bishop_canCut(pos.bw1, -24 - 3)
+            if pos.bw1.y > pos.box_dict["box25"].y and pos.bw1.x > pos.box_dict["box4"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1 and pos.bishopWhite1Clicked_minus24_minus3 == 1:
+                    check_white_bishop_canCut(pos.bw1, -32 - 4)
+            if pos.bw1.y > pos.box_dict["box33"].y and pos.bw1.x > pos.box_dict["box5"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1 and pos.bishopWhite1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_minus4 == 1:
+                    check_white_bishop_canCut(pos.bw1, -40 - 5)
+            if pos.bw1.y > pos.box_dict["box41"].y and pos.bw1.x > pos.box_dict["box6"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1 and pos.bishopWhite1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_minus4 == 1 and pos.bishopWhite1Clicked_minus40_minus5 == 1:
+                    check_white_bishop_canCut(pos.bw1, -48 - 6)
+            if pos.bw1.y > pos.box_dict["box49"].y and pos.bw1.x > pos.box_dict["box7"].x:
+                if pos.bishopWhite1Clicked_minus8_minus1 == 1 and pos.bishopWhite1Clicked_minus16_minus2 == 1 and pos.bishopWhite1Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite1Clicked_minus32_minus4 == 1 and pos.bishopWhite1Clicked_minus40_minus5 == 1 and pos.bishopWhite1Clicked_minus48_minus6 == 1:
+                    check_white_bishop_canCut(pos.bw1, -56 - 7)
+
+        if pos.bw2.collidepoint(mouse_pos[0], mouse_pos[1]):
+            if pos.bw2.y < pos.box_dict["box57"].y and pos.bw2.x < pos.box_dict["box8"].x:
+                check_bishop_canMove(pos.bw2, 8 + 1)
+            if pos.bw2.y < pos.box_dict["box49"].y and pos.bw2.x < pos.box_dict["box7"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1:
+                    check_bishop_canMove(pos.bw2, 16 + 2)
+            if pos.bw2.y < pos.box_dict["box41"].y and pos.bw2.x < pos.box_dict["box6"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1:
+                    check_bishop_canMove(pos.bw2, 24 + 3)
+            if pos.bw2.y < pos.box_dict["box33"].y and pos.bw2.x < pos.box_dict["box5"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1 and pos.bishopWhite2Clicked_plus24_plus3 == 1:
+                    check_bishop_canMove(pos.bw2, 32 + 4)
+            if pos.bw2.y < pos.box_dict["box25"].y and pos.bw2.x < pos.box_dict["box4"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1 and pos.bishopWhite2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_plus4 == 1:
+                    check_bishop_canMove(pos.bw2, 40 + 5)
+            if pos.bw2.y < pos.box_dict["box17"].y and pos.bw2.x < pos.box_dict["box3"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1 and pos.bishopWhite2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_plus4 == 1 and pos.bishopWhite2Clicked_plus40_plus5 == 1:
+                    check_bishop_canMove(pos.bw2, 48 + 6)
+            if pos.bw2.y < pos.box_dict["box9"].y and pos.bw2.x < pos.box_dict["box2"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1 and pos.bishopWhite2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_plus4 == 1 and pos.bishopWhite2Clicked_plus40_plus5 == 1 and pos.bishopWhite2Clicked_plus48_plus6 == 1:
+                    check_bishop_canMove(pos.bw2, 56 + 7)
+
+            if pos.bw2.y < pos.box_dict["box57"].y and pos.bw2.x > pos.box_dict["box1"].x:
+                check_bishop_canMove(pos.bw2, 8 - 1)
+            if pos.bw2.y < pos.box_dict["box49"].y and pos.bw2.x > pos.box_dict["box2"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1:
+                    check_bishop_canMove(pos.bw2, 16 - 2)
+            if pos.bw2.y < pos.box_dict["box41"].y and pos.bw2.x > pos.box_dict["box3"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1:
+                    check_bishop_canMove(pos.bw2, 24 - 3)
+            if pos.bw2.y < pos.box_dict["box33"].y and pos.bw2.x > pos.box_dict["box4"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1 and pos.bishopWhite2Clicked_plus24_minus3 == 1:
+                    check_bishop_canMove(pos.bw2, 32 - 4)
+            if pos.bw2.y < pos.box_dict["box25"].y and pos.bw2.x > pos.box_dict["box5"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1 and pos.bishopWhite2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_minus4 == 1:
+                    check_bishop_canMove(pos.bw2, 40 - 5)
+            if pos.bw2.y < pos.box_dict["box17"].y and pos.bw2.x > pos.box_dict["box6"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1 and pos.bishopWhite2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_minus4 == 1 and pos.bishopWhite2Clicked_plus40_minus5 == 1:
+                    check_bishop_canMove(pos.bw2, 48 - 6)
+            if pos.bw2.y < pos.box_dict["box9"].y and pos.bw2.x > pos.box_dict["box7"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1 and pos.bishopWhite2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_minus4 == 1 and pos.bishopWhite2Clicked_plus40_minus5 == 1 and pos.bishopWhite2Clicked_plus48_minus6 == 1:
+                    check_bishop_canMove(pos.bw2, 56 - 7)
+
+            if pos.bw2.y > pos.box_dict["box1"].y and pos.bw2.x < pos.box_dict["box8"].x:
+                check_bishop_canMove(pos.bw2, -8 + 1)
+            if pos.bw2.y > pos.box_dict["box9"].y and pos.bw2.x < pos.box_dict["box7"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1:
+                    check_bishop_canMove(pos.bw2, -16 + 2)
+            if pos.bw2.y > pos.box_dict["box17"].y and pos.bw2.x < pos.box_dict["box6"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1:
+                    check_bishop_canMove(pos.bw2, -24 + 3)
+            if pos.bw2.y > pos.box_dict["box25"].y and pos.bw2.x < pos.box_dict["box5"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1 and pos.bishopWhite2Clicked_minus24_plus3 == 1:
+                    check_bishop_canMove(pos.bw2, -32 + 4)
+            if pos.bw2.y > pos.box_dict["box33"].y and pos.bw2.x < pos.box_dict["box4"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1 and pos.bishopWhite2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_plus4 == 1:
+                    check_bishop_canMove(pos.bw2, -40 + 5)
+            if pos.bw2.y > pos.box_dict["box41"].y and pos.bw2.x < pos.box_dict["box3"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1 and pos.bishopWhite2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_plus4 == 1 and pos.bishopWhite2Clicked_minus40_plus5 == 1:
+                    check_bishop_canMove(pos.bw2, -48 + 6)
+            if pos.bw2.y > pos.box_dict["box49"].y and pos.bw2.x < pos.box_dict["box2"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1 and pos.bishopWhite2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_plus4 == 1 and pos.bishopWhite2Clicked_minus40_plus5 == 1 and pos.bishopWhite2Clicked_minus48_plus6 == 1:
+                    check_bishop_canMove(pos.bw2, -56 + 7)
+
+            if pos.bw2.y > pos.box_dict["box1"].y and pos.bw2.x > pos.box_dict["box1"].x:
+                check_bishop_canMove(pos.bw2, -8 - 1)
+            if pos.bw2.y > pos.box_dict["box9"].y and pos.bw2.x > pos.box_dict["box2"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1:
+                    check_bishop_canMove(pos.bw2, -16 - 2)
+            if pos.bw2.y > pos.box_dict["box17"].y and pos.bw2.x > pos.box_dict["box3"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1:
+                    check_bishop_canMove(pos.bw2, -24 - 3)
+            if pos.bw2.y > pos.box_dict["box25"].y and pos.bw2.x > pos.box_dict["box4"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1 and pos.bishopWhite2Clicked_minus24_minus3 == 1:
+                    check_bishop_canMove(pos.bw2, -32 - 4)
+            if pos.bw2.y > pos.box_dict["box33"].y and pos.bw2.x > pos.box_dict["box5"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1 and pos.bishopWhite2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_minus4 == 1:
+                    check_bishop_canMove(pos.bw2, -40 - 5)
+            if pos.bw2.y > pos.box_dict["box41"].y and pos.bw2.x > pos.box_dict["box6"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1 and pos.bishopWhite2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_minus4 == 1 and pos.bishopWhite2Clicked_minus40_minus5 == 1:
+                    check_bishop_canMove(pos.bw2, -48 - 6)
+            if pos.bw2.y > pos.box_dict["box49"].y and pos.bw2.x > pos.box_dict["box7"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1 and pos.bishopWhite2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_minus4 == 1 and pos.bishopWhite2Clicked_minus40_minus5 == 1 and pos.bishopWhite2Clicked_minus48_minus6 == 1:
+                    check_bishop_canMove(pos.bw2, -56 - 7)
+
+            # check if black pieces can be cut or not
+            if pos.bw2.y < pos.box_dict["box57"].y and pos.bw2.x < pos.box_dict["box8"].x:
+                check_white_bishop_canCut(pos.bw2, 8 + 1)
+            if pos.bw2.y < pos.box_dict["box49"].y and pos.bw2.x < pos.box_dict["box7"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1:
+                    check_white_bishop_canCut(pos.bw2, 16 + 2)
+            if pos.bw2.y < pos.box_dict["box41"].y and pos.bw2.x < pos.box_dict["box6"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1:
+                    check_white_bishop_canCut(pos.bw2, 24 + 3)
+            if pos.bw2.y < pos.box_dict["box33"].y and pos.bw2.x < pos.box_dict["box5"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1 and pos.bishopWhite2Clicked_plus24_plus3 == 1:
+                    check_white_bishop_canCut(pos.bw2, 32 + 4)
+            if pos.bw2.y < pos.box_dict["box25"].y and pos.bw2.x < pos.box_dict["box4"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1 and pos.bishopWhite2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_plus4 == 1:
+                    check_white_bishop_canCut(pos.bw2, 40 + 5)
+            if pos.bw2.y < pos.box_dict["box17"].y and pos.bw2.x < pos.box_dict["box3"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1 and pos.bishopWhite2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_plus4 == 1 and pos.bishopWhite2Clicked_plus40_plus5 == 1:
+                    check_white_bishop_canCut(pos.bw2, 48 + 6)
+            if pos.bw2.y < pos.box_dict["box9"].y and pos.bw2.x < pos.box_dict["box2"].x:
+                if pos.bishopWhite2Clicked_plus8_plus1 == 1 and pos.bishopWhite2Clicked_plus16_plus2 == 1 and pos.bishopWhite2Clicked_plus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_plus4 == 1 and pos.bishopWhite2Clicked_plus40_plus5 == 1 and pos.bishopWhite2Clicked_plus48_plus6 == 1:
+                    check_white_bishop_canCut(pos.bw2, 56 + 7)
+
+            if pos.bw2.y < pos.box_dict["box57"].y and pos.bw2.x > pos.box_dict["box1"].x:
+                check_white_bishop_canCut(pos.bw2, 8 - 1)
+            if pos.bw2.y < pos.box_dict["box49"].y and pos.bw2.x > pos.box_dict["box2"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1:
+                    check_white_bishop_canCut(pos.bw2, 16 - 2)
+            if pos.bw2.y < pos.box_dict["box41"].y and pos.bw2.x > pos.box_dict["box3"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1:
+                    check_white_bishop_canCut(pos.bw2, 24 - 3)
+            if pos.bw2.y < pos.box_dict["box33"].y and pos.bw2.x > pos.box_dict["box4"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1 and pos.bishopWhite2Clicked_plus24_minus3 == 1:
+                    check_white_bishop_canCut(pos.bw2, 32 - 4)
+            if pos.bw2.y < pos.box_dict["box25"].y and pos.bw2.x > pos.box_dict["box5"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1 and pos.bishopWhite2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_minus4 == 1:
+                    check_white_bishop_canCut(pos.bw2, 40 - 5)
+            if pos.bw2.y < pos.box_dict["box17"].y and pos.bw2.x > pos.box_dict["box6"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1 and pos.bishopWhite2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_minus4 == 1 and pos.bishopWhite2Clicked_plus40_minus5 == 1:
+                    check_white_bishop_canCut(pos.bw2, 48 - 6)
+            if pos.bw2.y < pos.box_dict["box9"].y and pos.bw2.x > pos.box_dict["box7"].x:
+                if pos.bishopWhite2Clicked_plus8_minus1 == 1 and pos.bishopWhite2Clicked_plus16_minus2 == 1 and pos.bishopWhite2Clicked_plus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_plus32_minus4 == 1 and pos.bishopWhite2Clicked_plus40_minus5 == 1 and pos.bishopWhite2Clicked_plus48_minus6 == 1:
+                    check_white_bishop_canCut(pos.bw2, 56 - 7)
+
+            if pos.bw2.y > pos.box_dict["box1"].y and pos.bw2.x < pos.box_dict["box8"].x:
+                check_white_bishop_canCut(pos.bw2, -8 + 1)
+            if pos.bw2.y > pos.box_dict["box9"].y and pos.bw2.x < pos.box_dict["box7"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1:
+                    check_white_bishop_canCut(pos.bw2, -16 + 2)
+            if pos.bw2.y > pos.box_dict["box17"].y and pos.bw2.x < pos.box_dict["box6"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1:
+                    check_white_bishop_canCut(pos.bw2, -24 + 3)
+            if pos.bw2.y > pos.box_dict["box25"].y and pos.bw2.x < pos.box_dict["box5"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1 and pos.bishopWhite2Clicked_minus24_plus3 == 1:
+                    check_white_bishop_canCut(pos.bw2, -32 + 4)
+            if pos.bw2.y > pos.box_dict["box33"].y and pos.bw2.x < pos.box_dict["box4"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1 and pos.bishopWhite2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_plus4 == 1:
+                    check_white_bishop_canCut(pos.bw2, -40 + 5)
+            if pos.bw2.y > pos.box_dict["box41"].y and pos.bw2.x < pos.box_dict["box3"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1 and pos.bishopWhite2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_plus4 == 1 and pos.bishopWhite2Clicked_minus40_plus5 == 1:
+                    check_white_bishop_canCut(pos.bw2, -48 + 6)
+            if pos.bw2.y > pos.box_dict["box49"].y and pos.bw2.x < pos.box_dict["box2"].x:
+                if pos.bishopWhite2Clicked_minus8_plus1 == 1 and pos.bishopWhite2Clicked_minus16_plus2 == 1 and pos.bishopWhite2Clicked_minus24_plus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_plus4 == 1 and pos.bishopWhite2Clicked_minus40_plus5 == 1 and pos.bishopWhite2Clicked_minus48_plus6 == 1:
+                    check_white_bishop_canCut(pos.bw2, -56 + 7)
+
+            if pos.bw2.y > pos.box_dict["box1"].y and pos.bw2.x > pos.box_dict["box1"].x:
+                check_white_bishop_canCut(pos.bw2, -8 - 1)
+            if pos.bw2.y > pos.box_dict["box9"].y and pos.bw2.x > pos.box_dict["box2"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1:
+                    check_white_bishop_canCut(pos.bw2, -16 - 2)
+            if pos.bw2.y > pos.box_dict["box17"].y and pos.bw2.x > pos.box_dict["box3"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1:
+                    check_white_bishop_canCut(pos.bw2, -24 - 3)
+            if pos.bw2.y > pos.box_dict["box25"].y and pos.bw2.x > pos.box_dict["box4"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1 and pos.bishopWhite2Clicked_minus24_minus3 == 1:
+                    check_white_bishop_canCut(pos.bw2, -32 - 4)
+            if pos.bw2.y > pos.box_dict["box33"].y and pos.bw2.x > pos.box_dict["box5"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1 and pos.bishopWhite2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_minus4 == 1:
+                    check_white_bishop_canCut(pos.bw2, -40 - 5)
+            if pos.bw2.y > pos.box_dict["box41"].y and pos.bw2.x > pos.box_dict["box6"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1 and pos.bishopWhite2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_minus4 == 1 and pos.bishopWhite2Clicked_minus40_minus5 == 1:
+                    check_white_bishop_canCut(pos.bw2, -48 - 6)
+            if pos.bw2.y > pos.box_dict["box49"].y and pos.bw2.x > pos.box_dict["box7"].x:
+                if pos.bishopWhite2Clicked_minus8_minus1 == 1 and pos.bishopWhite2Clicked_minus16_minus2 == 1 and pos.bishopWhite2Clicked_minus24_minus3 == 1 and \
+                        pos.bishopWhite2Clicked_minus32_minus4 == 1 and pos.bishopWhite2Clicked_minus40_minus5 == 1 and pos.bishopWhite2Clicked_minus48_minus6 == 1:
+                    check_white_bishop_canCut(pos.bw2, -56 - 7)
+
+    # what will happen if bishop is clicked
+    if pos.bishopWhite1Clicked == 1:
+        # remove the black pieces
+        if pos.bishopWhite1Clicked_cut == 1:
+            bishop_remove_black_pieces_restrictions(pos.bw1)
+        move_bishop_restrictions(pos.bw1)
+    if pos.bishopWhite2Clicked == 1:
+        # remove the black pieces
+        if pos.bishopWhite2Clicked_cut == 1:
+            bishop_remove_black_pieces_restrictions(pos.bw2)
+        move_bishop_restrictions(pos.bw2)
+
+
+def queenBMovements():
+    pass
+
+
+def queenWMovements():
     pass
 
 
@@ -5045,6 +6632,8 @@ def drawGameWindow():
     rookWMovements()
     bishopBMovements()
     bishopWMovements()
+    queenBMovements()
+    queenWMovements()
 
 
 game = MainGame()
