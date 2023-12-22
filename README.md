@@ -41,6 +41,8 @@
 
 ## Preview of the Game
 
+![image](https://github.com/karanBRAVO/Chess_Game/assets/77043443/f283403d-c224-4d7b-b38a-61fd14428a2f)
+
 ## File Structure
 
     chessAssets/
