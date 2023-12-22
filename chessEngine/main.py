@@ -3,10 +3,11 @@ import pygame
 from pygame.locals import *
 import sys
 from assets import chessboard, pieces, logger
+import json
 
 
 class Game():
-    def __init__(self, iconPath: str) -> None:
+    def __init__(self, iconPath: str, loadFlag: bool) -> None:
         pygame.init()
         self.colors = {
             "white": (255, 255, 255),
@@ -37,10 +38,17 @@ class Game():
         self.piecesImages = pieces.loadAssets(
             "../chessAssets", self.boxWidth, self.boxHeight)
         self.whiteArmyPos, self.blackArmyPos = pieces.getArmy(
-            self.imageWidth, self.imageHeight)
+            self.imageWidth, self.imageHeight, loadFlag)
         self.mouse_x = -1
         self.mouse_y = -1
-        self.turn = 'w'
+        self.turn = self.getFirstTurn(loadFlag)
+
+    def getFirstTurn(self, loadFlag: bool):
+        if loadFlag:
+            with open("game_state.json", "r") as f:
+                state = json.load(f)
+                return state['turn']
+        return 'w'
 
     def drawGameWindow(self):
         self.window.fill(self.colors["white"])
@@ -76,12 +84,44 @@ class Game():
         self.quitGame()
 
     def quitGame(self):
+        self.saveGameState()
         pygame.quit()
         sys.exit()
+
+    def saveGameState(self):
+        state = {"turn": self.turn, "blackArmyData": {}, "whiteArmyData": {}}
+
+        def addData(armyPos: dict, key: str):
+            for piece in armyPos:
+                state[key][piece] = [
+                    armyPos[piece].x // self.imageWidth, armyPos[piece].y // self.imageHeight]
+
+        addData(self.blackArmyPos, "blackArmyData")
+        addData(self.whiteArmyPos, "whiteArmyData")
+
+        with open("game_state.json", "w") as f:
+            json.dump(state, f)
+
+        logger.print_info("[*] Game state saved.")
+
+
+def takeUserResponse():
+    try:
+        with open("game_state.json", "r") as f:
+            state = json.load(f)
+            if not state:
+                return False
+        logger.print_warn(
+            "[?] Do you want to load the previous state: (yes|no)")
+        flag = input()
+        return True if flag.lower() == "yes" else False
+    except Exception as e:
+        return False
 
 
 if __name__ == '__main__':
     logger.print_info("[*] Chess Engine Loading ...")
-    game_instance = Game("../chessAssets/chess.png")
+    loadFlag = takeUserResponse()
+    game_instance = Game("../chessAssets/chess.png", loadFlag)
     logger.print_success("[*] Game Started")
     game_instance.startGame()

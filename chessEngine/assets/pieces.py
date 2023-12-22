@@ -2,6 +2,7 @@ import pygame
 import sys
 from assets.army import pawn, rook, knight, bishop, queen, king
 from assets import logger
+import json
 
 
 def resetStates(boxes: dict, blackArmy: dict, whiteArmy: dict, turn: str, mouseX: float, mouseY: float):
@@ -77,43 +78,78 @@ def drawPieces(window, assets: dict, whiteArmy: dict, blackArmy: dict):
                     blackArmy[blackPiece].pos)
 
 
-def getArmy(width, height):
-    blackArmy = {
-        'pb1': pawn.Pawn(0 * width, 1 * height, width, height, 'pb'),
-        'pb2': pawn.Pawn(1 * width, 1 * height, width, height, 'pb'),
-        'pb3': pawn.Pawn(2 * width, 1 * height, width, height, 'pb'),
-        'pb4': pawn.Pawn(3 * width, 1 * height, width, height, 'pb'),
-        'pb5': pawn.Pawn(4 * width, 1 * height, width, height, 'pb'),
-        'pb6': pawn.Pawn(5 * width, 1 * height, width, height, 'pb'),
-        'pb7': pawn.Pawn(6 * width, 1 * height, width, height, 'pb'),
-        'pb8': pawn.Pawn(7 * width, 1 * height, width, height, 'pb'),
-        'rb1': rook.Rook(0 * width, 0 * height, width, height, 'rb'),
-        'rb2': rook.Rook(7 * width, 0 * height, width, height, 'rb'),
-        'kb1': knight.Knight(1 * width, 0 * height, width, height, 'kb'),
-        'kb2': knight.Knight(6 * width, 0 * height, width, height, 'kb'),
-        'bb1': bishop.Bishop(2 * width, 0 * height, width, height, 'bb'),
-        'bb2': bishop.Bishop(5 * width, 0 * height, width, height, 'bb'),
-        'Qb': queen.Queen(3 * width, 0 * height, width, height, 'Qb'),
-        'Kb': king.King(4 * width, 0 * height, width, height, 'Kb'),
-    }
-    whiteArmy = {
-        'pw1': pawn.Pawn(0 * width, 6 * height, width, height, 'pw'),
-        'pw2': pawn.Pawn(1 * width, 6 * height, width, height, 'pw'),
-        'pw3': pawn.Pawn(2 * width, 6 * height, width, height, 'pw'),
-        'pw4': pawn.Pawn(3 * width, 6 * height, width, height, 'pw'),
-        'pw5': pawn.Pawn(4 * width, 6 * height, width, height, 'pw'),
-        'pw6': pawn.Pawn(5 * width, 6 * height, width, height, 'pw'),
-        'pw7': pawn.Pawn(6 * width, 6 * height, width, height, 'pw'),
-        'pw8': pawn.Pawn(7 * width, 6 * height, width, height, 'pw'),
-        'rw1': rook.Rook(0 * width, 7 * height, width, height, 'rw'),
-        'rw2': rook.Rook(7 * width, 7 * height, width, height, 'rw'),
-        'kw1': knight.Knight(1 * width, 7 * height, width, height, 'kw'),
-        'kw2': knight.Knight(6 * width, 7 * height, width, height, 'kw'),
-        'bw1': bishop.Bishop(2 * width, 7 * height, width, height, 'bw'),
-        'bw2': bishop.Bishop(5 * width, 7 * height, width, height, 'bw'),
-        'Qw': queen.Queen(3 * width, 7 * height, width, height, 'Qw'),
-        'Kw': king.King(4 * width, 7 * height, width, height, 'Kw'),
-    }
+def getArmy(width, height, loadFlag: bool):
+    if loadFlag:
+        with open("game_state.json", 'r') as f:
+            state = json.load(f)
+            blackArmyData = state["blackArmyData"]
+            whiteArmyData = state["whiteArmyData"]
+            logger.print_info("[*] Previous game state loaded")
+
+        blackArmy = {}
+        whiteArmy = {}
+
+        def createArmyFromPreviousState(armyData: dict, _army: dict):
+            for piece in armyData:
+                _x, _y = armyData[piece]
+                _x *= width
+                _y *= height
+                if piece[0] == 'p':
+                    instance = pawn.Pawn(_x, _y, width, height, 'p'+piece[1])
+                elif piece[0] == 'r':
+                    instance = rook.Rook(_x, _y, width, height, 'r'+piece[1])
+                elif piece[0] == 'b':
+                    instance = bishop.Bishop(
+                        _x, _y, width, height, 'b'+piece[1])
+                elif piece[0] == 'k':
+                    instance = knight.Knight(
+                        _x, _y, width, height, 'k'+piece[1])
+                elif piece[0] == 'Q':
+                    instance = queen.Queen(_x, _y, width, height, 'Q'+piece[1])
+                elif piece[0] == 'K':
+                    instance = king.King(_x, _y, width, height, 'K'+piece[1])
+                _army[piece] = instance
+
+        createArmyFromPreviousState(blackArmyData, blackArmy)
+        createArmyFromPreviousState(whiteArmyData, whiteArmy)
+
+    else:
+        blackArmy = {
+            'pb1': pawn.Pawn(0 * width, 1 * height, width, height, 'pb'),
+            'pb2': pawn.Pawn(1 * width, 1 * height, width, height, 'pb'),
+            'pb3': pawn.Pawn(2 * width, 1 * height, width, height, 'pb'),
+            'pb4': pawn.Pawn(3 * width, 1 * height, width, height, 'pb'),
+            'pb5': pawn.Pawn(4 * width, 1 * height, width, height, 'pb'),
+            'pb6': pawn.Pawn(5 * width, 1 * height, width, height, 'pb'),
+            'pb7': pawn.Pawn(6 * width, 1 * height, width, height, 'pb'),
+            'pb8': pawn.Pawn(7 * width, 1 * height, width, height, 'pb'),
+            'rb1': rook.Rook(0 * width, 0 * height, width, height, 'rb'),
+            'rb2': rook.Rook(7 * width, 0 * height, width, height, 'rb'),
+            'kb1': knight.Knight(1 * width, 0 * height, width, height, 'kb'),
+            'kb2': knight.Knight(6 * width, 0 * height, width, height, 'kb'),
+            'bb1': bishop.Bishop(2 * width, 0 * height, width, height, 'bb'),
+            'bb2': bishop.Bishop(5 * width, 0 * height, width, height, 'bb'),
+            'Qb': queen.Queen(3 * width, 0 * height, width, height, 'Qb'),
+            'Kb': king.King(4 * width, 0 * height, width, height, 'Kb'),
+        }
+        whiteArmy = {
+            'pw1': pawn.Pawn(0 * width, 6 * height, width, height, 'pw'),
+            'pw2': pawn.Pawn(1 * width, 6 * height, width, height, 'pw'),
+            'pw3': pawn.Pawn(2 * width, 6 * height, width, height, 'pw'),
+            'pw4': pawn.Pawn(3 * width, 6 * height, width, height, 'pw'),
+            'pw5': pawn.Pawn(4 * width, 6 * height, width, height, 'pw'),
+            'pw6': pawn.Pawn(5 * width, 6 * height, width, height, 'pw'),
+            'pw7': pawn.Pawn(6 * width, 6 * height, width, height, 'pw'),
+            'pw8': pawn.Pawn(7 * width, 6 * height, width, height, 'pw'),
+            'rw1': rook.Rook(0 * width, 7 * height, width, height, 'rw'),
+            'rw2': rook.Rook(7 * width, 7 * height, width, height, 'rw'),
+            'kw1': knight.Knight(1 * width, 7 * height, width, height, 'kw'),
+            'kw2': knight.Knight(6 * width, 7 * height, width, height, 'kw'),
+            'bw1': bishop.Bishop(2 * width, 7 * height, width, height, 'bw'),
+            'bw2': bishop.Bishop(5 * width, 7 * height, width, height, 'bw'),
+            'Qw': queen.Queen(3 * width, 7 * height, width, height, 'Qw'),
+            'Kw': king.King(4 * width, 7 * height, width, height, 'Kw'),
+        }
 
     return whiteArmy, blackArmy
 
