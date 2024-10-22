@@ -1,3 +1,6 @@
 __pycache__/
 game_state.json
 myenv/
+node_modules/
+.env
+dist/
