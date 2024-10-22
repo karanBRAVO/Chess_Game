@@ -4,7 +4,8 @@
   "description": "The main server for handling multiple client connections.",
   "main": "main.js",
   "scripts": {
-    "dev": "nodemon dist/main.js",
+    "dev": "ts-node-dev --respawn -r tsconfig-paths/register ./src/main.ts",
+    "build": "tsc --build && tsc-alias",
     "start": "node dist/main.js",
     "format:check": "prettier --check .",
     "format": "prettier --write ."
@@ -27,6 +28,9 @@
   "devDependencies": {
     "nodemon": "^3.1.7",
     "prettier": "^3.3.3",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.6.3"
   }
 }
