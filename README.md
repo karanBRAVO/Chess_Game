@@ -3,13 +3,13 @@
 - Create a chess game from `0 -> END`
 - Using: `Pygame`, `Python`
 
-***`note`***: make sure you have installed the `colorama` library before running the script.
+**_`note`_**: make sure you have installed the `colorama` library before running the script.
 
 - to install the `colorama` library
 
-    ```bash
-    pip install colorama
-    ```
+  ```bash
+  pip install colorama
+  ```
 
 - all the assets are provided in the `chessAssets` directory
 
@@ -17,27 +17,27 @@
 
 - clone the repository
 
-    ```bash
-    git clone https://github.com/karanBRAVO/Chess_Game.git
-    ```
+  ```bash
+  git clone https://github.com/karanBRAVO/Chess_Game.git
+  ```
 
 - move to the cloned directory
 
-    ```bash
-    cd chess_game 
-    ```
+  ```bash
+  cd chess_game
+  ```
 
 - move to the chess engine directory
 
-    ```bash
-    cd chessEngine
-    ```
+  ```bash
+  cd chessEngine
+  ```
 
 - run the script
 
-    ```bash
-    python main.py
-    ```
+  ```bash
+  python main.py
+  ```
 
 ## Preview of the Game
 
@@ -54,5 +54,27 @@
     |   |-- logger.py
     |   |-- pieces.py
     |-- main.py
+
+## Virtual Environment Setup (recommended)
+
+1. Install the `python3-venv`
+
+   ```bash
+   sudo apt install python3-venv
+   ```
+
+2. Create the virtual env.
+
+   ```bash
+   python3 -m venv myenv
+   ```
+
+3. Activate the env.
+
+   ```bash
+   source myenv/bin/activate
+   ```
+
+**note**: to deactivate type _`deactivate`_ in terminal
 
 ### ©️ Karan Yadav 2023
