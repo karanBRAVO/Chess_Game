@@ -1,7 +1,7 @@
-# Chess_Game
+# Chess_Game v2
 
-- Create a chess game from `0 -> END`
-- Using: `Pygame`, `Python`
+- Create a chess game from `0 -> END` `#multiplayer`
+- Using: `Pygame`, `Python`, `Node.js`, `Socket.io`
 
 **_`note`_**: make sure you have installed the `colorama` library before running the script.
 
@@ -24,7 +24,25 @@
 - move to the cloned directory
 
   ```bash
-  cd chess_game
+  cd Chess_Game
+  ```
+
+- move to the chess server directory
+
+  ```bash
+  cd chessServer
+  ```
+
+- install the dependencies and run the build command
+
+  ```bash
+  npm install && npm run build
+  ```
+
+- start the server
+
+  ```bash
+  npm run start
   ```
 
 - move to the chess engine directory
@@ -33,7 +51,7 @@
   cd chessEngine
   ```
 
-- run the script
+- run the script `(you have to run multiple terminals and run below command)`
 
   ```bash
   python main.py
@@ -54,6 +72,8 @@
     |   |-- logger.py
     |   |-- pieces.py
     |-- main.py
+    |
+    chessServer/
 
 ## Virtual Environment Setup (recommended)
 
@@ -76,5 +96,25 @@
    ```
 
 **note**: to deactivate type _`deactivate`_ in terminal
+
+## Create the desktop application
+
+1. install the module
+
+```bash
+pip install pyinstaller
+```
+
+2. run the command `(move to chessEngine directory)`
+
+```bash
+pyinstaller --onefile --add-data "assets:assets" --name=chess main.py
+```
+
+3. run the final output
+
+```
+./dist/chess
+```
 
 ### ©️ Karan Yadav 2023

@@ -16,7 +16,7 @@ def get_uid():
 class Game():
     def __init__(self, iconPath: str, loadFlag: bool) -> None:
         pygame.init()
-        self.socket = SocketClient("http://localhost:8080")
+        self.socket = SocketClient("https://chess-server-tbiv.onrender.com")
         self.colors = {
             "white": (255, 255, 255),
             "black": (0, 0, 0),

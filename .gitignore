@@ -4,3 +4,5 @@ myenv/
 node_modules/
 .env
 dist/
+build/
+*.spec
