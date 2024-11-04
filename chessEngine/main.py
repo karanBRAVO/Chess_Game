@@ -95,6 +95,16 @@ class Game():
                 self.blackArmyPos[name].pos.x = pos[0]
                 self.blackArmyPos[name].pos.y = pos[1]
 
+        @self.socket.sio.on("--server:piece-remove")
+        def onRemove(data):
+            name = data['name']
+            logger.print_error(f"[#] Removed {name}")
+            # update opponent's army
+            if self.opponent_details['army'] == 'white':
+                self.blackArmyPos.pop(name)
+            elif self.opponent_details['army'] == 'black':
+                self.whiteArmyPos.pop(name)
+
         @self.socket.sio.on("--server:player-left")
         def onPlayerLeft(data):
             logger.print_success(f'{data['message']}')

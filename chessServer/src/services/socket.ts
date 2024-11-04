@@ -179,6 +179,22 @@ export class SocketService {
         }
       });
 
+      // piece remove
+      socket.on("--client:piece-remove", (data) => {
+        console.log(`[REMOVE] Socket id: ${socket.id}`, data);
+        const playerMatchInfo = this.playerMatchInfo(socket.id);
+        console.log(playerMatchInfo);
+        if (playerMatchInfo) {
+          const opponentSocId =
+            playerMatchInfo.socid1 === socket.id
+              ? playerMatchInfo.socid2
+              : playerMatchInfo.socid1;
+          this.send_message(opponentSocId, "--server:piece-remove", {
+            name: data["name"],
+          });
+        }
+      });
+
       // disconnect
       socket.on("disconnect", () => {
         const playerMatchInfo = this.playerMatchInfo(socket.id);
