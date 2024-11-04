@@ -3,10 +3,13 @@ from assets.army.collision import detectCollision
 from assets.army import queen, bishop, knight, rook
 from assets import logger
 from assets.army.mappings import piece_mapping
+from assets.socket import SocketClient
 
 
 class Pawn():
-    def __init__(self, x: int, y: int, width: int, height: int, face: str = 'pb' or 'pw') -> None:
+    def __init__(self, name: str, sio: SocketClient, x: int, y: int, width: int, height: int, face: str = 'pb' or 'pw') -> None:
+        self.name = name
+        self.socket = sio
         self.x = x
         self.y = y
         self.width = width
@@ -66,6 +69,14 @@ class Pawn():
             self.resetArmy(whiteArmy)
             addMarks_helper(whiteArmy, blackArmy, 6)
 
+    def send_pos(self):
+        self.socket.send_message(
+            "--client:piece-move", {'name': self.name, 'pos': [self.x, self.y, self.width, self.height]})
+
+    def send_remove_player(self, name: str):
+        self.socket.send_message(
+            "--client:piece-remove", {'name': name})
+
     def Move(self, boxes: dict, mouseX: float, mouseY: float, whiteArmy: dict, blackArmy: dict):
         if self.state:
             def move(same_army: dict, opponent_army: dict, base: int):
@@ -103,6 +114,7 @@ class Pawn():
                         opponentPlayer = self.getOpponentPlayer(
                             boxes, opponent_army, pos)
                         opponent_army.pop(opponentPlayer)
+                        self.send_remove_player(opponentPlayer)
                         self.upgradePawn(boxes, same_army)
                         self.resetState()
                         return True
@@ -117,6 +129,7 @@ class Pawn():
                         opponentPlayer = self.getOpponentPlayer(
                             boxes, opponent_army, pos)
                         opponent_army.pop(opponentPlayer)
+                        self.send_remove_player(opponentPlayer)
                         self.upgradePawn(boxes, same_army)
                         self.resetState()
                         return True
@@ -159,26 +172,35 @@ class Pawn():
 
                 # remove the pawn
                 pos = (self.x // self.width, self.y // self.height)
+                remove_piece_name = ""
                 for piece in same_army:
                     if boxes[f"box_{pos[0]}_{pos[1]}"].colliderect(same_army[piece].pos):
                         same_army.pop(piece)
+                        remove_piece_name = piece
                         break
 
                 # add the new piece
+                face = ""
                 if new_piece == 1:
+                    face = f'Q{self.face[1]}'
                     same_army[new_name] = queen.Queen(
-                        self.x, self.y, self.width, self.height, f'Q{self.face[1]}')
+                        new_name, self.socket, self.x, self.y, self.width, self.height, f'Q{self.face[1]}')
                 elif new_piece == 2:
+                    face = f'b{self.face[1]}'
                     same_army[new_name] = bishop.Bishop(
-                        self.x, self.y, self.width, self.height, f'b{self.face[1]}')
+                        new_name, self.socket, self.x, self.y, self.width, self.height, f'b{self.face[1]}')
                 elif new_piece == 3:
+                    face = f'k{self.face[1]}'
                     same_army[new_name] = knight.Knight(
-                        self.x, self.y, self.width, self.height, f'k{self.face[1]}')
+                        new_name, self.socket, self.x, self.y, self.width, self.height, f'k{self.face[1]}')
                 elif new_piece == 4:
+                    face = f'r{self.face[1]}'
                     same_army[new_name] = rook.Rook(
-                        self.x, self.y, self.width, self.height, f'r{self.face[1]}')
+                        new_name, self.socket, self.x, self.y, self.width, self.height, f'r{self.face[1]}')
 
                 logger.print_success("[+] pawn upgraded to " + upgradeTo)
+                self.socket.send_message("--client:pawn-upgrade", {
+                                         'removePieceName': remove_piece_name, 'newPieceName': new_name, 'pos': [self.x, self.y, self.width, self.height], 'face': face, 'newPiece': new_piece})
 
         if self.face == 'pb':
             upgrade(7)
@@ -200,6 +222,7 @@ class Pawn():
         self.y = y
         self.pos.x = x
         self.pos.y = y
+        self.send_pos()
         return True
 
     def resetArmy(self, army: dict):

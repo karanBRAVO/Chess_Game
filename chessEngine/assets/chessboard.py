@@ -1,7 +1,7 @@
 import pygame
 
 
-def drawChessBoard(window, color1: str, color2: str, whiteBoxPosList: [], blackBoxPosList: []):
+def drawChessBoard(window, color1: str, color2: str, whiteBoxPosList: list, blackBoxPosList: list):
     for whiteBoxPos in whiteBoxPosList:
         pygame.draw.rect(window, color1, whiteBoxPos)
 

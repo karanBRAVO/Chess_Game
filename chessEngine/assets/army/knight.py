@@ -2,10 +2,13 @@ import pygame
 from assets.army.collision import detectCollision
 from assets import logger
 from assets.army.mappings import piece_mapping
+from assets.socket import SocketClient
 
 
 class Knight():
-    def __init__(self, x: int, y: int, width: int, height: int, face: str = 'kb' or 'kb') -> None:
+    def __init__(self, name: str, sio: SocketClient, x: int, y: int, width: int, height: int, face: str = 'kb' or 'kb') -> None:
+        self.name = name
+        self.socket = sio
         self.x = x
         self.y = y
         self.width = width
@@ -46,6 +49,14 @@ class Knight():
                 addMarks_helper((self.x // self.width + x_offset, self.y //
                                 self.height + y_offset), whiteArmy, blackArmy)
 
+    def send_pos(self):
+        self.socket.send_message(
+            "--client:piece-move", {'name': self.name, 'pos': [self.x, self.y, self.width, self.height]})
+
+    def send_remove_player(self, name: str):
+        self.socket.send_message(
+            "--client:piece-remove", {'name': name})
+
     def Move(self, boxes: dict, mouseX: float, mouseY: float, whiteArmy: dict, blackArmy: dict):
         if self.state:
             isPositionUpdated = False
@@ -67,6 +78,7 @@ class Knight():
                             opponentPlayer = self.getOpponentPlayer(
                                 boxes, whiteArmy, pos)
                             whiteArmy.pop(opponentPlayer)
+                            self.send_remove_player(opponentPlayer)
                             self.resetState()
 
                     if isPositionUpdated:
@@ -89,6 +101,7 @@ class Knight():
                             opponentPlayer = self.getOpponentPlayer(
                                 boxes, blackArmy, pos)
                             blackArmy.pop(opponentPlayer)
+                            self.send_remove_player(opponentPlayer)
                             self.resetState()
 
                     if isPositionUpdated:
@@ -112,8 +125,9 @@ class Knight():
         self.y = y
         self.pos.x = self.x
         self.pos.y = self.y
+        self.send_pos()
         return True
-    
+
     def resetArmy(self, army: dict):
         for piece in army:
             if piece != self:
