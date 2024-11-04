@@ -95,6 +95,10 @@ class Game():
                 self.blackArmyPos[name].pos.x = pos[0]
                 self.blackArmyPos[name].pos.y = pos[1]
 
+        @self.socket.sio.on("--server:player-left")
+        def onPlayerLeft(data):
+            logger.print_success(f'{data['message']}')
+
     def getFirstTurn(self, loadFlag: bool):
         if loadFlag:
             with open("game_state.json", "r") as f:

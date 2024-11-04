@@ -181,6 +181,16 @@ export class SocketService {
 
       // disconnect
       socket.on("disconnect", () => {
+        const playerMatchInfo = this.playerMatchInfo(socket.id);
+        if (playerMatchInfo) {
+          const opponentSocId =
+            playerMatchInfo.socid1 === socket.id
+              ? playerMatchInfo.socid2
+              : playerMatchInfo.socid1;
+          this.send_message(opponentSocId, "--server:player-left", {
+            message: "Opponent left the match",
+          });
+        }
         this.removeFromUserMap(socket.id);
         this.removeFromWaitingList(socket.id);
         this.removeFromMatch(socket.id);
