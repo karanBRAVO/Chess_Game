@@ -195,6 +195,20 @@ export class SocketService {
         }
       });
 
+      // pawn remove
+      socket.on("--client:pawn-upgrade", (data) => {
+        console.log(`[UPGRADE] Socket id: ${socket.id}`, data);
+        const playerMatchInfo = this.playerMatchInfo(socket.id);
+        console.log(playerMatchInfo);
+        if (playerMatchInfo) {
+          const opponentSocId =
+            playerMatchInfo.socid1 === socket.id
+              ? playerMatchInfo.socid2
+              : playerMatchInfo.socid1;
+          this.send_message(opponentSocId, "--server:pawn-upgrade", data);
+        }
+      });
+
       // disconnect
       socket.on("disconnect", () => {
         const playerMatchInfo = this.playerMatchInfo(socket.id);

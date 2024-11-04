@@ -6,7 +6,7 @@ from assets import chessboard, pieces, logger
 import json
 from assets.socket import SocketClient
 import uuid
-import random
+from assets.army import queen, rook, bishop, knight
 
 
 def get_uid():
@@ -105,6 +105,44 @@ class Game():
             elif self.opponent_details['army'] == 'black':
                 self.whiteArmyPos.pop(name)
 
+        @self.socket.sio.on("--server:pawn-upgrade")
+        def onPawnUpgrade(data):
+            old_piece_name = data['removePieceName']
+            new_name = data['newPieceName']
+            pos = data['pos']
+            face = data['face']
+            new_piece = data['newPiece']
+
+            if self.opponent_details['army'] == 'white':
+                self.whiteArmyPos.pop(old_piece_name)
+                if new_piece == 1:
+                    self.whiteArmyPos[new_name] = queen.Queen(
+                        new_name, self.socket, pos[0], pos[1], pos[2], pos[3], face)
+                elif new_piece == 2:
+                    self.whiteArmyPos[new_name] = bishop.Bishop(
+                        new_name, self.socket, pos[0], pos[1], pos[2], pos[3], face)
+                elif new_piece == 3:
+                    self.whiteArmyPos[new_name] = knight.Knight(
+                        new_name, self.socket, pos[0], pos[1], pos[2], pos[3], face)
+                elif new_piece == 4:
+                    self.whiteArmyPos[new_name] = rook.Rook(
+                        new_name, self.socket, pos[0], pos[1], pos[2], pos[3], face)
+
+            elif self.opponent_details['army'] == 'black':
+                self.blackArmyPos.pop(old_piece_name)
+                if new_piece == 1:
+                    self.blackArmyPos[new_name] = queen.Queen(
+                        new_name, self.socket, pos[0], pos[1], pos[2], pos[3], face)
+                elif new_piece == 2:
+                    self.blackArmyPos[new_name] = bishop.Bishop(
+                        new_name, self.socket, pos[0], pos[1], pos[2], pos[3], face)
+                elif new_piece == 3:
+                    self.blackArmyPos[new_name] = knight.Knight(
+                        new_name, self.socket, pos[0], pos[1], pos[2], pos[3], face)
+                elif new_piece == 4:
+                    self.blackArmyPos[new_name] = rook.Rook(
+                        new_name, self.socket, pos[0], pos[1], pos[2], pos[3], face)
+
         @self.socket.sio.on("--server:player-left")
         def onPlayerLeft(data):
             logger.print_success(f'{data['message']}')
@@ -176,7 +214,7 @@ class Game():
 
     def quitGame(self):
         self.socket.disconnect()
-        self.saveGameState()
+        # self.saveGameState()
         pygame.quit()
         sys.exit()
 
