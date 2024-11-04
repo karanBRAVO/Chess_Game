@@ -10,11 +10,6 @@ class SocketClient:
         @self.sio.event
         def connect():
             logger.print_info("connection established")
-            self.send_message('--client:connect-success', "Hello from Client.")
-
-        @self.sio.on('--server:connect-success')
-        def on_message(data):
-            print('[RECEIVED]', data)
 
         @self.sio.event
         def disconnect():
@@ -23,5 +18,8 @@ class SocketClient:
     def send_message(self, evt, data):
         self.sio.emit(evt, data)
 
-    def connect(self):
-        self.sio.connect(self.url, transports=["websocket"])
+    def connect(self, user_details):
+        self.sio.connect(self.url, transports=["websocket"], auth=user_details)
+
+    def disconnect(self):
+        self.sio.disconnect()
