@@ -20,6 +20,11 @@ export class SocketService {
     io.on("connection", (socket: Socket) => {
       console.log(`Socket connected with id ${socket.id}`);
 
+      socket.on("--client:connect-success", (data) => {
+        console.log("[CLIENT]", data);
+        socket.emit("--server:connect-success", "Hi from server.");
+      });
+
       socket.on("disconnect", () => {
         console.log(`Socket disconnected with id ${socket.id}`);
       });

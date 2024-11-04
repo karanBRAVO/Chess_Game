@@ -4,11 +4,13 @@ from pygame.locals import *
 import sys
 from assets import chessboard, pieces, logger
 import json
+from assets.socket import SocketClient
 
 
 class Game():
     def __init__(self, iconPath: str, loadFlag: bool) -> None:
         pygame.init()
+        self.socket = SocketClient("http://localhost:8080")
         self.colors = {
             "white": (255, 255, 255),
             "black": (0, 0, 0),
@@ -68,6 +70,7 @@ class Game():
             self.mouse_x, self.mouse_y = pygame.mouse.get_pos()
 
     def startGame(self):
+        self.socket.connect()
         firstTurn = "white" if self.turn == 'w' else "black"
         logger.print_warn(f"First Turn: {firstTurn}")
 
@@ -79,11 +82,18 @@ class Game():
                     self.run = False
 
             self.drawGameWindow()
+            self.reconnect_to_socket()
             pygame.display.update()
             self.clock.tick(self.fps)
         self.quitGame()
 
+    def reconnect_to_socket(self):
+        if not self.socket.sio.connected:
+            logger.print_info("Reconnecting...")
+            self.socket.connect()
+
     def quitGame(self):
+        self.socket.sio.disconnect()
         self.saveGameState()
         pygame.quit()
         sys.exit()
