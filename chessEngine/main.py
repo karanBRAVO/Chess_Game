@@ -65,6 +65,7 @@ class Game():
         self.mouse_y = -1
         self.turn = self.getFirstTurn(loadFlag)
         self.font = pygame.font.SysFont('monospace', 16, True, False)
+        self.opponent_curr_move = [-1, -1]
 
         @self.socket.sio.on("--server:match")
         def onMatch(data):
@@ -92,11 +93,15 @@ class Game():
                 self.whiteArmyPos[name].y = pos[1]
                 self.whiteArmyPos[name].pos.x = pos[0]
                 self.whiteArmyPos[name].pos.y = pos[1]
+                self.opponent_curr_move[0] = pos[0]
+                self.opponent_curr_move[1] = pos[1]
             elif self.opponent_details['army'] == 'black':
                 self.blackArmyPos[name].x = pos[0]
                 self.blackArmyPos[name].y = pos[1]
                 self.blackArmyPos[name].pos.x = pos[0]
                 self.blackArmyPos[name].pos.y = pos[1]
+                self.opponent_curr_move[0] = pos[0]
+                self.opponent_curr_move[1] = pos[1]
 
         @self.socket.sio.on("--server:piece-remove")
         def onRemove(data):
@@ -162,6 +167,9 @@ class Game():
         self.getMousePosition()
         chessboard.drawChessBoard(
             self.window, self.colors["white"], self.colors["grey"], self.whiteBoxesPosList, self.blackBoxesPosList)
+        if self.opponent_curr_move[0] > 0 and self.opponent_curr_move[1] > 0:
+            pygame.draw.rect(self.window, self.colors['green'], (
+                self.opponent_curr_move[0], self.opponent_curr_move[1], self.boxWidth, self.boxHeight))
         pieces.drawPieces(self.window, self.piecesImages,
                           self.whiteArmyPos, self.blackArmyPos)
         turn = pieces.piecesMovements(self.window, self.colors, self.boxes,
