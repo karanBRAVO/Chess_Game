@@ -2,10 +2,13 @@ import pygame
 from assets.army.collision import detectCollision
 from assets import logger
 from assets.army.mappings import piece_mapping
+from assets.socket import SocketClient
 
 
 class Rook():
-    def __init__(self, x: int, y: int, width: int, height: int, face: str = 'rb' or 'rw') -> None:
+    def __init__(self, name: str, sio: SocketClient, x: int, y: int, width: int, height: int, face: str = 'rb' or 'rw') -> None:
+        self.name = name
+        self.socket = sio
         self.x = x
         self.y = y
         self.width = width
@@ -67,6 +70,10 @@ class Rook():
         elif self.face == 'rw':
             self.resetArmy(whiteArmy)
             addMarks(whiteArmy, blackArmy)
+
+    def send_pos(self):
+        self.socket.send_message(
+            "--client:piece-move", {'name': self.name, 'pos': [self.x, self.y, self.width, self.height]})
 
     def Move(self, boxes: dict, mouseX: float, mouseY: float, whiteArmy: dict, blackArmy: dict):
         if self.state:
@@ -153,6 +160,7 @@ class Rook():
         self.y = y
         self.pos.x = self.x
         self.pos.y = self.y
+        self.send_pos()
         return True
 
     def resetArmy(self, army: dict):

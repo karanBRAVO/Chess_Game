@@ -2,10 +2,13 @@ import pygame
 from assets.army.collision import detectCollision
 from assets import logger
 from assets.army.mappings import piece_mapping
+from assets.socket import SocketClient
 
 
 class Bishop:
-    def __init__(self, x: int, y: int, width: int, height: int, face: str = 'bb' or 'bw') -> None:
+    def __init__(self, name: str, sio: SocketClient, x: int, y: int, width: int, height: int, face: str = 'bb' or 'bw') -> None:
+        self.name = name
+        self.socket = sio
         self.x = x
         self.y = y
         self.width = width
@@ -53,6 +56,10 @@ class Bishop:
         elif self.face == 'bw':
             self.resetArmy(whiteArmy)
             addMarks_helper(whiteArmy, blackArmy)
+
+    def send_pos(self):
+        self.socket.send_message(
+            "--client:piece-move", {'name': self.name, 'pos': [self.x, self.y, self.width, self.height]})
 
     def Move(self, boxes: dict, mouseX: float, mouseY: float, whiteArmy: dict, blackArmy: dict):
         if self.state:
@@ -115,8 +122,9 @@ class Bishop:
         self.y = y
         self.pos.x = self.x
         self.pos.y = self.y
+        self.send_pos()
         return True
-    
+
     def resetArmy(self, army: dict):
         for piece in army:
             if piece != self:
