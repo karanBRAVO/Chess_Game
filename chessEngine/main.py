@@ -41,15 +41,17 @@ class Game():
         }
         self.clock = pygame.time.Clock()
         self.fps = 60
-        self.windowWidth = 400
+        self.windowWidth = 500
         self.windowHeight = 400
         self.window = pygame.display.set_mode(
             (self.windowWidth, self.windowHeight))
         pygame.display.set_caption("Chess Game")
         pygame.display.set_icon(pygame.image.load(iconPath))
         self.run = True
-        self.boxWidth = self.windowWidth // 8
-        self.boxHeight = self.windowHeight // 8
+        # self.boxWidth = self.windowWidth // 8
+        # self.boxHeight = self.windowHeight // 8
+        self.boxWidth = 50
+        self.boxHeight = 50
         self.imageWidth = self.boxWidth
         self.imageHeight = self.boxHeight
         self.boxes = chessboard.getBoxes_rect(self.boxWidth, self.boxHeight)
@@ -62,6 +64,7 @@ class Game():
         self.mouse_x = -1
         self.mouse_y = -1
         self.turn = self.getFirstTurn(loadFlag)
+        self.font = pygame.font.SysFont('monospace', 16, True, False)
 
         @self.socket.sio.on("--server:match")
         def onMatch(data):
@@ -168,10 +171,27 @@ class Game():
         pieces.checkWin(self.blackArmyPos, self.whiteArmyPos)
         pieces.resetStates(self.boxes, self.blackArmyPos,
                            self.whiteArmyPos, self.turn, self.mouse_x, self.mouse_y)
+        self.show_details()
 
     def getMousePosition(self):
         if pygame.mouse.get_pressed(3)[0]:
             self.mouse_x, self.mouse_y = pygame.mouse.get_pos()
+
+    def render_msg(self, msg: str, pos: tuple[int, int], color: tuple[int, int, int]):
+        f = self.font.render(msg, True, color)
+        self.window.blit(f, pos)
+
+    def show_details(self):
+        self.render_msg(f"{self.user_details['username']}", (self.boxWidth * 8 + 10,
+                                                             self.windowHeight - self.boxHeight), self.colors["black"])
+
+        army = "white" if self.turn == 'w' else "black"
+        if self.user_details['army'] == army:
+            self.render_msg(f"#", (self.boxWidth * 8,
+                                   self.windowHeight - self.boxHeight), self.colors["red"])
+
+        self.render_msg(f"{self.opponent_details['username']}", (
+            self.boxWidth * 8 + 10, self.boxWidth), self.colors["black"])
 
     def startGame(self):
         self.input_user_details()
@@ -182,11 +202,11 @@ class Game():
             logger.print_error("Unable to connect.")
             return
 
-        while len(self.opponent_details['id']) == 0:
-            print("Waiting for other player to join...", end='\r')
-        print()
+        # while len(self.opponent_details['id']) == 0:
+        #     print("Waiting for other player to join...", end='\r')
+        # print()
 
-        logger.print_warn(f"Turn: {"white" if self.turn == 'w' else "black"}")
+        # logger.print_warn(f"Turn: {"white" if self.turn == 'w' else "black"}")
 
         while self.run:
             for event in pygame.event.get():
@@ -195,7 +215,12 @@ class Game():
                 if event.type == pygame.KEYDOWN and (event.key == K_ESCAPE):
                     self.run = False
 
-            self.drawGameWindow()
+            if len(self.opponent_details['id']) == 0:
+                print("Waiting for other player to join...", end='\r')
+                self.render_msg(f"Waiting for other player to join...",
+                                (20, 20), self.colors["silver"])
+            else:
+                self.drawGameWindow()
             self.reconnect_to_socket()
             pygame.display.update()
             self.clock.tick(self.fps)
