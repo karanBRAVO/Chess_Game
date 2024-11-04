@@ -53,6 +53,10 @@ class Knight():
         self.socket.send_message(
             "--client:piece-move", {'name': self.name, 'pos': [self.x, self.y, self.width, self.height]})
 
+    def send_remove_player(self, name: str):
+        self.socket.send_message(
+            "--client:piece-remove", {'name': name})
+
     def Move(self, boxes: dict, mouseX: float, mouseY: float, whiteArmy: dict, blackArmy: dict):
         if self.state:
             isPositionUpdated = False
@@ -74,6 +78,7 @@ class Knight():
                             opponentPlayer = self.getOpponentPlayer(
                                 boxes, whiteArmy, pos)
                             whiteArmy.pop(opponentPlayer)
+                            self.send_remove_player(opponentPlayer)
                             self.resetState()
 
                     if isPositionUpdated:
@@ -96,6 +101,7 @@ class Knight():
                             opponentPlayer = self.getOpponentPlayer(
                                 boxes, blackArmy, pos)
                             blackArmy.pop(opponentPlayer)
+                            self.send_remove_player(opponentPlayer)
                             self.resetState()
 
                     if isPositionUpdated:

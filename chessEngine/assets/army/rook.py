@@ -75,6 +75,10 @@ class Rook():
         self.socket.send_message(
             "--client:piece-move", {'name': self.name, 'pos': [self.x, self.y, self.width, self.height]})
 
+    def send_remove_player(self, name: str):
+        self.socket.send_message(
+            "--client:piece-remove", {'name': name})
+
     def Move(self, boxes: dict, mouseX: float, mouseY: float, whiteArmy: dict, blackArmy: dict):
         if self.state:
             def move(same_army: dict, opponent_army: dict):
@@ -102,6 +106,7 @@ class Rook():
                                 opponentPlayer = self.getOpponentPlayer(
                                     boxes, opponent_army, pos)
                                 opponent_army.pop(opponentPlayer)
+                                self.send_remove_player(opponentPlayer)
                                 self.resetState()
                             break
 
@@ -130,6 +135,7 @@ class Rook():
                                 opponentPlayer = self.getOpponentPlayer(
                                     boxes, opponent_army, pos)
                                 opponent_army.pop(opponentPlayer)
+                                self.send_remove_player(opponentPlayer)
                                 self.resetState()
                             break
 
