@@ -7,7 +7,12 @@ export class ServerService {
 
   constructor(port: number) {
     this._PORT = port;
-    this._server = http.createServer();
+    this._server = http.createServer((req, res) => {
+      if (req.method === "GET" && req.url === "/health") {
+        res.writeHead(200, { "Content-Type": "text/plain" });
+        res.end("Hello, world!");
+      }
+    });
   }
 
   public start() {
