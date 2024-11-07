@@ -45,16 +45,10 @@
   npm run start
   ```
 
-- move to the chess engine directory
-
-  ```bash
-  cd chessEngine
-  ```
-
 - run the script `(you have to run multiple terminals and run below command)`
 
   ```bash
-  python main.py
+  python chessEngine/main.py
   ```
 
 ## Preview of the Game
@@ -105,16 +99,16 @@
 pip install pyinstaller
 ```
 
-2. run the command `(move to chessEngine directory)`
+2. run the command
 
 ```bash
-pyinstaller --onefile --add-data "assets:assets" --name=chess main.py
+pyinstaller --onefile --icon=chessEngine/icon.ico --add-data "chessAssets;chessAssets" --hidden-import socketio --hidden-import colorama chessEngine/main.py
 ```
 
 3. run the final output
 
 ```
-./dist/chess
+./dist/main
 ```
 
 ### ©️ Karan Yadav 2023
