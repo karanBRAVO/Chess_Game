@@ -18,8 +18,8 @@ def get_uid():
 class Game():
     def __init__(self, iconPath: str, loadFlag: bool) -> None:
         pygame.init()
-        # self.socket = SocketClient("https://chess-server-tbiv.onrender.com")
-        self.socket = SocketClient("http://localhost:8080")
+        self.socket = SocketClient("https://chess-server-tbiv.onrender.com")
+        # self.socket = SocketClient("http://localhost:8080")
         self.colors = {
             "white": (255, 255, 255),
             "black": (0, 0, 0),
@@ -291,8 +291,8 @@ if __name__ == '__main__':
     try:
         logger.print_info("[*] Chess Engine Loading ...")
         logger.print_info("[?] Checking socket server status...")
-        # response = requests.get("https://chess-server-tbiv.onrender.com/health")
-        response = requests.get("http://localhost:8080/health")
+        response = requests.get("https://chess-server-tbiv.onrender.com/health")
+        # response = requests.get("http://localhost:8080/health")
         if response.status_code == 200:
             logger.print_success("[+] Socket server is live")
             # loadFlag = takeUserResponse()
