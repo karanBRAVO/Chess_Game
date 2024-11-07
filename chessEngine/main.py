@@ -7,6 +7,7 @@ import json
 from assets.socket import SocketClient
 import uuid
 from assets.army import queen, rook, bishop, knight
+from assets.helper import resource_path
 
 
 def get_uid():
@@ -57,8 +58,10 @@ class Game():
         self.boxes = chessboard.getBoxes_rect(self.boxWidth, self.boxHeight)
         self.whiteBoxesPosList, self.blackBoxesPosList = chessboard.getBoxes_posList(
             self.boxes)
+        # self.piecesImages = pieces.loadAssets(
+        #     "../chessAssets", self.boxWidth, self.boxHeight)
         self.piecesImages = pieces.loadAssets(
-            "../chessAssets", self.boxWidth, self.boxHeight)
+            resource_path("chessAssets"), self.boxWidth, self.boxHeight)
         self.whiteArmyPos, self.blackArmyPos = pieces.getArmy(
             self.imageWidth, self.imageHeight, loadFlag, self.socket)
         self.mouse_x = -1
@@ -286,6 +289,7 @@ if __name__ == '__main__':
     logger.print_info("[*] Chess Engine Loading ...")
     # loadFlag = takeUserResponse()
     # game_instance = Game("../chessAssets/chess.png", loadFlag)
-    game_instance = Game("../chessAssets/chess.png", False)
+    icon_path = resource_path("chessAssets/chess.png")
+    game_instance = Game(icon_path, False)
     logger.print_success("[*] Game Started")
     game_instance.startGame()

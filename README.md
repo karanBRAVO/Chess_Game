@@ -45,10 +45,10 @@
   npm run start
   ```
 
-- run the script `(you have to run multiple terminals and run below command)`
+- run the game script `(you have to run multiple terminals and run below command from the root dir)`
 
   ```bash
-  python chessEngine/main.py
+  chmod +x main.sh && ./main.sh
   ```
 
 ## Preview of the Game
@@ -102,17 +102,19 @@ pip install pyinstaller
 2. run the command
 
 ```bash
-pyinstaller --onefile --icon=chessEngine/icon.ico --add-data "chessAssets;chessAssets" --hidden-import socketio --hidden-import colorama chessEngine/main.py
+pyinstaller --onefile --icon=chessEngine/icon.ico --add-data "chessAssets;chessAssets" --hidden-import socketio --hidden-import colorama --name=chess chessEngine/main.py
 ```
 
 3. run the final output
 
 ```
-./dist/main
+./dist/chess
 ```
 
 ### Note
+
 To fix the path issue while creating the `.exe` file
+
 ```python
 import os
 import sys
