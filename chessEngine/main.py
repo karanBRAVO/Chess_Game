@@ -7,6 +7,8 @@ import json
 from assets.socket import SocketClient
 import uuid
 from assets.army import queen, rook, bishop, knight
+from assets.helper import resource_path
+import requests
 
 
 def get_uid():
@@ -17,6 +19,7 @@ class Game():
     def __init__(self, iconPath: str, loadFlag: bool) -> None:
         pygame.init()
         self.socket = SocketClient("https://chess-server-tbiv.onrender.com")
+        # self.socket = SocketClient("http://localhost:8080")
         self.colors = {
             "white": (255, 255, 255),
             "black": (0, 0, 0),
@@ -57,8 +60,10 @@ class Game():
         self.boxes = chessboard.getBoxes_rect(self.boxWidth, self.boxHeight)
         self.whiteBoxesPosList, self.blackBoxesPosList = chessboard.getBoxes_posList(
             self.boxes)
+        # self.piecesImages = pieces.loadAssets(
+        #     "../chessAssets", self.boxWidth, self.boxHeight)
         self.piecesImages = pieces.loadAssets(
-            "../chessAssets", self.boxWidth, self.boxHeight)
+            resource_path("chessAssets"), self.boxWidth, self.boxHeight)
         self.whiteArmyPos, self.blackArmyPos = pieces.getArmy(
             self.imageWidth, self.imageHeight, loadFlag, self.socket)
         self.mouse_x = -1
@@ -283,9 +288,21 @@ def takeUserResponse():
 
 
 if __name__ == '__main__':
-    logger.print_info("[*] Chess Engine Loading ...")
-    # loadFlag = takeUserResponse()
-    # game_instance = Game("../chessAssets/chess.png", loadFlag)
-    game_instance = Game("../chessAssets/chess.png", False)
-    logger.print_success("[*] Game Started")
-    game_instance.startGame()
+    try:
+        logger.print_info("[*] Chess Engine Loading ...")
+        logger.print_info("[?] Checking socket server status...")
+        response = requests.get("https://chess-server-tbiv.onrender.com/health")
+        # response = requests.get("http://localhost:8080/health")
+        if response.status_code == 200:
+            logger.print_success("[+] Socket server is live")
+            # loadFlag = takeUserResponse()
+            # game_instance = Game("../chessAssets/chess.png", loadFlag)
+            icon_path = resource_path("chessAssets/chess.png")
+            game_instance = Game(icon_path, False)
+            logger.print_success("[*] Game Started")
+            game_instance.startGame()
+        else:
+            logger.print_error(
+                "Request failed with status code:", response.status_code)
+    except Exception as e:
+        print("Something went wrong! Try again later")
